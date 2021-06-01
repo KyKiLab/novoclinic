@@ -1,0 +1,25 @@
+.btn {
+  @include button-reset();
+  @include transition-colors();
+  border-radius: rem(30);
+  text-transform: uppercase;
+  font-size: rem(14);
+  border: 1px solid $transparent;
+  padding: rem(17) rem(46);
+
+  &:focus {
+    outline: $primary;
+    box-shadow: 2px 2px 2px 2px $primary;
+  }
+}
+
+.btn-light {
+  background-color: $light-bg-color;
+  color: $main-text-color;
+
+  &:hover {
+    background-color: $dark-bg-color;
+    color: $light-text-color;
+    border-color: $dark-bg-color;
+  }
+}

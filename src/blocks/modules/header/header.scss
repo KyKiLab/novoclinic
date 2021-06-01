@@ -1,0 +1,205 @@
+.header {
+  padding: rem(18) 0;
+  background: $transparent;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  &__container {
+    display: flex;
+    align-items: center;
+    @include to(1032px) {
+      flex-wrap: wrap;
+    }
+  }
+  // .header__container
+
+  &__nav {
+    flex: 1;
+    @include to(1235px) {
+      flex: 2;
+    }
+
+    @include to(1032px) {
+      order: 0;
+      flex: auto;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      display: flex;
+
+      @include to(1032px) {
+        width: 100%;
+        justify-content: center;
+      }
+
+      li {
+        &:not(:last-child) {
+          margin-right: rem(26);
+        }
+
+        a {
+          color: $light-text-color;
+          font-size: rem(14);
+          @include transition-colors();
+          &:hover {
+            color: $hover-text-color;
+          }
+        }
+      }
+    }
+  }
+  // .header__nav
+
+  &__logo {
+    // width: rem(181);
+    flex: 1;
+    text-align: center;
+
+    @include to(1032px) {
+      text-align: left;
+      flex: auto;
+    }
+  }
+  // .header__logo
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+
+    @include to(1235px) {
+      flex: 2;
+    }
+  }
+  // .header__actions
+
+  &__btn {
+    @include button-reset();
+    @include transition-colors();
+    margin-left: rem(36);
+    color: $light-text-color;
+    background-color: $transparent;
+    text-transform: uppercase;
+    font-size: rem(14);
+    display: flex;
+    align-items: center;
+    padding: rem(17) rem(22);
+    border-radius: $border-radius;
+    border: 1px solid $light-text-color;
+    &:hover,
+    &:active {
+      background-color: $light-bg-color;
+      color: $main-text-color;
+    }
+
+    &:focus {
+      outline: $primary;
+      &:focus {
+        outline: $primary;
+        box-shadow: 2px 2px 2px 2px $primary;
+      }
+    }
+  } // .header__actions
+}
+
+.header-contact {
+  position: relative;
+  // .header-contact__dropdown-btn
+
+  &__dropdown-btn {
+    @include button-reset();
+    color: $light-text-color;
+    font-size: rem(14);
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: $hover-text-color;
+
+      .header-contact__dropdown-ic {
+        fill: $hover-text-color !important;
+      }
+    }
+
+    &:focus {
+      outline: $primary;
+      outline: $primary;
+      &:focus {
+        outline: $primary;
+      }
+    }
+
+    &.is-active {
+      .header-contact__dropdown-ic {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  // .header-contact__dropdown-content
+
+  &__dropdown-ic {
+    margin-left: rem(11);
+    width: 10px;
+    height: 8px;
+    fill: $light-text-color;
+  }
+  // .header-contact__dropdown-ic
+
+  &__dropdown-content {
+    display: none;
+    position: absolute;
+    right: -18px;
+    top: calc(100% + 20px);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    min-width: 300px;
+    padding: rem(8);
+    border-radius: $border-radius;
+  }
+
+  // .header-contact__item
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: $light-text-color;
+    font-size: rem(14);
+    border-radius: $border-radius;
+    padding: rem(8) rem(10);
+    @include transition-colors();
+    &:hover {
+      color: $hover-text-color;
+
+      .header-contact__link {
+        color: $hover-text-color;
+      }
+    }
+  }
+
+  &__link {
+    color: $light-text-color;
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    @include transition-colors();
+  }
+  // .header-contact__link
+
+  &__link-ic {
+    width: 16px;
+    height: 16px;
+    margin-left: rem(8);
+    // fill: $light-text-color !important;
+  }
+
+  // .header-contact__link-ic
+}

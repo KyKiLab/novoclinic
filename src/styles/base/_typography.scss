@@ -1,0 +1,19 @@
+.banner-title {
+  font: 400 rem(104) "El messiri";
+  line-height: rem(90);
+  word-wrap: break-word;
+
+  @include to(1200px) {
+    font-size: rem(90);
+    line-height: rem(80);
+  }
+
+  @include to(768px) {
+    font-size: rem(80);
+    line-height: rem(80);
+  }
+
+  &--light {
+    color: $light-text-color;
+  }
+}
