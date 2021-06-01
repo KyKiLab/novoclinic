@@ -57,3 +57,13 @@ body {
   // @include lg(max-width, rem(930));
   // @include xl(max-width, rem(1110));
 }
+
+.link {
+  font-size: inherit;
+  color: inherit;
+  text-decoration: underline;
+
+  &:hover {
+    color: $primary;
+  }
+}
