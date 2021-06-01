@@ -1,0 +1,69 @@
+.features {
+  @include row-flex();
+  justify-content: center;
+  padding: rem(15) 0;
+}
+
+.features-card {
+  @include col();
+  @include size(4);
+  @include to(1080px) {
+    @include size(5);
+  }
+  @include size-md(6);
+  @include size-sm(12);
+  @include flex-center();
+  position: relative;
+  border-radius: $border-radius;
+  min-height: rem(270);
+  padding: rem(20);
+  overflow: hidden;
+
+  @include hover() {
+    .features-card__hovered {
+      opacity: 1;
+    }
+  }
+
+  &__heading {
+    max-width: rem(320);
+    text-align: center;
+    font: 600 rem(36) / 1.2 "El Messiri";
+  }
+  // .features-card__heading
+
+  &__hovered {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 1;
+    background-color: $light-bg-color;
+    padding: rem(40);
+    text-align: center;
+    opacity: 0;
+    transition: opacity $transition;
+
+    @include flex-center();
+    @include lg-block {
+      display: none;
+    }
+  }
+  // .features-card__hovered
+
+  &__link {
+    display: block;
+    color: $main-text-color;
+    font-style: italic;
+    text-decoration: underline;
+
+    &:hover,
+    &:active {
+      color: $primary;
+      text-decoration: none;
+    }
+  }
+  // .features-card__link
+}
