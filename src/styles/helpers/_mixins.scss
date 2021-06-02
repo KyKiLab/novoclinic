@@ -47,6 +47,7 @@
   cursor: pointer;
   outline: transparent;
   white-space: normal;
+  display: inline-block;
 }
 
 @mixin transition-colors {
