@@ -1,0 +1,38 @@
+.about {
+  padding: rem(90) 0;
+
+  &__title {
+    margin-bottom: rem(75);
+  }
+  // .about__title
+}
+
+.about-content {
+  @include row-flex();
+  justify-content: space-between;
+  align-items: center;
+
+  &__left {
+    @include col();
+    @include size(3.3);
+  }
+  // .about-content__left
+
+  &__center {
+    @include col();
+    @include size(4);
+    text-align: center;
+  }
+  // .about-content__center
+
+  &__right {
+    @include col();
+    @include size(3.3);
+  }
+  // .about-content__right
+
+  &__img {
+    border-radius: 12px;
+  }
+  // .about-content__img
+}
