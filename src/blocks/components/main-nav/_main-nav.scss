@@ -1,0 +1,36 @@
+.main-nav {
+  ul {
+    display: flex;
+    li {
+      &:not(:last-child) {
+        margin-right: rem(26);
+      }
+
+      a {
+        color: $light-text-color;
+        font-size: rem(14);
+        @include transition-colors();
+        &:hover {
+          color: $hover-text-color;
+        }
+      }
+    }
+  }
+
+  &--xl {
+    ul {
+      li {
+        &:not(:last-child) {
+          margin-right: rem(45);
+        }
+
+        a {
+          font-size: rem(18);
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}

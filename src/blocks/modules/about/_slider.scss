@@ -1,0 +1,38 @@
+.about-slider {
+  display: flex;
+  overflow-x: auto;
+  margin: 0 -15px;
+  &__item {
+    overflow: hidden;
+    border-radius: $border-radius;
+    min-width: calc(50% - 30px);
+    max-height: 90vh;
+    position: relative;
+    margin-right: 15px;
+    margin-left: 15px;
+
+    @include sm-block {
+      min-width: calc(100% - 30px);
+      margin-right: 0px;
+      &:first-child {
+        margin-left: 7px;
+      }
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  // .about-slider__item
+}

@@ -29,26 +29,9 @@
     }
 
     ul {
-      display: flex;
-
       @include to(1032px) {
         width: 100%;
         justify-content: center;
-      }
-
-      li {
-        &:not(:last-child) {
-          margin-right: rem(26);
-        }
-
-        a {
-          color: $light-text-color;
-          font-size: rem(14);
-          @include transition-colors();
-          &:hover {
-            color: $hover-text-color;
-          }
-        }
       }
     }
   }
