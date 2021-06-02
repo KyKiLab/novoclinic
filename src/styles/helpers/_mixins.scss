@@ -63,3 +63,15 @@
     }
   }
 }
+
+@mixin input-reset($color) {
+  input:-webkit-autofill {
+    box-shadow: inset 0 0 0 100px $color !important;
+    /* Цвет фона автозаполнение для хрома и файрфокс*/
+  }
+
+  input:invalid {
+    box-shadow: none;
+    /* стандартная валидация файрфокс*/
+  }
+}

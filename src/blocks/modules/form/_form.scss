@@ -1,0 +1,89 @@
+.form {
+  padding: rem(90) 0 rem(80);
+  &__title {
+    margin-bottom: rem(50);
+  }
+  // .form__title
+}
+
+.contact-form {
+  // width: 100%;
+  // max-width: rem(930);
+  // margin: 0 auto;
+
+  form {
+    @include row-flex();
+    justify-content: center;
+  }
+
+  &__group {
+    @include col();
+  }
+
+  &__input-group {
+    @include size(2);
+  }
+  // .contact-form__input-group
+
+  // .contact-form__textarea
+
+  &__textarea {
+    @include size(4);
+  }
+
+  // .contact-form__action
+
+  &__action {
+    @include size(2.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: rem(34);
+  }
+
+  // .contact-form__text
+
+  &__text {
+    margin-top: rem(20);
+  }
+}
+
+.input-group {
+  // .input-group__item
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: rem(20);
+    }
+  }
+}
+
+.contact-form-input {
+  @include input-reset($light-text-color);
+  width: 100%;
+  border: none;
+  background-color: $light-bg-color;
+  outline: $primary;
+  padding: rem(18);
+  border-radius: $border-radius;
+
+  &::placeholder {
+    font-family: 400 rem(14) / rem(17) "Roboto";
+    color: $main-text-color;
+    text-overflow: ellipsis;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+
+  &:focus {
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+}
+
+textarea {
+  resize: none;
+}
