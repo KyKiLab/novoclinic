@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+  <link rel="stylesheet" href="styles/main.min.css">
+
+  
+</head>
+    <body>
+        <header class="header">
+  <div class="container header__container">
+    <nav class="header__nav main-nav">
+      <ul>
+        <li><a href="#">О клинике</a></li>
+        <li><a href="#">Акции</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Цены</a></li>
+        <li><a href="#">Отзывы</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <!-- /.header__nav -->
+
+    <div class="header__logo">
+      <img src="./img/logo.svg" width="181" height="47" alt="Novo clinic logo">
+    </div>
+    <!-- /.header__logo -->
+
+    <div class="header__actions">
+
+      <div class="header-contact">
+        <button type="button" class="header-contact__dropdown-btn js-dropdown-btn">Клиники: 
+          <svg class="header-contact__dropdown-ic">
+            <use xlink:href="./img/svg/sprite.svg#ic-arrow-down"></use>
+          </svg>
+        </button>
+
+        <ul class="header-contact__dropdown-content js-dropdown-content">
+          <li class="header-contact__item">
+            На Фрунзенской
+            <a class="header-contact__link" href="tel:+7921331-52-55">
+              +7 (921) 331-52-55  
+              <svg class="header-contact__link-ic">
+                <use xlink:href="./img/svg/sprite.svg#ic-viber"></use>
+              </svg>
+          </a>
+          
+          </li>
+          <li class="header-contact__item">
+            На Петроградской
+            <a class="header-contact__link" href="tel:+7921596-31-60">
+              +7 (921) 596-31-60
+              <svg class="header-contact__link-ic">
+                <use xlink:href="./img/svg/sprite.svg#ic-viber"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <!-- /.header-contact__dropdown-content -->
+      </div>
+      <!-- /.header-contact -->
+
+      <button type="button" class="header__btn">ЗАПИСАТЬСЯ НА ПРИЕМ</button>
+    </div>
+    <!-- /.header__actions -->
+  </div>
+  <!-- /.container -->
+</header>
+        <main>
+            
+            <div id="topBannerSlider" class="banner-slider" >
+  <div class="banner-slider-item banner-slider-item-1" style="background-image: url(./img/banner-slide-1.jpg);">
+    <div class="banner-slider-item-1__inner">
+      <div class="container">
+        <p class="banner-title banner-title--light banner-slider-item-1__title">
+          -20% на всю косметологию
+        </p>
+        <p class="banner-slider-item-1__footnote">
+          *при первом посещении клиник Novo.Clinic
+        </p>
+
+        <button type="button" class="btn btn-light">ОНЛАЙН ЗАПИСЬ</button>
+    </div>
+    <!-- /.container -->
+    </div>
+    <!-- /.__inner -->
+  </div>
+  <!-- /.banner-slider-item-1 -->
+
+  <div class="banner-slider-item banner-slider-item-2" style="background-image: url(./img/banner-slide-2.jpg);">
+    <div class="banner-slider-item-2__inner">
+      <div class="container">
+        <p class="banner-slider-item-2__inner-top banner-slider-heading">Специальное предложение на лазерную эпиляцию</p>
+        <p class="banner-title banner-title--light banner-slider-item-2__inner-body">
+          Бикини и подмышки 
+        </p>
+
+        <div class="banner-slider-item-2__inner-bottom">
+          <div class="banner-slider-price">
+
+            <div class="banner-slider-price__item">
+              <div class="banner-slider-heading banner-slider-price__heading">Александритовый лазер</div>
+              <div class="banner-price banner-price--light">1490 руб.</div>
+            </div>
+
+            <div class="banner-slider-price__item">
+              <div class="banner-slider-heading banner-slider-price__heading"">Диодный лазер</div>
+              <div class="banner-price banner-price--light">740 руб.</div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-light">ОНЛАЙН ЗАПИСЬ</button>
+        </div>
+
+    </div>
+    <!-- /.container -->
+    </div>
+    <!-- /.__inner -->
+  </div>
+  <!-- /.banner-slider-item-2 -->
+
+  <div class="banner-slider-item banner-slider-item-3" style="background-image: url(./img/banner-slide-3.jpg);">
+    <div class="banner-slider-item-3__inner">
+      <div class="container">
+        <p class="banner-slider-item-3__inner-top banner-slider-subtitle banner-slider-subtitle--light">Специальное предложение на лазерную эпиляцию</p>
+        <p class="banner-title banner-title--light banner-slider-item-3__inner-body">
+          BioRePeel 
+        </p>
+
+        <ul class="banner-slider-item-3__inner-list banner-slider-heading">
+          <li>разглаживает морщины </li>
+          <li>беорется со следами акне</li>
+          <li>сужает поры </li>
+          <li>возвращает мышечный тонус </li>
+        </ul>
+
+        <div class="banner-slider-item-3__inner-bottom">
+
+          <div class="banner-price banner-price--light banner-slider-item-3__price">2700 руб <br> вместо <span class="banner-price--old">3400 руб.</span></div>
+
+          <button type="button" class="btn btn-light">ОНЛАЙН ЗАПИСЬ</button>
+        </div>
+
+    </div>
+    <!-- /.container -->
+    </div>
+    <!-- /.__inner -->
+  </div>
+  <!-- /.banner-slider-item-3 -->
+</div>
+<!-- /.banner-slider -->
+            <section>
+  <div class="container">
+
+    <div class="features">
+
+      <div class="features-card">
+  <h2 class="features-card__heading">Современное оборудование</h2>
+  <!-- /.features-card__heading -->
+  <div class="features-card__hovered">
+    <div class="features-card__wrap">
+      <span> Клиники Novo Clinic оснащены передовым оборудованием, процедуры проводятся эффективно и безопасно для пациентов с любым типом кожи. </span> 
+      <a href="#" class="features-card__link" download="">Подробнее</a>
+      <!-- /.features__link -->
+    </div>
+  </div>
+  <!-- /.features-card__hovered -->
+</div>
+<!-- /.features-card -->
+
+<div class="features-card">
+  <h2 class="features-card__heading">Удобное расположение</h2>
+  <!-- /.features-card__heading -->
+  <div class="features-card__hovered">
+    <div class="features-card__wrap">
+      <span> Клиники в 5 минутах от ст. м. Фрунзенская и Петроградская. </span> 
+      <a href="#" class="features-card__link" download="">Посмотреть на карте</a>
+      <!-- /.features__link -->
+    </div>
+  </div>
+  <!-- /.features-card__hovered -->
+</div>
+<!-- /.features-card -->
+
+<div class="features-card">
+  <h2 class="features-card__heading">Дипломированные специалисты</h2>
+  <!-- /.features-card__heading -->
+  <div class="features-card__hovered">
+    <div class="features-card__wrap">
+      <span> Все врачи клиники имеют высокую квалификацию, необходимые дипломы и сертификаты. Мы ценим и гордимся нашими врачами. </span> 
+      <a href="#" class="features-card__link" download="">Специалисты</a>
+      <!-- /.features__link -->
+    </div>
+  </div>
+  <!-- /.features-card__hovered -->
+</div>
+<!-- /.features-card -->
+
+
+    
+
+    </div>
+    <!-- /.features -->
+
+  </div>
+  <!-- ./ container -->
+</section>
+
+            <section class="about">
+  <div class="container">
+    <h1 class="main-title">Novo Clinic</h1>
+    <h2 class="main-title about__title"> Свежие решения. Новые тенденции. Современные технологии.</h2>
+    <div class="about-content">
+      <div class="about-content__left">
+        <img class="about-content__img" width="362" height="442" src="../img/about-5.jpg" alt="Novo Clinic. Новые тенденции">
+      </div>
+      <div class="about-content__center">
+        <p>
+          Красота и здоровье - неотъемлемые атрибуты успешного и уверенного в себе человека. Быть неотразимым в условиях современного ритма жизни становится все сложнее, а требования к себе все выше. Понимая, насколько важно для Вас выглядеть и чувствовать себя уверенно, не потеряв при этом время и средства, мы открыли нашу клинику.
+        </p>
+        <p>В Novo Clinic для Вас доступны аппаратная и инъекционная косметология. Все процедуры осуществляются с использованием современного лицензированного оборудования и сертифицированных препаратов.</p>
+        <p>Novo Clinic всегда использует самые современные технологии. У нас Вы сможете найти настоящих профессионалов своего дела, получивших высшее образование в лучших ВУЗах страны. Наши специалисты – это прогрессивно мыслящие, открытые новому и современные люди. Благодаря этому, мы не боимся называть себя клиникой нового поколения.</p>
+        <p>
+          Мы дорожим нашими пациентами и поэтому хотим сделать все процедуры доступнее. Специальные цены и акции гарантированно обрадуют Вас, а удобное расположение недалеко от метро позволит сэкономить драгоценное время.</p>
+        <p>Ждем Вас!</p>
+
+      </div>
+      <div class="about-content__right">
+        <img class="about-content__img" width="360" height="293" src="../img/about-6.jpg" alt="Novo Clinic. Свежие решения.">
+      </div>
+    </div>
+    <!-- /.about__content -->
+  </div>
+</section>
+            <section>
+  <div class="container">
+    <div class="about-slider">
+      <div class="about-slider__item">
+        <img src="../img/about-1.jpg" alt="about-1" width="690" height="690">
+      </div>
+      <!-- /.about-slider__item -->
+      <div class="about-slider__item">
+        <img src="../img/about-2.jpg" alt="about-2" width="690" height="690">
+      </div>
+      <!-- /.about-slider__item -->
+      <div class="about-slider__item">
+        <img src="../img/about-3.jpg" alt="about-3" width="690" height="690">
+      </div>
+      <!-- /.about-slider__item -->
+      <div class="about-slider__item">
+        <img src="../img/about-4.jpg" alt="about-4" width="690" height="690">
+      </div>
+      <!-- /.about-slider__item -->
+    </div>
+    <!-- /.about-slider -->
+  </div>
+</section>
+            <section class="form">
+  <div class="container">
+    <h2 class="section-title form__title">КОНТАКТЫ</h2>
+
+    <div class="contact-form">
+      <form>
+        <div class="contact-form__input-group input-group contact-form__group">
+          <input class="contact-form-input input-group__item" type="tel" name="" id="" placeholder="+7(">
+          <input class="contact-form-input input-group__item" type="text" name="" id="" placeholder="Имя">
+        </div>
+        <div class="contact-form__textarea contact-form__group">
+          <textarea class="contact-form-input" name="" id="" rows="5" placeholder="Комментарий"></textarea>
+        </div>
+        <div class="contact-form__action contact-form__group">
+          <input type="submit" class="btn btn-dark" value="ОТПРАВИТЬ"/>
+          <p class="contact-form__text">Вы можете задать любой вопрос нашим специалистам, и мы обязательно на него ответим</p>
+        </div>  
+      </form>
+    </div>
+    <!-- /.contact-form -->
+  </div>
+</section>
+            <section>
+  <div class="container">
+    <div class="feedback-slider">
+      <div class="feedback-slider__item">
+        <div class="feedback-slider__inner">
+          <img src="../img/feedback-1.jpg" alt="feedback-1">
+        </div>
+      </div>
+      <!-- /.feedback-slider__item -->
+      <div class="feedback-slider__item">
+        <div class="feedback-slider__inner">
+          <img src="../img/feedback-2.jpg" alt="feedback-2">
+        </div>
+      </div>
+      <!-- /.feedback-slider__item -->
+      <div class="feedback-slider__item">
+        <div class="feedback-slider__inner">
+          <img src="../img/feedback-3.jpg" alt="feedback-3">
+        </div>
+      </div>
+      <!-- /.feedback-slider__item -->
+      <div class="feedback-slider__item">
+        <div class="feedback-slider__inner">
+          <img src="../img/feedback-4.jpg" alt="feedback-4">
+        </div>
+      </div>
+      <!-- /.feedback-slider__item -->
+      <div class="feedback-slider__item">
+        <div class="feedback-slider__inner">
+          <img src="../img/feedback-5.jpg" alt="feedback-5">
+        </div>
+      </div>
+      <!-- /.feedback-slider__item -->
+    </div>
+    <!-- /.feedback-slider -->
+  </div>
+</section>
+            <section class="bfr-aft">
+  <div class="container">
+    <h2 class="section-title bfr-aft__title">ДО/ПОСЛЕ</h2>
+    <p class="section-subtitle bfr-aft__subtitle">
+      Больше работ в нашем Instagram 
+      <a class="link" href="#" target="_blank">Instagram</a>
+    </p>
+
+    <div class="bfr-aft-gallery">
+
+      
+        <div class="bfr-aft-gallery__item">
+  <img src="../img/after-before/item-1.jpg" alt="Novo Clinic before-after effect - 1" class="bfr-aft-gallery__img">
+</div>
+      
+        <div class="bfr-aft-gallery__item">
+  <img src="../img/after-before/item-2.jpg" alt="Novo Clinic before-after effect - 2" class="bfr-aft-gallery__img">
+</div>
+      
+        <div class="bfr-aft-gallery__item">
+  <img src="../img/after-before/item-3.jpg" alt="Novo Clinic before-after effect - 3" class="bfr-aft-gallery__img">
+</div>
+      
+        <div class="bfr-aft-gallery__item">
+  <img src="../img/after-before/item-4.jpg" alt="Novo Clinic before-after effect - 4" class="bfr-aft-gallery__img">
+</div>
+      
+        <div class="bfr-aft-gallery__item">
+  <img src="../img/after-before/item-5.jpg" alt="Novo Clinic before-after effect - 5" class="bfr-aft-gallery__img">
+</div>
+      
+        <div class="bfr-aft-gallery__item">
+  <img src="../img/after-before/item-6.jpg" alt="Novo Clinic before-after effect - 6" class="bfr-aft-gallery__img">
+</div>
+      
+        <div class="bfr-aft-gallery__item">
+  <img src="../img/after-before/item-7.jpg" alt="Novo Clinic before-after effect - 7" class="bfr-aft-gallery__img">
+</div>
+      
+        <div class="bfr-aft-gallery__item">
+  <img src="../img/after-before/item-8.jpg" alt="Novo Clinic before-after effect - 8" class="bfr-aft-gallery__img">
+</div>
+      
+
+    </div>
+    <!-- /.bfr-aft-gallery -->
+  </div>
+  <!-- /.container -->
+</section>
+            <section class="contacts">
+  <div class="container contacts__container">
+    <h2 class="section-title contacts__title">КОНТАКТЫ</h2>
+    <!-- /.section-title -->
+
+    <div class="contacts__row">
+      <div class="contacts__col">
+        <p class="contacts__item">
+          Ст. м. Фрунзенская, Красуцкого д. 3 лит. М 
+          <a class="contacts__link link" href="tel:+79213315255">+7 (921) 331-52-55</a>
+        </p>
+
+        <p class="contacts__item">
+          Ст. м. Петроградская, Ординарная д .21/22 
+          <a class="contacts__link link" href="tel:+79215963160">+7 (921) 596-31-60</a>
+        </p>
+      </div>
+      <!-- /.contacts__col -->
+      <div class="contacts__col">
+        <p class="contacts__item">
+          Режим работы: с 10 до 21:00, без выходных
+          <a class="contacts__link link" href="mailto:novolaserspbplus@gmail.com">novolaserspbplus@gmail.com</a>
+        </p>
+
+        <button type="button" class="btn btn-dark">ОНЛАЙН ЗАПИСЬ</button>
+      </div>
+      <!-- /.contacts__col -->
+    </div>
+    <!-- /.contacts__row -->
+  </div>
+  <!-- /.container -->
+
+  <div class="contacts-map" id="contactsMap">
+    <span>КАРТА</span>
+  </div>
+  <!-- /#contactsMap.contacts-map -->
+</section>
+        
+        </main>
+        <footer class="footer">
+  <div class="container">
+    <div class="footer__header">
+
+      <div class="footer__logo">
+        <img src="./img/logo.svg" width="181" height="47" alt="Novo clinic logo">
+      </div>
+
+      <nav class="main-nav main-nav--xl footer__nav">
+        <ul>
+          <li><a href="#">О клинике</a></li>
+          <li><a href="#">Акции</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Цены</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <!-- /.footer__nav -->
+    </div>
+    <!-- /.footer__header -->
+
+    <div class="footer__body">
+      <ul class="footer__list footer-list">
+        <li class="footer-list__item">
+          <a href="#" class="footer__link">Специалисты</a>
+        </li>
+        <!-- /.footer-list__item -->
+        <li class="footer-list__item">
+          <a href="#" class="footer__link">Лицензии</a>
+        </li>
+        <!-- /.footer-list__item -->
+        <li class="footer-list__item">
+          <a href="#" class="footer__link">Договор оказания медицинских услуг</a>
+        </li>
+        <!-- /.footer-list__item -->
+        <li class="footer-list__item">
+          <a href="#" class="footer__link">Правовая информация</a>
+        </li>
+        <!-- /.footer-list__item -->
+        <li class="footer-list__item">
+          <a href="#" class="footer__link">Реквизиты</a>
+        </li>
+        <!-- /.footer-list__item -->
+      </ul>
+
+      <div class="footer__actions">
+        <button type="button" class="btn btn-primary footer__btn">ОНЛАЙН ЗАПИСЬ</button>
+        <a href="#" class="footer__link"><a href="#" class="footer__link">Политика в отношении обработки персональных данных</a></a>
+      </div>
+    </div>
+    <!-- /.footer__body -->
+
+    <div class="footer__footer">
+      <span>ООО «Новолазер Плюс»</span>
+      <span>Сайт разработан <!-- ... и слава богу))) --> </span>
+    </div>
+    <!-- /.footer__footer =) --> 
+  </div>
+  <!-- /.container -->
+</footer>
+        <script src="js/main.min.js"></script>
+        <script src="js/vendor.min.js"></script>
+    </body>
+</html>
