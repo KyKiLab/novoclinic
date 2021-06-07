@@ -2,6 +2,11 @@
   @include row-flex();
   justify-content: center;
   padding: rem(15) 0;
+
+  @include lg-block {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .features-card {
@@ -13,6 +18,7 @@
   @include size-md(6);
   @include size-sm(12);
   @include flex-center();
+  flex-wrap: wrap;
   position: relative;
   border-radius: $border-radius;
   min-height: rem(270);
@@ -25,31 +31,46 @@
     }
   }
 
+  @include lg-block {
+    min-height: auto;
+  }
+
   &__heading {
     max-width: rem(320);
     text-align: center;
     font: 600 rem(36) / 1.2 "El Messiri";
+
+    @include lg-block {
+      opacity: 1;
+      font-size: rem(24);
+      margin-bottom: rem(24);
+    }
   }
   // .features-card__heading
 
   &__hovered {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    opacity: 1;
-    background-color: $light-bg-color;
-    border-radius: $border-radius;
-    padding: rem(40);
     text-align: center;
-    opacity: 0;
     transition: opacity $transition;
 
     @include flex-center();
+
+    @include from(1024px) {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      opacity: 0;
+      background-color: $light-bg-color;
+      border-radius: $border-radius;
+      padding: rem(40);
+    }
+
     @include lg-block {
-      display: none;
+      opacity: 1;
+      background-color: $transparent;
+      padding: rem(0);
     }
   }
   // .features-card__hovered
