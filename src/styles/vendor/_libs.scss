@@ -2,3 +2,33 @@
 @import "import/smart-grid";
 @import "../../../node_modules/slick-carousel/slick/slick.scss";
 @import "../../../node_modules/slick-carousel/slick/slick-theme.scss";
+
+.slick-dots {
+  bottom: 15px;
+
+  li {
+    button {
+      &::before {
+        font-size: rem(26);
+        color: #bababa;
+        opacity: 1;
+      }
+    }
+
+    button {
+      @include hover {
+        &::before {
+          color: #070707;
+        }
+      }
+    }
+
+    &.active {
+      button {
+        &::before {
+          color: #070707;
+        }
+      }
+    }
+  }
+}

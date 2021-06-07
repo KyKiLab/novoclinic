@@ -1,6 +1,10 @@
 .bfr-aft {
   padding: rem(90) 0;
 
+  @include md-block {
+    padding: rem(64) 0;
+  }
+
   &__title {
     margin-bottom: rem(16);
   }
@@ -17,6 +21,7 @@
   @include md-block {
     justify-content: center;
   }
+
   &__item {
     @include u-col(4px);
     @include u-size(3, 12, 4px);
@@ -24,6 +29,7 @@
     @include md-block {
       @include u-size(4, 12, 4px);
       justify-content: space-between;
+      opacity: 1;
     }
     @include sm-block {
       @include u-size(6, 12, 4px);
@@ -54,4 +60,16 @@
     object-fit: cover;
   }
   // .bfr-aft-gallery__img
+
+  &.slick-slider {
+    margin-bottom: 0 !important;
+  }
+
+  .slick-slide {
+    padding: 0 4px;
+
+    @include sm-block {
+      padding: 0;
+    }
+  }
 }

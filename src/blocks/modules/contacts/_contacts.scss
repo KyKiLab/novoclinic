@@ -37,6 +37,8 @@
     @include size(3);
     @include size-lg(5);
     @include size-md(6);
+    @include size-sm(10);
+    @include size-xs(12);
     display: flex;
     flex-direction: column;
     align-items: center;
