@@ -1,8 +1,14 @@
 {
-    "name": "project-name",
-    "description": "project-description",
-    "author": "project-author",
+    "name": "novo-clinic",
+    "description": "",
+    "main": "index.js",
+    "author": "Aralov Mykhail <aralov.mykhailo@gmail.com>",
     "license": "project-license",
+    "homepage": "https://kykilab.github.io/novoclinic/",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/KyKiLab/novoclinic.git"
+      },
     "scripts": {
         "dev": "gulp",
         "build": "gulp prod --production",
@@ -16,7 +22,8 @@
         "build:favicons": "gulp favicons --production",
         "build:gzip": "gulp gzip --production",
         "bem-c": "bem create $* -l src/blocks/components",
-        "bem-m": "bem create $* -l src/blocks/modules"
+        "bem-m": "bem create $* -l src/blocks/modules",
+        "deploy": "gh-pages -d dist"
     },
     "devDependencies": {
         "@babel/core": "^7.4.3",
@@ -28,6 +35,7 @@
         "bem-tools-create": "bem-tools/bem-tools-create",
         "browser-sync": "^2.23.6",
         "del": "^5.1.0",
+        "gh-pages": "^3.1.0",   
         "gulp": "^4.0.0",
         "gulp-autoprefixer": "^7.0.1",
         "gulp-clean-css": "^4.2.0",
