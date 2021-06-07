@@ -1,16 +1,21 @@
 .form {
   padding: rem(90) 0 rem(80);
+
+  @include md-block {
+    padding: rem(64) 0;
+  }
+
   &__title {
     margin-bottom: rem(50);
+
+    @include md-block {
+      margin-bottom: rem(20);
+    }
   }
   // .form__title
 }
 
 .contact-form {
-  // width: 100%;
-  // max-width: rem(930);
-  // margin: 0 auto;
-
   form {
     @include row-flex();
     justify-content: center;
@@ -22,6 +27,12 @@
 
   &__input-group {
     @include size(2);
+    @include size-lg(3);
+    @include size-md(10);
+
+    @include md-block {
+      margin-bottom: rem(20);
+    }
   }
   // .contact-form__input-group
 
@@ -29,18 +40,31 @@
 
   &__textarea {
     @include size(4);
+    @include size-lg(6);
+    @include size-md(10);
   }
 
   // .contact-form__action
 
   &__action {
     @include size(2.2);
+    @include size-xl(3);
+    @include size-md(10);
+
+    @include to(940px) {
+      @include size(4);
+    }
+
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-top: rem(34);
+
+    // @include to(1069px) {
+    //   @include size(3);
+    // }
   }
 
   // .contact-form__text
@@ -64,7 +88,7 @@
   @include input-reset($light-text-color);
   width: 100%;
   border: none;
-  background-color: $light-bg-color;
+  background-color: rgba($light-bg-color, 0.8);
   outline: $primary;
   padding: rem(18);
   border-radius: $border-radius;
