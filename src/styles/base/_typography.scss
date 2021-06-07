@@ -21,11 +21,20 @@
 .main-title {
   font: 600 rem(64) / 1.1 "El Messiri";
   text-align: center;
+
+  @include sm-block {
+    font-size: rem(24);
+  }
 }
 
 .section-title {
   font: 400 rem(24) / rem(28) "Roboto";
   text-align: center;
+  text-transform: uppercase;
+
+  @include sm-block {
+    font-size: rem(18);
+  }
 }
 
 .section-subtitle {

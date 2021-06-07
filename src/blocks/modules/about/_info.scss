@@ -1,8 +1,16 @@
 .about {
   padding: rem(90) 0;
 
+  @include sm-block {
+    padding: rem(40) 0;
+  }
+
   &__title {
     margin-bottom: rem(75);
+
+    @include sm-block {
+      margin-bottom: rem(24);
+    }
   }
   // .about__title
 }
@@ -15,12 +23,18 @@
   &__left {
     @include col();
     @include size(3.3);
+    @include size-sm(12);
+
+    @include sm-block {
+      order: 1;
+    }
   }
   // .about-content__left
 
   &__center {
     @include col();
     @include size(4);
+    @include size-sm(12);
     text-align: center;
   }
   // .about-content__center
@@ -28,6 +42,11 @@
   &__right {
     @include col();
     @include size(3.3);
+    @include size-sm(12);
+    @include sm-block {
+      order: -1;
+      margin-bottom: rem(22);
+    }
   }
   // .about-content__right
 
