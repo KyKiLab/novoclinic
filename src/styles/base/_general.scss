@@ -50,6 +50,9 @@ body {
   }
 }
 
+.scrolled {
+  overflow: hidden;
+}
 .container {
   @include container();
   // @include sm(max-width, rem(510));
