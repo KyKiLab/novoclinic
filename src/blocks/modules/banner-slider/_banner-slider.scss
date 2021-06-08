@@ -7,96 +7,40 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
 
-  &-item-1 {
-    padding-bottom: 10%;
-    display: flex !important;
-    align-items: flex-end;
-
-    @include from(1600px) {
-      padding-bottom: 200px;
-    }
-
-    @media screen and (max-height: 600px) {
-      padding-bottom: 50px;
-    }
-
-    &__inner {
-      width: 100%;
-    }
-    &__title {
-      max-width: rem(660);
-      margin-bottom: rem(20);
-    }
-
-    &__footnote {
-      font: 400 rem(16) "RobotoCondensed";
-      color: rgba($light-text-color, 0.7);
-      margin-bottom: rem(50);
+    @include sm-block {
+      padding-top: rem(60);
     }
   }
 
-  &-item-2 {
-    padding-bottom: 120px;
-    @include to(1200px) {
-      padding-bottom: 50px;
-    }
-    display: flex !important;
-    align-items: flex-end;
-    &__inner {
-      width: 100%;
-    }
-
-    &__inner-top {
-      max-width: 340px;
-      margin-bottom: 30px;
-
-      @include from(1440px) {
-        margin-bottom: 50px;
-      }
-
-      @include to(1200px) {
-        max-width: 100%;
-      }
-    }
-
-    &__inner-body {
-      max-width: 576px;
-      margin-bottom: 50px;
-
-      @include to(1200px) {
-        margin-bottom: 20px;
-      }
-
-      @include from(1440px) {
-        margin-bottom: 80px;
-      }
-    }
-
-    &__inner-bottom {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      max-width: 1180px;
-    }
-  }
-
+  @import "./slide-1";
+  @import "./slide-2";
   @import "./slide-3";
 
   &-price {
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
 
     &__heading {
       margin-bottom: 16px;
     }
 
+    @include sm-block {
+      justify-content: center;
+    }
+
     // .banner-slider-price__heading
     &__item {
+      @include sm-block {
+        margin-bottom: rem(30);
+      }
       &:not(:last-child) {
-        margin-right: 90px;
+        margin-right: rem(90);
+
+        @include sm-block {
+          margin-right: 0;
+        }
       }
     }
   }
@@ -131,9 +75,12 @@
 }
 
 .banner-slider-subtitle {
-  font: 600 rem(36) "El messiri";
-  line-height: 0.85;
+  font: 600 rem(36) / 1.1 "El messiri";
   word-wrap: break-word;
+
+  @include sm-block {
+    font-size: rem(24);
+  }
 
   &--light {
     color: $light-text-color;

@@ -3,11 +3,16 @@
   display: flex !important;
   align-items: flex-end;
 
-  @include to(1440px) {
+  @include xl-block {
     padding-bottom: 80px;
   }
   @include to(1370px) {
     padding-bottom: 50px;
+  }
+  @include sm-block {
+    padding-bottom: 20px;
+    align-items: center;
+    text-align: center;
   }
 
   &__inner {
@@ -43,6 +48,10 @@
 
     @include from-to(1024px, 1200px) {
       display: inline-block;
+    }
+
+    @include sm-block {
+      text-align: left;
     }
   }
 

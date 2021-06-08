@@ -22,8 +22,13 @@ $border: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  outline: none;
   @media (max-width: $show) {
     display: flex;
+  }
+
+  &:focus {
+    outline: none;
   }
 
   span {
