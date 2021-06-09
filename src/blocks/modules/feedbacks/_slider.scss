@@ -40,3 +40,13 @@
     overflow: hidden;
   }
 }
+
+.feedback {
+  padding-top: rem(64);
+  &__title {
+    margin-bottom: rem(50);
+    @include md-block {
+      margin-bottom: rem(24);
+    }
+  }
+}

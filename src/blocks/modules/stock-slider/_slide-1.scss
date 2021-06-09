@@ -1,0 +1,33 @@
+&-item-1 {
+  @include md-block {
+    background-position: 65% 0;
+  }
+  @include sm-block {
+    background-position: center;
+  }
+  &__inner {
+    max-width: 630px;
+    text-align: center;
+    @include md-block {
+      max-width: 80%;
+    }
+  }
+
+  &__heading {
+    max-width: 330px;
+  }
+
+  &__block {
+    margin: 0 auto 40px;
+
+    @include md-block {
+      margin: 0 auto 30px;
+    }
+  }
+
+  &__price {
+    @include md-block {
+      margin: 0;
+    }
+  }
+}

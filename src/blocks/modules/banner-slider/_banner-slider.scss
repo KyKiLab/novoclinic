@@ -25,20 +25,20 @@
     &__heading {
       margin-bottom: 16px;
     }
-
-    @include sm-block {
+    @include md-block {
+      flex-direction: column;
       justify-content: center;
     }
 
     // .banner-slider-price__heading
     &__item {
-      @include sm-block {
+      @include md-block {
         margin-bottom: rem(30);
       }
       &:not(:last-child) {
         margin-right: rem(90);
 
-        @include sm-block {
+        @include md-block {
           margin-right: 0;
         }
       }
@@ -55,6 +55,10 @@
     @include to(1200px) {
       font-size: rem(18);
       line-height: rem(22);
+    }
+
+    &--dark {
+      color: $main-text-color;
     }
   }
   // .banner-slider-heading

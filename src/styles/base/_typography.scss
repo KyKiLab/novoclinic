@@ -4,18 +4,15 @@
   word-wrap: break-word;
 
   @include to(1200px) {
-    font-size: rem(90);
-    line-height: rem(80);
-  }
-
-  @include to(768px) {
     font-size: rem(80);
-    line-height: rem(80);
+    line-height: 1.1;
   }
 
+  @include md-block {
+    font-size: rem(50);
+  }
   @include sm-block {
     font-size: rem(36);
-    line-height: rem(31);
   }
 
   &--light {

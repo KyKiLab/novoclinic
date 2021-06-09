@@ -23,10 +23,12 @@
   &__left {
     @include col();
     @include size(3.3);
-    @include size-sm(12);
+    @include size-md(12);
 
-    @include sm-block {
+    @include md-block {
       order: 1;
+      display: flex;
+      justify-content: center;
     }
   }
   // .about-content__left
@@ -34,7 +36,7 @@
   &__center {
     @include col();
     @include size(4);
-    @include size-sm(12);
+    @include size-md(12);
     text-align: center;
   }
   // .about-content__center
@@ -42,9 +44,11 @@
   &__right {
     @include col();
     @include size(3.3);
-    @include size-sm(12);
-    @include sm-block {
+    @include size-md(12);
+    @include md-block {
       order: -1;
+      display: flex;
+      justify-content: center;
       margin-bottom: rem(22);
     }
   }

@@ -51,9 +51,10 @@
     width: 100%;
     max-width: 1180px;
 
-    @include sm-block {
-      justify-content: center;
-      text-align: center;
+    @include md-block {
+      flex-direction: column;
+      justify-content: start;
+      align-items: flex-start;
     }
   }
 }
