@@ -17,6 +17,28 @@
     }
   }
 
+  @include sm-block {
+    padding-top: rem(96);
+    ul {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      li {
+        &:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+
+        a {
+          font-size: rem(36);
+          line-height: 1.5;
+          font-family: "El Messiri";
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
   &--xl {
     ul {
       li {
