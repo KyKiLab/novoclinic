@@ -4,12 +4,18 @@
   border-radius: rem(30);
   text-transform: uppercase;
   font-size: rem(14);
+  min-width: rem(130);
   border: 1px solid $transparent;
   padding: rem(17) rem(46);
 
   &:focus {
     outline: $primary;
     box-shadow: 2px 2px 2px 2px $primary;
+  }
+
+  @include sm-block {
+    font-size: rem(10);
+    padding: rem(14) rem(20);
   }
 }
 

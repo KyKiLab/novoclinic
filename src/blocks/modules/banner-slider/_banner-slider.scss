@@ -49,12 +49,15 @@
   &-heading {
     font-size: rem(24);
     font-family: "Roboto";
-    line-height: rem(28);
+    line-height: 1.3;
     color: $light-text-color;
 
     @include to(1200px) {
       font-size: rem(18);
-      line-height: rem(22);
+    }
+
+    @include sm-block {
+      font-size: rem(14);
     }
 
     &--dark {

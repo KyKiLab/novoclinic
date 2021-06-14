@@ -12,10 +12,18 @@
       height: 568px;
     }
 
-    &__inner {
+    &__inner-rigth {
       margin-left: auto;
+    }
+    &__inner-left {
+      margin-right: auto;
     }
   }
 
   @import "./slide-1";
+  @import "./slide-2";
+  @import "./slide-3";
+  @import "./slide-4";
+  @import "./slide-5";
+  @import "./slide-6";
 }

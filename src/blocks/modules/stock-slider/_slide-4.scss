@@ -1,0 +1,45 @@
+&-item-4 {
+  display: flex;
+  align-items: center;
+  @include sm-block {
+    padding-bottom: 90px;
+    align-items: flex-end;
+  }
+  &__inner {
+    max-width: 600px;
+
+    text-align: center;
+    @include sm-block {
+      text-align: left;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 50px;
+
+    @include sm-block {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__list {
+    padding: 0 20px;
+    margin: 0 auto 60px;
+    text-align: left;
+  }
+
+  &__block {
+    margin: 0 auto 36px;
+
+    @include sm-block {
+      margin: 0 0 24px;
+      max-width: 90%;
+    }
+  }
+
+  &__price {
+    @include md-block {
+      margin: 0;
+    }
+  }
+}
