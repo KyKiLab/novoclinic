@@ -13,7 +13,7 @@ function init() {
     zoom: 12,
     // Элементы управления
     // https://tech.yandex.ru/maps/doc/jsapi/2.1/dg/concepts/controls/standard-docpage/
-    // controls: []
+    controls: []
   });
 
   // myMap.behaviors.disable('scrollZoom');
