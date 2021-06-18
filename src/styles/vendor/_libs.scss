@@ -1,7 +1,7 @@
 @import "import/normalize";
 @import "import/smart-grid";
-@import "../../../node_modules/slick-carousel/slick/slick.scss";
-@import "../../../node_modules/slick-carousel/slick/slick-theme.scss";
+@import "import/slick.scss";
+@import "import/slick-theme.scss";
 $slick-font-path: "../fonts/" !default;
 
 .slick-list {
