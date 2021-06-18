@@ -42,4 +42,8 @@
 .section-subtitle {
   font: 400 rem(18) / rem(22) "Roboto";
   text-align: center;
+
+  &--light {
+    color: $light-text-color;
+  }
 }

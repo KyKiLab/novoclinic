@@ -1,0 +1,18 @@
+<div class="tabs-content js-tabs-content flex-column" >
+
+  <div class="tabs-content-nav js-tabs-content-nav tabs-section__content-nav">
+    <button type="button" data-target-tab="0"
+      class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn tabs-content-btn--active">VBEAM</button>
+    <button type="button" data-target-tab="1"
+      class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn">RF-ЛИФТИНГ</button>
+    <button type="button" data-target-tab="2"
+      class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn">RF-АБЛЯЦИЯ</button>
+  </div>
+  <!-- ./tabs-content-nav -->
+
+  @@include('./VBEAM.html')<!-- Лазерная система VBEAM -->
+  @@include('./RF-L.html')<!-- RF-ЛИФТИНГ -->
+  @@include('./RF-А.html')<!-- RF-АБЛЯЦИЯ -->
+
+</div>
+<!-- /.tabs-content -->
