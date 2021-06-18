@@ -59,11 +59,16 @@
 }
 
 .contacts-map {
-  padding-bottom: 31%;
-  max-height: 560px;
+  min-height: 550px;
   position: relative;
   background: #e8e7e7;
-  span {
-    @include center-absolute();
+
+  .ymaps-2-1-78-map {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100% !important;
   }
 }

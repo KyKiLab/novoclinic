@@ -88,3 +88,14 @@ body {
 .line-through {
   text-decoration: line-through;
 }
+
+.horizontal-scroll-wrapper {
+  flex-direction: column;
+  transform: rotate(-90deg) translateY(-100px);
+  transform-origin: right top;
+
+  & > div {
+    transform: rotate(90deg);
+    transform-origin: right top;
+  }
+}

@@ -143,7 +143,53 @@
         box-shadow: 2px 2px 2px 2px $primary;
       }
     }
-  } // .header__actions
+  } // .header__btn
+
+  &-sticky {
+    position: fixed;
+    background: $primary-bg-color;
+
+    .main-nav {
+      a {
+        color: $main-text-color;
+        @include sm-block {
+          color: $light-text-color;
+        }
+      }
+    }
+
+    .header {
+      &__btn {
+        color: $main-text-color;
+        border-color: $main-text-color;
+      }
+
+      &__logo {
+        img {
+          filter: brightness(0);
+        }
+      }
+    }
+
+    .header-contact {
+      &__dropdown-btn {
+        color: $main-text-color;
+      }
+
+      &__dropdown-content {
+        background: $primary-bg-color;
+      }
+
+      &__item {
+        background: $light-bg-color;
+        color: $main-text-color;
+      }
+
+      &__link {
+        color: $main-text-color;
+      }
+    }
+  }
 }
 
 .header-contact {
@@ -204,6 +250,7 @@
     border-radius: $border-radius;
   }
 
+  // .header-contact__dropdown-content
   // .header-contact__item
 
   &__item {

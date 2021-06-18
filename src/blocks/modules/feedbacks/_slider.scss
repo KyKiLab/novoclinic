@@ -1,16 +1,16 @@
 .feedback-slider {
-  display: flex;
-  overflow-x: auto;
-  margin: 0 -15px;
+  // display: flex;
+  // overflow-x: auto;
+  // margin: 0 -15px;
   &__item {
     overflow: hidden;
     border-radius: $border-radius;
     background-color: $light-bg-color;
     min-width: calc(50% - 30px);
-    max-height: 90vh;
+    max-height: 80vh;
     position: relative;
-    margin-right: 15px;
-    margin-left: 15px;
+    // margin-right: 15px;
+    // margin-left: 15px;
 
     @include sm-block {
       min-width: calc(100% - 30px);
@@ -38,6 +38,10 @@
     align-items: center;
 
     overflow: hidden;
+  }
+
+  .slick-slide {
+    margin-right: 15px;
   }
 }
 
