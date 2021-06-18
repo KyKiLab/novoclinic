@@ -23,12 +23,12 @@
   <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
   <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-  <link rel="stylesheet" href="styles/main.min.css">
+  <link rel="stylesheet" href="styles/main.css">
 
   
 </head>
     <body>
-        <header class="header">
+        <header id="header" class="header">
   <div class="container header__container">
     <nav class="header__nav main-nav">
       <ul>
@@ -43,7 +43,7 @@
     <!-- /.header__nav -->
 
     <div class="header__logo">
-      <img src="./img/logo.svg" width="181" height="47" alt="Novo clinic logo">
+      <img src="./img/logo.svg" width="250" alt="Novo clinic logo">
     </div>
     <!-- /.header__logo -->
 
@@ -84,12 +84,19 @@
       <button type="button" class="header__btn">ЗАПИСАТЬСЯ НА ПРИЕМ</button>
     </div>
     <!-- /.header__actions -->
+
+    <button class="toggle-menu js-toggle-menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
   </div>
   <!-- /.container -->
 </header>
         <main>
             
             <div id="topBannerSlider" class="banner-slider" >
+  
   <div class="banner-slider-item banner-slider-item-1" style="background-image: url(./img/banner-slide-1.jpg);">
     <div class="banner-slider-item-1__inner">
       <div class="container">
@@ -108,37 +115,40 @@
   </div>
   <!-- /.banner-slider-item-1 -->
 
+
+
   <div class="banner-slider-item banner-slider-item-2" style="background-image: url(./img/banner-slide-2.jpg);">
-    <div class="banner-slider-item-2__inner">
-      <div class="container">
-        <p class="banner-slider-item-2__inner-top banner-slider-heading">Специальное предложение на лазерную эпиляцию</p>
-        <p class="banner-title banner-title--light banner-slider-item-2__inner-body">
-          Бикини и подмышки 
-        </p>
+  <div class="banner-slider-item-2__inner">
+    <div class="container">
+      <p class="banner-slider-item-2__inner-top banner-slider-heading">Специальное предложение на лазерную эпиляцию</p>
+      <p class="banner-title banner-title--light banner-slider-item-2__inner-body">
+        Бикини и подмышки 
+      </p>
 
-        <div class="banner-slider-item-2__inner-bottom">
-          <div class="banner-slider-price">
+      <div class="banner-slider-item-2__inner-bottom">
+        <div class="banner-slider-price">
 
-            <div class="banner-slider-price__item">
-              <div class="banner-slider-heading banner-slider-price__heading">Александритовый лазер</div>
-              <div class="banner-price banner-price--light">1490 руб.</div>
-            </div>
-
-            <div class="banner-slider-price__item">
-              <div class="banner-slider-heading banner-slider-price__heading"">Диодный лазер</div>
-              <div class="banner-price banner-price--light">740 руб.</div>
-            </div>
+          <div class="banner-slider-price__item">
+            <div class="banner-slider-heading banner-slider-price__heading">Александритовый лазер</div>
+            <div class="banner-price banner-price--light">1490 руб.</div>
           </div>
-          <button type="button" class="btn btn-light">ОНЛАЙН ЗАПИСЬ</button>
+
+          <div class="banner-slider-price__item">
+            <div class="banner-slider-heading banner-slider-price__heading"">Диодный лазер</div>
+            <div class="banner-price banner-price--light">740 руб.</div>
+          </div>
         </div>
+        <button type="button" class="btn btn-light">ОНЛАЙН ЗАПИСЬ</button>
+      </div>
 
-    </div>
-    <!-- /.container -->
-    </div>
-    <!-- /.__inner -->
   </div>
-  <!-- /.banner-slider-item-2 -->
+  <!-- /.container -->
+  </div>
+  <!-- /.__inner -->
+</div>
+<!-- /.banner-slider-item-2 -->
 
+  
   <div class="banner-slider-item banner-slider-item-3" style="background-image: url(./img/banner-slide-3.jpg);">
     <div class="banner-slider-item-3__inner">
       <div class="container">
@@ -276,6 +286,677 @@
     <!-- /.about-slider -->
   </div>
 </section>
+            <div class="tabs-section flex-column">
+  <h2 class="tabs-section__title section-subtitle section-subtitle--light">УСЛУГИ</h2>
+  <!-- /.tabs-section__title section-subtitle section-subtitle--light -->
+
+  <div class="container flex-column">
+    <div class="tabs js-tabs flex-column">
+      <div class="tabs-nav js-tabs-nav tabs-section__tabs-nav">
+        <button type="button" data-target-tab="0"
+          class="js-tab-btn tabs-nav__btn tabs-nav-btn tabs-nav-btn--active">АППАРАТНАЯ КОСМЕТОЛОГИЯ</button>
+        <button type="button" data-target-tab="1"
+          class="js-tab-btn tabs-nav__btn tabs-nav-btn">ИНЪЕКЦИОННАЯ КОСМЕТОЛОГИЯ</button>
+        <button type="button" data-target-tab="2"
+          class="js-tab-btn tabs-nav__btn tabs-nav-btn">ЛАЗЕРНАЯ ЭПИЛЯЦИЯ</button>
+        <button type="button" data-target-tab="3"
+        class="js-tab-btn tabs-nav__btn tabs-nav-btn">УДАЛЕНИЕ НОВООБРАЗОВАНИЙ
+        </button>
+        <!-- <button type="button" data-target-tab="4"
+          class="js-tab-btn tabs-nav__btn tabs-nav-btn">УХОДОВЫЕ ПРОЦЕДУРЫ</button> -->
+      </div>
+      <!-- /.tabs-nav -->
+
+      <!-- АППАРАТНАЯ КОСМЕТОЛОГИЯ -->
+      <div class="tabs-content js-tabs-content flex-column" >
+
+  <div class="tabs-content-nav js-tabs-content-nav tabs-section__content-nav">
+    <button type="button" data-target-tab="0"
+      class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn tabs-content-btn--active">VBEAM</button>
+    <button type="button" data-target-tab="1"
+      class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn">RF-ЛИФТИНГ</button>
+    <button type="button" data-target-tab="2"
+      class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn">RF-АБЛЯЦИЯ</button>
+  </div>
+  <!-- ./tabs-content-nav -->
+
+  <div class="service js-tabs-content-inner flex-column">
+  <h3 class="service__title">
+    Лазерная система VBEAM
+  </h3>
+  <!-- /.tabs-content-inner --> 
+
+  <div class="service__row">
+    <div class="service__picture service__picture--vertical">
+      <img src="../img/services/s-vbeam-v.jpg" width="310" height="440" alt="Лазерная система VBEAM">
+    </div>
+    <div class="service__content">
+      <p class="service__text">
+        Это импульсный лазер на красителе, используемый для лечения сосудистых патологий кожи. Лазерный луч действует избирательно на оксигемоглобин, который придает красный цвет крови в сосудах. Окружающая кожа и другие ткани не страдают, а сосуды склерозируются.
+      </p>
+      <p class="service__text">Показания:</p>
+
+      <ul class="service__list service-list ">
+        <li class="service-list__item">Расширенные сосуды</li>
+        <li class="service-list__item">Ангиомы, гемангиомы</li>
+        <li class="service-list__item">Винные пятна-для них VBeam лазер выбора, единственный лазер, который удаляет их без рубцов</li>
+        <li class="service-list__item">Розацеа</li>
+        <li class="service-list__item">Акне/ Постакне</li>
+        <li class="service-list__item">Бородавки</li>
+        <li class="service-list__item">Гематомы</li>
+      </ul>
+    
+      <p class="service__text">
+        Как правило, необходим курс процедур, но уже после первой пациент отмечает видимый результат. Посветление обработанного участка кожи, уменьшение количества видимых сосудов. Анестезия перед процедурой не требуется и не проводится. Охлаждение кожи, которое происходит процессе процедуры, делает ее максимально комфортной.
+      </p>
+      <p class="service__text">
+        Так же применяется Beam Perfecta для омоложения. Процедура стимулирует выработку коллагена, выравнивает цвет кожи, устраняет мелкие сосуды. Буквально после первой процедуры пациенты отмечают заметное улучшение качества кожи и лифтинг-эффект.
+      </p>
+
+      <div class="service__actions service-actions">
+        <a href="#" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+        <a href="#" class="service-actions__link service-actions__link--primary">УЗНАТЬ СТОИМОСТЬ</a>
+        <!-- /.service-btns -->
+      </div>
+      <!-- /.service__actions -->
+    </div>
+    <div class="service__picture service__picture--horizontal">
+      <img src="../img/services/s-vbeam-h.jpg" width="320" height="260"  alt="Лазерная система VBEAM">
+    </div>
+  </div>
+</div><!-- Лазерная система VBEAM -->
+  
+  <div class="service js-tabs-content-inner flex-column">
+    <h3 class="service__title">
+      RF-лифтинг
+    </h3>
+    <!-- /.tabs-content-inner --> 
+  
+    <div class="service__row">
+      <div class="service__picture service__picture--vertical">
+        <img src="../img/services/s-rf-v.jpg" width="310" height="440" alt="Лазерная система VBEAM">
+      </div>
+      <div class="service__content">
+        <p class="service__text">
+          RF-лифтинг (термолифтинг) на аппарате Venus Viva. Venus Viva- это аппарат нового типа, предназначеный для омоложения лица и тела. Главный плюс - отсутствие хирургического вмешательства и безболезненность процедуры.
+        </p>
+        
+        <p class="service__text">
+Термолифтинг направлен на стимуляцию выработки коллагена и уплотнение имеющегося, в том числе уменьшение объемов жировых пакетов.
+        </p>
+        <p class="service__text">
+КАК ЭТО РАБОТАЕТ?</br>
+Во время процедуры происходит контролируемый прогрев структур кожи и подкожно-жировой клетчатки в зоне воздействия. Системного влияния на организм не происходит. Продолжительность процедуры: до 40 мин ( в зависимости от зоны).
+</p>
+<p class="service__text">
+РЕЗУЛЬТАТ: уплотнение кожи лица и тела; формирование четкого овала лица; уменьшение «второго подбородка», уменьшение отечности и пастозности лица и области вокруг глаз; подтяжка кожи живота, внутренней поверхности плеча и бедер, уменьшение проявления целлюлита.</p>
+
+  
+        <div class="service__actions service-actions">
+          <a href="#" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#" class="service-actions__link service-actions__link--primary">УЗНАТЬ СТОИМОСТЬ</a>
+          <!-- /.service-btns -->
+        </div>
+        <!-- /.service__actions -->
+      </div>
+      <div class="service__picture service__picture--horizontal">
+        <img src="../img/services/s-rf-h.jpg" width="320" height="260"  alt="Лазерная система VBEAM">
+      </div>
+    </div>
+  </div><!-- RF-ЛИФТИНГ -->
+  
+  <div class="service js-tabs-content-inner flex-column">
+    <h3 class="service__title">
+      RF-абляция 
+    </h3>
+    <!-- /.tabs-content-inner --> 
+  
+    <div class="service__row">
+      <div class="service__picture service__picture--vertical">
+        
+      </div>
+      <div class="service__content">
+        <p class="service__text">
+          Процедура деликатной «шлифовки». Более быстрая и мягкая pеабилитация по сравнению с лазерной шлифовкой. Показания:
+        </p>
+  
+        <ul class="service__list service-list ">
+          <li class="service-list__item"> Опущение нижнего и верхнего века</li>
+          <li class="service-list__item">Кисетные морщины и морщинки возле рта</li>
+          <li class="service-list__item">Рубцы, постакне, стрии/ растяжки</li>
+          <li class="service-list__item">Расширенные поры</li>
+          <li class="service-list__item">Потеря упругости, эластичности кожи</li>
+          <li class="service-list__item">Неравномерный цвет лица</li>
+          <li class="service-list__item"> Пигментация</li>
+        </ul>
+      
+        <p class="service__text">
+          В результате процедуры выпариваются крохотные столбики кожи в месте контакта игольчатых электродов (абляция). А также осуществляется прогрев тканей вокруг этих столбиков (коагуляция), что дополнительно стимулирует кожу. Курс: 2-5 процедур 1 раз в месяц. Продолжительность процедуры: 60 мин. 
+        </p>
+
+  
+        <div class="service__actions service-actions">
+          <a href="#" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#" class="service-actions__link service-actions__link--primary">УЗНАТЬ СТОИМОСТЬ</a>
+          <!-- /.service-btns -->
+        </div>
+        <!-- /.service__actions -->
+      </div>
+      <div class="service__picture service__picture--horizontal">
+        <img src="../img/services/s-rfa-h.jpg" width="320" height="260"  alt="Лазерная система VBEAM">
+      </div>
+    </div>
+  </div><!-- RF-АБЛЯЦИЯ -->
+
+</div>
+<!-- /.tabs-content -->
+
+      <!-- ИНЪЕКЦИОННАЯ КОСМЕТОЛОГИЯ -->
+      <div class="tabs-content js-tabs-content flex-column" >
+
+  <div class="tabs-content-nav js-tabs-content-nav tabs-section__content-nav">
+    <button 
+      type="button" 
+      data-target-tab="0"
+      class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn tabs-content-btn--active">
+      БИОРЕВИТАЛИЗАЦИЯ
+    </button>
+    <button 
+      type="button" 
+      data-target-tab="1"
+      class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn">
+      БОТУЛИНОТЕРАПИЯ
+    </button>
+    <button 
+      type="button" 
+      data-target-tab="2"
+      class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn">
+      МЕЗОТЕРАПИЯ
+    </button>
+    <button 
+      type="button" 
+      data-target-tab="3"
+      class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn">
+      АУТОПЛАЗМОТЕРАПИЯ
+    </button>
+
+  </div>
+  <!-- ./tabs-content-nav -->
+  
+  <div class="service js-tabs-content-inner flex-column">
+    <h3 class="service__title">
+      БИОРЕВИТАЛИЗАЦИЯ
+    </h3>
+    <!-- /.tabs-content-inner --> 
+  
+    <div class="service__row">
+      <div class="service__picture service__picture--vertical"> </div>
+      <div class="service__content">
+        <p class="service__text">
+          Биоревитализация – это метод внутрикожных инъекций немодифицированной гиалуроновой кислоты, позволяющий достигнуть восстановления физиологической среды и нормализации обменных процессов в дерме.
+        </p>
+        <p class="service__text">Биоревитализант – гель, применяющийся для инъекционных процедур омоложения кожи и устранения эстетических дефектов. В его состав входит  гиалуроновая кислота с различным процентным содержанием.Биоревитализация позволяет достичь следующих эффектов:</p>
+  
+        <ul class="service__list service-list ">
+          <li class="service-list__item">Профилактика раннего увядания и предотвращения дряблости кожи</li>
+          <li class="service-list__item">Коррекция морщин</li>
+          <li class="service-list__item">Дополнительная гидратация дермы</li>
+          <li class="service-list__item">Уменьшение выраженности рубцов и шрамов постакне </li>
+        </ul>
+      
+        <p class="service__text">
+          Выбор препарата основывается на индивидуальных особенностях: возраст, степень выраженности возрастных изменений, сочетание с другими методами и препаратами коррекции.
+        </p>
+        <p class="service__text">
+          Процедуре предшествует нанесение аппликационной анестезии (препарат «Акриол Про», содержащий лидокаин 2,5г., прилокаин 2,5). Использование местной анестезии позволяет свести к минимуму неприятные ощущения во время процедуры.
+        </p>
+  
+        <div class="service__actions service-actions">
+          <a href="#" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#" class="service-actions__link service-actions__link--primary">УЗНАТЬ СТОИМОСТЬ</a>
+          <!-- /.service-btns -->
+        </div>
+        <!-- /.service__actions -->
+      </div>
+      <div class="service__picture service__picture--horizontal">
+        <img src="../img/services/s-bio-h.jpg" width="320" height="260"  alt="БИОРЕВИТАЛИЗАЦИЯ">
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="service js-tabs-content-inner flex-column">
+    <h3 class="service__title">
+      БОТУЛИНОТЕРАПИЯ
+    </h3>
+    <!-- /.tabs-content-inner --> 
+  
+    <div class="service__row">
+      <div class="service__picture service__picture--vertical">
+        <img src="../img/services/s-botu-v.jpg" width="310" height="440" alt="БОТУЛИНОТЕРАПИЯ">
+      </div>
+      <div class="service__content">
+        <p class="service__text">
+          Ботулинотерапия – процедура, направленная на снижение тонуса мимических мышц с уменьшением их двигательной активности, а также на уменьшение выработки кожного пота под действием ботулинического токсина типа A путем блокирования высвобождения ацетилхолина. Результатом проведения процедуры является: 
+        </p>
+        
+        <ul class="service__list service-list ">
+          <li class="service-list__item">Устранение или уменьшение глубины статических и динамических мимических морщин</li>
+          <li class="service-list__item">Устранение симптомов проявления гипергидроза (повышенной потливости)</li>
+          <li class="service-list__item">Профилактика образования статических мимических морщин</li>
+        </ul>
+      
+        <p class="service__text">
+          Введение препарата осуществляется поэтапно в намеченные участки. Количество препарата, необходимого для процедуры, индивидуально. Эффект от процедуры становится заметен в течение 2 недель и является временным. Повторная процедура рекомендована не ранее, чем через 4-6 месяцев.
+        </p>
+  
+        <div class="service__actions service-actions">
+          <a href="#" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#" class="service-actions__link service-actions__link--primary">УЗНАТЬ СТОИМОСТЬ</a>
+          <!-- /.service-btns -->
+        </div>
+        <!-- /.service__actions -->
+      </div>
+      <div class="service__picture service__picture--horizontal">
+        <img src="../img/services/s-botu-h.jpg" width="320" height="260"  alt="БОТУЛИНОТЕРАПИЯs">
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="service js-tabs-content-inner flex-column">
+    <h3 class="service__title">
+      Мезотерапия
+    </h3>
+    <!-- /.tabs-content-inner --> 
+  
+    <div class="service__row">
+      <div class="service__picture service__picture--vertical">
+        <img src="../img/services/s-mezo-v.jpg" width="310" height="440" alt="Мезотерапия">
+      </div>
+      <div class="service__content">
+        <p class="service__text">
+          Мезотерапия – это метод внутрикожных инъекций активных ингредиентов препарата, позволяющий достигнуть восстановления физиологической среды и нормализации обменных процессов в дерме. В состав препарата для мезотерапии могут входить различные ингредиенты, в зависимости от назначения препарат, витамины, микроэлементы, гиалуроновая кислота, пептиды и антиоксиданты. Мезотерапия позволяет достичь следующих эффектов: 
+        </p>
+        
+        <ul class="service__list service-list ">
+          <li class="service-list__item">
+            Профилактика раннего увядания и предотвращения дряблости кожи
+          </li>
+          <li class="service-list__item">
+            Коррекция морщин
+          </li>
+          <li class="service-list__item">
+            Дополнительная гидратация дермы
+          </li>
+          <li class="service-list__item">
+            Уменьшение выраженности рубцов и шрамов постакне
+          </li>
+          
+        </ul>
+      
+        <p class="service__text">
+          Выбор препарата исходит из индивидуальных факторов: возраст, степень выраженности возрастных изменений, сочетание с другими методами и препаратами коррекции.
+        </p>
+        <p class="service__text">
+          Процедуре предшествует нанесение аппликационной анестезии (препарат «Акриол Про», содержащий лидокаин 2,5г., прилокаин 2,5). Использование местной анестезии позволяет свести к минимуму неприятные ощущения во время процедуры.сочетание с другими методами и препаратами коррекции.
+        </p>
+  
+        <div class="service__actions service-actions">
+          <a href="#" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#" class="service-actions__link service-actions__link--primary">УЗНАТЬ СТОИМОСТЬ</a>
+          <!-- /.service-btns -->
+        </div>
+        <!-- /.service__actions -->
+      </div>
+      <div class="service__picture service__picture--horizontal">
+        <!-- <img src="../img/services/s-botu-h.jpg" width="320" height="260"  alt="БОТУЛИНОТЕРАПИЯs"> -->
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="service js-tabs-content-inner flex-column">
+    <h3 class="service__title">
+      Аутоплазмотерапия
+    </h3>
+    <!-- /.tabs-content-inner --> 
+  
+    <div class="service__row">
+      <div class="service__picture service__picture--vertical">
+        <img src="../img/services/s-auto-v.jpg" width="310" height="440" alt="Аутоплазмотерапия">
+      </div>
+      <div class="service__content">
+        <p class="service__text">
+          АУТОПЛАЗМОТЕРАПИЯ занимает лидирующие позиции среди инъекционных методик омоложения.  ️Плазма богата тромбоцитами, аминокислотами, витаминами, глюкозой, жирами, гормонами и ферментами. Показания:
+        </p>
+        
+        <ul class="service__list service-list ">
+          
+          
+          <li class="service-list__item">
+            Профилактика или коррекция возрастных изменений кожи 
+          </li>
+          <li class="service-list__item">
+            Мелкие мимические морщины 
+          </li>
+          <li class="service-list__item">
+            Акне и постакне 
+          </li>
+          <li class="service-list__item">
+            Нарушение пигментации 
+          </li>
+          <li class="service-list__item">
+            Аллопеция (облысение/выпадения волос)
+          </li>
+          <li class="service-list__item">
+            Сухость и шелушение кожи
+          </li>
+          
+        </ul>
+        
+        <p class="service__text">
+          ВАутоплазмотерапия представляет из себя курс от 4-х процедур. Периодичность - раз в 1 неделю. Преимущества:
+        </p>
+        
+        <ul class="service__list service-list ">
+          <li class="service-list__item">
+            Безопасность и гипоаллергенность
+          </li>
+          <li class="service-list__item">
+            Для инъекций используется плазма собственной крови пациента, которую прекрасно воспринимает организм
+          </li>
+          <li class="service-list__item">
+            ️Натуральность. Для лечения не применяются синтетические препараты
+          </li>
+          <li class="service-list__item">
+            Эффективность — многолетняя клиническая практика и десятки научных статей подтверждают действенность технологии
+          </li>
+          <li class="service-list__item">
+            Комфортность процедуры - Инъекции «родной» плазмы сопровождаются минимальными ощущениями.
+          </li>
+        </ul>
+  
+        <div class="service__actions service-actions">
+          <a href="#" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#" class="service-actions__link service-actions__link--primary">УЗНАТЬ СТОИМОСТЬ</a>
+          <!-- /.service-btns -->
+        </div>
+        <!-- /.service__actions -->
+      </div>
+      <div class="service__picture service__picture--horizontal">
+        <img src="../img/services/s-auto-h.jpg" width="320" height="260"  alt="Аутоплазмотерапия">
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<!-- /.tabs-content -->
+
+      <!-- ЛАЗЕРНАЯ ЭПИЛЯЦИЯ -->
+      <div class="tabs-content js-tabs-content flex-column" >
+  <div class="tabs-content-nav js-tabs-content-nav tabs-section__content-nav">
+    <button 
+      type="button" 
+      data-target-tab="0"
+      class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn tabs-content-btn--active">
+      АЛЕКСАНДРИТОВЫЙ ЛАЗЕР CYNOSURE APOGEE +
+    </button>
+    <button 
+      type="button" 
+      data-target-tab="1"
+      class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn">
+      ДИОДНЫЙ ЛАЗЕР MAGIC ONE
+    </button>
+    <button 
+      type="button" 
+      data-target-tab="2"
+      class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn">
+      АЛЕКСАНДРИТОВЫЙ ЛАЗЕР CANDELA GENTLELASE PRO
+    </button>
+  </div>
+  <!-- ./tabs-content-nav -->
+
+  
+
+  <div class="service js-tabs-content-inner flex-column">
+    <h3 class="service__title">
+      АЛЕКСАНДРИТОВЫЙ ЛАЗЕР CYNOSURE APOGEE +
+    </h3>
+    <!-- /.tabs-content-inner --> 
+  
+  <div class="service__row">
+    <div class="service__picture service__picture--vertical">
+      <img src="../img/services/s-apogee-v.jpg" width="310" height="440" alt="АЛЕКСАНДРИТОВЫЙ ЛАЗЕР CYNOSURE APOGEE +">
+    </div>
+    <div class="service__content">
+      <p class="service__text">
+        "Золотой стандарт" лазерной эпиляции. Является уникальным лазером, сочетая в себе самые современные технологические решения, широкие возможности и исключительную надежность.
+        Система ультракороткого импульса (0,5 мсек.) позволяет удалять волосы с минимальным количеством пигмента.
+      </p>
+      <p class="service__text">
+        Тотальная эпиляция волос любого цвета, любой структуры, на фототипах кожи от I до III по шкале Фитцпатрика. С осторожностью следует проводить эпиляцию для пациентов с фототипом кожи IV.
+      </p>
+      <p class="service__text">
+        Плюсы удаления волос на александритовом лазере:
+      </p>
+      
+      <ul class="service__list service-list ">
+        <li class="service-list__item">
+          Минимальный риск и дискомфорт
+        </li>
+        <li class="service-list__item">
+          Эффект сохраняется надолго (требуемое количество поддерживающих процедур около 1-2 в год)
+        </li>
+        <li class="service-list__item">
+          Действует лучше всего на светлой коже и темных волосах
+        </li>
+        <li class="service-list__item">
+          Замедление роста волос, оставшихся после первых процедур
+        </li>
+        
+      </ul>
+      
+      <div class="service__actions service-actions">
+        <a href="#" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+        <a href="#" class="service-actions__link service-actions__link--primary">УЗНАТЬ СТОИМОСТЬ</a>
+        <!-- /.service-btns -->
+      </div>
+      <!-- /.service__actions -->
+    </div>
+    <div class="service__picture service__picture--horizontal">
+      <img src="../img/services/s-apogee-h.jpg" width="320" height="260"  alt="      АЛЕКСАНДРИТОВЫЙ ЛАЗЕР CYNOSURE APOGEE +">
+    </div>
+  </div>
+</div>
+  
+
+  <div class="service js-tabs-content-inner flex-column">
+    <h3 class="service__title">
+      Диодный лазер MAGIC ONE
+    </h3>
+    <!-- /.tabs-content-inner --> 
+  
+  <div class="service__row">
+    <div class="service__picture service__picture--vertical">
+      <img src="../img/services/s-magic-v.jpg" width="310" height="440" alt="АЛЕКСАНДРИТОВЫЙ ЛАЗЕР CYNOSURE APOGEE +">
+    </div>
+    <div class="service__content">
+      <p class="service__text">
+        Диодный лазер Magic One — это медицинская разработка, зарекомендовавшая себя в косметологии и получившая положительные отзывы многих специалистов. Вся технология заключается в воздействии механизма, производящего луч с волновой длиной 808 нм непосредственно на волосяную фолликулу.
+      </p>
+      <p class="service__text">
+        Может применяться на более смуглой или загорелой коже, работает на 1-5 фототипах кожи.
+        Лазер отлично зарекомендовал себя в удалении волос на загорелой коже: им можно пользоваться в летние месяцы, наши клиенты могут не беспокоиться о нежелательных последствиях.
+        Лазерная эпиляция с помощью отечественного аппарата Magic ONE основана на влиянии на меланин, содержащийся непосредственно в волосяной луковице.
+      </p>
+      <p class="service__text">
+        Плюсы удаления волос на диодном лазере:
+      </p>
+      
+      <ul class="service__list service-list ">
+        
+        <li class="service-list__item">
+          Безопасность, поскольку лазерный луч воздействует на волосяную луковицу, не задевая при этом кожные покровы
+        </li>
+        <li class="service-list__item">
+          Безболезненно (во время процедуры может ощущаться легкое покалывание)
+        </li>
+        <li class="service-list__item">
+          Во время процедуры не образовываются шрамы и рубцы
+        </li>
+        <li class="service-list__item">
+          Удаление не занимает много времени
+        </li>
+        <li class="service-list__item">
+          Можно обрабатывать смуглую кожу
+        </li>
+        
+      </ul>
+      
+      <div class="service__actions service-actions">
+        <a href="#" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+        <a href="#" class="service-actions__link service-actions__link--primary">УЗНАТЬ СТОИМОСТЬ</a>
+        <!-- /.service-btns -->
+      </div>
+      <!-- /.service__actions -->
+    </div>
+    <div class="service__picture service__picture--horizontal">
+      <img src="../img/services/s-magic-h.jpg" width="320" height="260"  alt="      АЛЕКСАНДРИТОВЫЙ ЛАЗЕР CYNOSURE APOGEE +">
+    </div>
+  </div>
+</div>
+
+
+
+<div class="service js-tabs-content-inner flex-column">
+  <h3 class="service__title">
+    Александритовый лазер CANDELA GENTLELASE PRO
+  </h3>
+  <!-- /.tabs-content-inner --> 
+  
+
+<div class="service__row">
+  <div class="service__picture service__picture--vertical">
+    <img src="../img/services/s-pro-v.jpg" width="310" height="440" alt="Александритовый лазер CANDELA GENTLELASE PRO">
+  </div>
+  <div class="service__content">
+
+    <p class="service__text">
+      Диодный лазер Magic One — это медицинская разработка, зарекомендовавшая себя в косметологии и получившая положительные отзывы многих специалистов. Вся технология заключается в воздействии механизма, производящего луч с волновой длиной 808 нм непосредственно на волосяную фолликулу.
+    </p>
+    <p class="service__text">
+      20 лет в лазерной эпиляции. Именно столько времени прошло с момента получения лазером GentleLase разрешения FDA на проведение перманентной лазерной эпиляции, что сделало его Первым в мире длинноимпульсным александритовым лазером с системой охлаждения кожи, официально разрешенным для проведения процедур по удалению волос.
+    </p>
+    <p class="service__text">
+      Плюсы удаления волос на александритовом лазере:
+    </p>
+
+    <ul class="service__list service-list ">
+      
+      <li class="service-list__item">
+        Короткая длительность процедуры
+      </li>
+      <li class="service-list__item">
+        Высокая эффективность, быстрый результат
+      </li>
+      <li class="service-list__item">
+        Минимальный риск и дискомфорт
+      </li>
+      <li class="service-list__item">
+        Эффект сохраняется надолго (требуемое количество поддерживающих процедур около 1-2 в год)
+      </li>
+      
+    </ul>
+    
+    <div class="service__actions service-actions">
+      <a href="#" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+      <a href="#" class="service-actions__link service-actions__link--primary">УЗНАТЬ СТОИМОСТЬ</a>
+      <!-- /.service-btns -->
+    </div>
+    <!-- /.service__actions -->
+  </div>
+  <div class="service__picture service__picture--horizontal">
+    <img src="../img/services/s-pro-h.jpg" width="320" height="260"  alt="Александритовый лазер CANDELA GENTLELASE PRO">
+  </div>
+</div>
+</div>
+
+</div>
+<!-- /.tabs-content -->
+
+      <!-- УДАЛЕНИЕ НОВООБРАЗОВАНИЙ -->
+      
+<div class="tabs-content js-tabs-content flex-column" ><
+  <div class="service js-tabs-content-inner flex-column">
+    <h3 class="service__title">
+      Александритовый лазер CYNOSURE APOGEE +
+    </h3>
+    <!-- /.tabs-content-inner --> 
+  
+  <div class="service__row">
+    <div class="service__picture service__picture--vertical">
+      <img src="../img/services/s-remove-v.jpg" width="310" height="440" alt="АЛЕКСАНДРИТОВЫЙ ЛАЗЕР CYNOSURE APOGEE +">
+    </div>
+    <div class="service__content">
+      <p class="service__text">
+        В косметологической клинике удаление новообразований является одной из самых востребованных процедур. Что же можно удалить в кабинете косметолога? Исключительно доброкачественные новообразования, например: папилломы, кератомы, фибромы, невусы/родинки.
+      </p>
+      <p class="service__text">
+        Это больно? Нет, процедура проходит максимально комфортно для пациента. Перед удалением проводится анестезия.
+      </p>
+      <p class="service__text">
+        Какой метод мы используем? В нашей клинике мы удаляем новообразования методом электрокоагуляции. Это объясняет основное противопоказание - наличие у пациента кардиостимулятора.
+      </p>
+      <p class="service__text">
+        Есть ли ограничения после процедуры?
+      </p>
+      
+      <ul class="service__list service-list ">
+        
+        <li class="service-list__item">
+          Да, после удаления следует избегать контакта ранки с водой
+        </li>
+        <li class="service-list__item">
+          Исключить приём ванны, посещение сауны и бассейна до заживления
+        </li>
+        <li class="service-list__item">
+          Использовать фотозащиту spf50+ в течение 1,5 месяцев после удаления
+        </li>
+        <li class="service-list__item">
+          Также нужно будет несколько раз в день обрабатывать кожу по рекомендациям врача 
+        </li>
+        
+      </ul>
+      
+      <div class="service__actions service-actions">
+        <a href="#" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+        <a href="#" class="service-actions__link service-actions__link--primary">УЗНАТЬ СТОИМОСТЬ</a>
+        <!-- /.service-btns -->
+      </div>
+      <!-- /.service__actions -->
+    </div>
+    <div class="service__picture service__picture--horizontal">
+      <!-- <img src="../img/services/s-magic-h.jpg" width="320" height="260"  alt="      АЛЕКСАНДРИТОВЫЙ ЛАЗЕР CYNOSURE APOGEE +"> -->
+    </div>
+  </div>
+</div>
+
+</div>
+      
+      <!-- УХОДОВЫЕ ПРОЦЕДУРЫ -->
+      <!-- <div class="tabs-content js-tabs-content" >
+
+        <div class="tabs-content-inner js-tabs-content-inner">
+          УХОДОВЫЕ ПРОЦЕДУРЫ
+        </div>
+      </div> -->
+      <!-- /.tabs-content -->
+    </div>
+    <!-- /.tabs -->
+  </div>
+</div>
             <section class="form">
   <div class="container">
     <h2 class="section-title form__title">ВОЗНИКЛИ ВОПРОСЫ?</h2>
@@ -298,8 +979,252 @@
     <!-- /.contact-form -->
   </div>
 </section>
-            <section>
+            <div id="stockSlider" class="stock-slider">
+  <div>
+<style>
+  .stock-slider-item-1 {
+    background-image: url('./img/stock-slider/bg-slide-1.jpg');
+    
+  }
+
+  @media screen and (max-width: 600px) {
+    .stock-slider-item-1 {
+      background-image: url('./img/stock-slider/bg-slide-1_m.jpg');
+    }
+  }
+</style>
+<div class="stock-slider-item stock-slider-item-1">
   <div class="container">
+      <div class="stock-slider-item-1__inner stock-slider-item__inner-rigth">
+        <p class="stock-slider-item-1__heading stock-slider-item-1__block banner-slider-heading banner-slider-heading--dark">Специальное предложение на лазерную эпиляцию</p>
+      <p class="banner-title stock-slider-item-1__block">
+        Бикини <br/> и подмышки 
+      </p>
+      <div class="banner-slider-price stock-slider-item-1__block stock-slider-item-1__price">
+
+        <div class="banner-slider-price__item">
+          <div class="banner-slider-heading banner-slider-heading--dark banner-slider-price__heading">Александритовый лазер</div>
+          <div class="banner-price ">1490 руб.</div>
+        </div>
+
+        <div class="banner-slider-price__item">
+          <div class="banner-slider-heading banner-slider-heading--dark banner-slider-price__heading"">Диодный лазер</div>
+          <div class="banner-price ">740 руб.</div>
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-dark">ОНЛАЙН ЗАПИСЬ</button>
+  </div>
+  <!-- /.__inner -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /.stock-slider-item-1 -->
+</div>
+  <div>
+  <style>
+    .stock-slider-item-2 {
+      background-image: url('./img/stock-slider/bg-slide-2.jpg');
+      
+    }
+
+    @media screen and (max-width: 600px) {
+      .stock-slider-item-2 {
+        background-image: url('./img/stock-slider/bg-slide-2_m.jpg');
+      }
+    }
+  </style>
+  <div class="stock-slider-item stock-slider-item-2">
+    <div class="w-100">
+      <div class="container">
+          <div class="stock-slider-item-2__inner stock-slider-item__inner-right">
+            
+          <p class="banner-title stock-slider-item-2__block">
+            Скидка -50%
+          </p>
+
+          <p class="banner-slider-subtitle stock-slider-item-2__block">на эпиляцию любой зоны по промокоду “Гладкость”</p>
+          <!-- /.banner-slider-subtitle -->
+
+          <p class="stock-slider-item-2__heading banner-slider-heading banner-slider-heading--dark">Промокод действителен при первом посещении. Карта лояльности на три месяца в подарок.</p>
+
+          <button type="button" class="btn btn-dark">ОНЛАЙН ЗАПИСЬ</button>
+      </div>
+    <!-- /.__inner -->
+    </div>
+  </div>
+  <!-- /.container -->
+  </div>
+  <!-- /.stock-slider-item-2 -->
+</div>
+  <div>
+<style>
+    .stock-slider-item-3 {
+      background-image: url('./img/stock-slider/bg-slide-3.jpg');
+      
+    }
+
+    @media screen and (max-width: 600px) {
+      .stock-slider-item-3 {
+        background-image: url('./img/stock-slider/bg-slide-3_m.jpg');
+      }
+    }
+  </style>
+  <div class="stock-slider-item stock-slider-item-3">
+    <div class="w-100">
+      <div class="container">
+        <div class="stock-slider-item-3__inner stock-slider-item__inner-right">
+          <p class="banner-slider-subtitle stock-slider-item-3__subtitle stock-slider-item-3__block">Лазерная эпиляция по супер-ценам БЕЗ клубной карты</p>
+            
+          <p class="banner-title stock-slider-item-3__block">
+            Счастливые часы
+          </p>
+
+          <!-- /.banner-slider-subtitle -->
+
+          <ul class="banner-slider-heading banner-slider-heading--dark stock-slider-item-3__list">
+            <li>В акции может участвовать каждый наш клиент - и новый, и постоянный</li>
+            <li>Счастливые часы действуют с 13:00 до 17:00</li>
+          </ul>
+
+          <button type="button" class="btn btn-dark">ОНЛАЙН ЗАПИСЬ</button>
+      </div>
+    <!-- /.__inner -->
+    </div>
+  </div>
+  <!-- /.container -->
+  </div>
+  <!-- /.stock-slider-item-3 -->
+  </div>
+  <div>
+<style>
+    .stock-slider-item-4 {
+      background-image: url('./img/stock-slider/bg-slide-4.jpg');
+      
+    }
+
+    @media screen and (max-width: 600px) {
+      .stock-slider-item-4 {
+        background-image: url('./img/stock-slider/bg-slide-4_m.jpg');
+      }
+    }
+  </style>
+  <div class="stock-slider-item stock-slider-item-4">
+    <div class="w-100">
+      <div class="container">
+        <div class="stock-slider-item-4__inner stock-slider-item__inner-rigth">
+          <p class="banner-slider-subtitle stock-slider-item-4__block">АКЦИЯ</p>
+            
+          <p class="banner-title stock-slider-item-4__block">
+            RF-лифтинг лица
+          </p>
+
+          <!-- /.banner-slider-subtitle -->
+
+          <p 
+            class="
+                stock-slider-item-4__heading
+                banner-slider-heading 
+                banner-slider-heading--dark">
+                2500 руб. вместо <span class="line-through">3125 руб.</span> 
+          </p>
+
+          <button type="button" class="btn btn-dark">ОНЛАЙН ЗАПИСЬ</button>
+      </div>
+    <!-- /.__inner -->
+    </div>
+  </div>
+  <!-- /.container -->
+  </div>
+  <!-- /.stock-slider-item-4 -->
+</div>
+  <div>
+  <style>
+    .stock-slider-item-5 {
+      background-image: url('./img/stock-slider/bg-slide-5.jpg');
+      
+    }
+
+    @media screen and (max-width: 600px) {
+      .stock-slider-item-5 {
+        background-image: url('./img/stock-slider/bg-slide-5_m.jpg');
+      }
+    }
+  </style>
+  <div class="stock-slider-item stock-slider-item-5">
+    <div class="w-100">
+      <div class="container">
+        <div class="stock-slider-item-5__inner stock-slider-item__inner-left">
+          <p class="banner-title banner-title stock-slider-item-5__block">
+            -20% на всю косметологию
+          </p>
+            
+          <p class="stock-slider-item-5__block">
+            *при первом посещении клиник Novo.Clinic
+          </p>
+
+          <!-- /.banner-slider-subtitle -->
+
+          <button type="button" class="btn btn-dark">ОНЛАЙН ЗАПИСЬ</button>
+      </div>
+    <!-- /.__inner -->
+    </div>
+  </div>
+  <!-- /.container -->
+  </div>
+  <!-- /.stock-slider-item-4 -->
+</div>
+    <div>
+  <style>
+    .stock-slider-item-6 {
+      background-image: url('./img/stock-slider/bg-slide-6.jpg');
+      
+    }
+
+    @media screen and (max-width: 600px) {
+      .stock-slider-item-6 {
+        background-image: url('./img/stock-slider/bg-slide-6_m.jpg');
+      }
+    }
+  </style>
+  <div class="stock-slider-item stock-slider-item-6">
+    <div class="w-100">
+      <div class="container">
+        <div class="stock-slider-item-6__inner stock-slider-item__inner-rigth">
+          <p class="banner-slider-subtitle banner-slider-subtitle--light stock-slider-item-6__subtitle">Инновационный метод двухфазного пилинга</p>
+            
+          <p class="banner-title banner-title--light stock-slider-item-6__title">
+            BioRePeel
+          </p>
+
+          <ul class="banner-slider-heading banner-slider-heading--light stock-slider-item-6__list">
+            <li>разглаживает морщины</li>
+            <li>беорется со следами акне</li>
+            <li>сужает поры</li>
+            <li>возвращает мышечный тонус</li>
+          </ul>
+
+          <p 
+            class="
+                stock-slider-item-6__heading
+                banner-slider-heading 
+                banner-slider-heading--light">
+                2500 руб. вместо <span class="line-through">3125 руб.</span> 
+          </p>
+
+          <button type="button" class="btn btn-primary">ОНЛАЙН ЗАПИСЬ</button>
+      </div>
+    <!-- /.__inner -->
+    </div>
+  </div>
+  <!-- /.container -->
+  </div>
+  <!-- /.stock-slider-item-6 -->
+</div>
+</div>
+            <section class="feedback">
+  <div class="container">
+    <h2 class="section-title feedback__title">ОТЗЫВЫ</h2>
     <div class="feedback-slider">
       <div class="feedback-slider__item">
         <div class="feedback-slider__inner">
@@ -484,7 +1409,7 @@
   </div>
   <!-- /.container -->
 </footer>
-        <script src="js/main.min.js"></script>
-        <script src="js/vendor.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/vendor.js"></script>
     </body>
 </html>
