@@ -32,12 +32,12 @@
   <div class="container header__container">
     <nav class="header__nav main-nav">
       <ul>
-        <li><a href="#">О клинике</a></li>
-        <li><a href="#">Акции</a></li>
-        <li><a href="#">Услуги</a></li>
-        <li><a href="#">Цены</a></li>
-        <li><a href="#">Отзывы</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li><a href="#goto-about">О клинике</a></li>
+        <li><a href="#goto-stock">Акции</a></li>
+        <li><a href="#goto-service">Услуги</a></li>
+        <li><a href="#goto-price">Цены</a></li>
+        <li><a href="#goto-feedback">Отзывы</a></li>
+        <li><a href="#goto-contact">Контакты</a></li>
       </ul>
     </nav>
     <!-- /.header__nav -->
@@ -183,51 +183,45 @@
   <div class="container">
 
     <div class="features">
+      <div class="features-card">
+        <h2 class="features-card__heading">Современное оборудование</h2>
+        <!-- /.features-card__heading -->
+        <div class="features-card__hovered">
+          <div class="features-card__wrap">
+            <span> Клиники Novo Clinic оснащены передовым оборудованием, процедуры проводятся эффективно и безопасно для пациентов с любым типом кожи. </span> 
+            <a href="#" class="features-card__link" download="">Подробнее</a>
+            <!-- /.features__link -->
+          </div>
+        </div>
+        <!-- /.features-card__hovered -->
+      </div>
 
       <div class="features-card">
-  <h2 class="features-card__heading">Современное оборудование</h2>
-  <!-- /.features-card__heading -->
-  <div class="features-card__hovered">
-    <div class="features-card__wrap">
-      <span> Клиники Novo Clinic оснащены передовым оборудованием, процедуры проводятся эффективно и безопасно для пациентов с любым типом кожи. </span> 
-      <a href="#" class="features-card__link" download="">Подробнее</a>
-      <!-- /.features__link -->
-    </div>
-  </div>
-  <!-- /.features-card__hovered -->
-</div>
-<!-- /.features-card -->
+        <h2 class="features-card__heading">Удобное расположение</h2>
+        <!-- /.features-card__heading -->
+        <div class="features-card__hovered">
+          <div class="features-card__wrap">
+            <span>Клиники в 5 минутах от ст. м. Фрунзенская и Петроградская.</span> 
+            <a href="#goto-contact" class="features-card__link" >Посмотреть на карте</a>
+            <!-- /.features__link -->
+          </div>
+        </div>
+        <!-- /.features-card__hovered -->
+      </div>
 
-<div class="features-card">
-  <h2 class="features-card__heading">Удобное расположение</h2>
-  <!-- /.features-card__heading -->
-  <div class="features-card__hovered">
-    <div class="features-card__wrap">
-      <span> Клиники в 5 минутах от ст. м. Фрунзенская и Петроградская. </span> 
-      <a href="#" class="features-card__link" download="">Посмотреть на карте</a>
-      <!-- /.features__link -->
-    </div>
-  </div>
-  <!-- /.features-card__hovered -->
-</div>
-<!-- /.features-card -->
-
-<div class="features-card">
-  <h2 class="features-card__heading">Дипломированные специалисты</h2>
-  <!-- /.features-card__heading -->
-  <div class="features-card__hovered">
-    <div class="features-card__wrap">
-      <span> Все врачи клиники имеют высокую квалификацию, необходимые дипломы и сертификаты. Мы ценим и гордимся нашими врачами. </span> 
-      <a href="#" class="features-card__link" download="">Специалисты</a>
-      <!-- /.features__link -->
-    </div>
-  </div>
-  <!-- /.features-card__hovered -->
-</div>
-<!-- /.features-card -->
-
-
-    
+      <div class="features-card">
+        <h2 class="features-card__heading">Дипломированные специалисты</h2>
+        <!-- /.features-card__heading -->
+        <div class="features-card__hovered">
+          <div class="features-card__wrap">
+            <span>Все врачи клиники имеют высокую квалификацию, необходимые дипломы и сертификаты. Мы ценим и гордимся нашими врачами.</span> 
+            <a href="#" class="features-card__link" download="">Специалисты</a>
+            <!-- /.features__link -->
+          </div>
+        </div>
+        <!-- /.features-card__hovered -->
+      </div>
+      <!-- /.features-card -->
 
     </div>
     <!-- /.features -->
@@ -236,7 +230,7 @@
   <!-- ./ container -->
 </section>
 
-            <section class="about">
+            <section id="goto-about" class="about">
   <div class="container">
     <h2 class="section-title about__title">О клинике</h2>
     <h1 class="main-title">Novo Clinic</h1>
@@ -263,9 +257,9 @@
     <!-- /.about__content -->
   </div>
 </section>
-            <section>
+            <section >
   <div class="container">
-    <div class="about-slider">
+    <div class="about-slider js-horizontal-slider">
       <div class="about-slider__item">
         <img src="./img/about-1.jpg" alt="about-1" width="690" height="690">
       </div>
@@ -290,7 +284,7 @@
   <h2 class="tabs-section__title section-subtitle section-subtitle--light">УСЛУГИ</h2>
   <!-- /.tabs-section__title section-subtitle section-subtitle--light -->
 
-  <div class="container flex-column">
+  <div id="goto-service" class="container flex-column">
     <div class="tabs js-tabs flex-column">
       <div class="tabs-nav js-tabs-nav tabs-section__tabs-nav">
         <button type="button" data-target-tab="0"
@@ -299,11 +293,11 @@
           class="js-tab-btn tabs-nav__btn tabs-nav-btn">ИНЪЕКЦИОННАЯ КОСМЕТОЛОГИЯ</button>
         <button type="button" data-target-tab="2"
           class="js-tab-btn tabs-nav__btn tabs-nav-btn">ЛАЗЕРНАЯ ЭПИЛЯЦИЯ</button>
-        <button type="button" data-target-tab="3"
+          <button type="button" data-target-tab="3"
+            class="js-tab-btn tabs-nav__btn tabs-nav-btn">УХОДОВЫЕ ПРОЦЕДУРЫ</button>
+        <button type="button" data-target-tab="4"
         class="js-tab-btn tabs-nav__btn tabs-nav-btn">УДАЛЕНИЕ НОВООБРАЗОВАНИЙ
         </button>
-        <!-- <button type="button" data-target-tab="4"
-          class="js-tab-btn tabs-nav__btn tabs-nav-btn">УХОДОВЫЕ ПРОЦЕДУРЫ</button> -->
       </div>
       <!-- /.tabs-nav -->
 
@@ -354,8 +348,8 @@
       </p>
 
       <div class="service__actions service-actions">
-        <a href="#" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
-        <a href="#" class="service-actions__link service-actions__link--primary">УЗНАТЬ СТОИМОСТЬ</a>
+        <a href="#goto-price" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+        <a href="#" class="service-actions__link service-actions__link--primary">ОНЛАЙН ЗАПИСЬ</a>
         <!-- /.service-btns -->
       </div>
       <!-- /.service__actions -->
@@ -393,8 +387,8 @@
 
   
         <div class="service__actions service-actions">
-          <a href="#" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
-          <a href="#" class="service-actions__link service-actions__link--primary">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#goto-price" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#" class="service-actions__link service-actions__link--primary">ОНЛАЙН ЗАПИСЬ</a>
           <!-- /.service-btns -->
         </div>
         <!-- /.service__actions -->
@@ -436,8 +430,8 @@
 
   
         <div class="service__actions service-actions">
-          <a href="#" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
-          <a href="#" class="service-actions__link service-actions__link--primary">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#goto-price" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#" class="service-actions__link service-actions__link--primary">ОНЛАЙН ЗАПИСЬ</a>
           <!-- /.service-btns -->
         </div>
         <!-- /.service__actions -->
@@ -512,8 +506,8 @@
         </p>
   
         <div class="service__actions service-actions">
-          <a href="#" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
-          <a href="#" class="service-actions__link service-actions__link--primary">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#goto-price" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#" class="service-actions__link service-actions__link--primary">ОНЛАЙН ЗАПИСЬ</a>
           <!-- /.service-btns -->
         </div>
         <!-- /.service__actions -->
@@ -551,8 +545,8 @@
         </p>
   
         <div class="service__actions service-actions">
-          <a href="#" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
-          <a href="#" class="service-actions__link service-actions__link--primary">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#goto-price" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#" class="service-actions__link service-actions__link--primary">ОНЛАЙН ЗАПИСЬ</a>
           <!-- /.service-btns -->
         </div>
         <!-- /.service__actions -->
@@ -603,8 +597,8 @@
         </p>
   
         <div class="service__actions service-actions">
-          <a href="#" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
-          <a href="#" class="service-actions__link service-actions__link--primary">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#goto-price" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#" class="service-actions__link service-actions__link--primary">ОНЛАЙН ЗАПИСЬ</a>
           <!-- /.service-btns -->
         </div>
         <!-- /.service__actions -->
@@ -678,8 +672,8 @@
         </ul>
   
         <div class="service__actions service-actions">
-          <a href="#" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
-          <a href="#" class="service-actions__link service-actions__link--primary">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#goto-price" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#" class="service-actions__link service-actions__link--primary">ОНЛАЙН ЗАПИСЬ</a>
           <!-- /.service-btns -->
         </div>
         <!-- /.service__actions -->
@@ -759,8 +753,8 @@
       </ul>
       
       <div class="service__actions service-actions">
-        <a href="#" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
-        <a href="#" class="service-actions__link service-actions__link--primary">УЗНАТЬ СТОИМОСТЬ</a>
+        <a href="#goto-price" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+        <a href="#" class="service-actions__link service-actions__link--primary">ОНЛАЙН ЗАПИСЬ</a>
         <!-- /.service-btns -->
       </div>
       <!-- /.service__actions -->
@@ -816,8 +810,8 @@
       </ul>
       
       <div class="service__actions service-actions">
-        <a href="#" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
-        <a href="#" class="service-actions__link service-actions__link--primary">УЗНАТЬ СТОИМОСТЬ</a>
+        <a href="#goto-price" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+        <a href="#" class="service-actions__link service-actions__link--primary">ОНЛАЙН ЗАПИСЬ</a>
         <!-- /.service-btns -->
       </div>
       <!-- /.service__actions -->
@@ -871,8 +865,8 @@
     </ul>
     
     <div class="service__actions service-actions">
-      <a href="#" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
-      <a href="#" class="service-actions__link service-actions__link--primary">УЗНАТЬ СТОИМОСТЬ</a>
+      <a href="#goto-price" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+      <a href="#" class="service-actions__link service-actions__link--primary">ОНЛАЙН ЗАПИСЬ</a>
       <!-- /.service-btns -->
     </div>
     <!-- /.service__actions -->
@@ -885,6 +879,16 @@
 
 </div>
 <!-- /.tabs-content -->
+
+            <!-- УХОДОВЫЕ ПРОЦЕДУРЫ -->
+     <div class="tabs-content js-tabs-content" >
+        <div class="service js-tabs-content-inner flex-column">
+          <h3 class="service__title">
+            УХОДОВЫЕ ПРОЦЕДУРЫ
+          </h3>
+        </div>
+      </div> -->
+      <!-- /.tabs-content -->
 
       <!-- УДАЛЕНИЕ НОВООБРАЗОВАНИЙ -->
       
@@ -931,8 +935,8 @@
       </ul>
       
       <div class="service__actions service-actions">
-        <a href="#" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
-        <a href="#" class="service-actions__link service-actions__link--primary">УЗНАТЬ СТОИМОСТЬ</a>
+        <a href="#goto-price" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+        <a href="#" class="service-actions__link service-actions__link--primary">ОНЛАЙН ЗАПИСЬ</a>
         <!-- /.service-btns -->
       </div>
       <!-- /.service__actions -->
@@ -945,14 +949,7 @@
 
 </div>
       
-      <!-- УХОДОВЫЕ ПРОЦЕДУРЫ -->
-      <!-- <div class="tabs-content js-tabs-content" >
 
-        <div class="tabs-content-inner js-tabs-content-inner">
-          УХОДОВЫЕ ПРОЦЕДУРЫ
-        </div>
-      </div> -->
-      <!-- /.tabs-content -->
     </div>
     <!-- /.tabs -->
   </div>
@@ -979,7 +976,1391 @@
     <!-- /.contact-form -->
   </div>
 </section>
-            <div id="stockSlider" class="stock-slider">
+            <div id="goto-price" class="tabs-section price" >
+  
+
+  <div class="container">
+    <div class="price__row tabs js-tabs price__da-target-btn" >
+
+      <div class="price__nav">
+        <div class="tabs-nav tabs-nav--vertical js-tabs-nav price__tabs-nav">
+          <button type="button" data-target-tab="0"
+            class="js-tab-btn tabs-nav__btn tabs-nav-btn tabs-nav-btn--active">АППАРАТНАЯ КОСМЕТОЛОГИЯ</button>
+          <button type="button" data-target-tab="1"
+            class="js-tab-btn tabs-nav__btn tabs-nav-btn">ИНЪЕКЦИОННАЯ КОСМЕТОЛОГИЯ</button>
+          <button type="button" data-target-tab="2"
+            class="js-tab-btn tabs-nav__btn tabs-nav-btn">ЛАЗЕРНАЯ ЭПИЛЯЦИЯ</button>
+            <button type="button" data-target-tab="3"
+              class="js-tab-btn tabs-nav__btn tabs-nav-btn">УХОДОВЫЕ ПРОЦЕДУРЫ</button>
+          <button type="button" data-target-tab="4"
+          class="js-tab-btn tabs-nav__btn tabs-nav-btn">УДАЛЕНИЕ НОВООБРАЗОВАНИЙ
+          </button>
+        </div>
+
+        <button data-da="price__da-target-btn,last,768" type="button" class="btn btn-primary">ОНЛАЙН ЗАПИСЬ</button>
+      </div>
+
+      <section class="price__content  tabs-content js-tabs-content ">
+        <h2 class="tabs-section__title section-subtitle section-subtitle--light">ПРАЙС</h2>
+        <!-- /.tabs-section__title section-subtitle section-subtitle--light -->
+        <div class="price-tables">
+          <div class="price-tables__item">
+            <h3 
+              class="
+                price-tables__heading
+                price-tables__heading--b-radius-tl">
+              VBEAM
+            </h3>
+
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th>ПРОЦЕДУРА</th>
+                  <th>ЦЕНА (руб.)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Вспышка 1-5 (цена за одну вспушку)</th>
+                  <td>325</td>
+                </tr>
+                <tr>
+                  <th>Вспышка 6-15 (цена за одну вспышку)</th>
+                  <td>275</td>
+                </tr>
+                <tr>
+                  <th>Вспышка 16-30 (цена за одну вспышку)</th>
+                  <td>225</td>
+                </tr>
+                <tr>
+                  <th>Нос</th>
+                  <td>3750</td>
+                </tr>
+                <tr>
+                  <th>Щеки</th>
+                  <td>7500</td>
+                </tr>
+                <tr>
+                  <th>Подбородок</th>
+                  <td>3750</td>
+                </tr>
+                <tr>
+                  <th>Лицо полностью</th>
+                  <td>16125</td>
+                </tr>
+                <tr>
+                  <th>Декольте</th>
+                  <td>10750</td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+          <div class="price-tables__item">
+            <h3 class="price-tables__heading">АБЛЯЦИЯ</h3>
+
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th>ПРОЦЕДУРА</th>
+                  <th>ЦЕНА (руб.)</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <th>Область вокруг глаз	</th>
+                  <td>6250
+                  </td>
+                </tr>
+                <tr>
+                  <th>Щеки</th>
+                  <td>6250</td>
+                </tr>
+                <tr>
+                  <th>Лицо полностью</th>
+                  <td>13625</td>
+                </tr>
+                <tr>
+                  <th>Шея</th>
+                  <td>6250</td>
+                </tr>
+                <tr>
+                  <th>Декольте</th>
+                  <td>8125</td>
+                </tr>
+                <tr>
+                  <th>Грудь</th>
+                  <td>7500</td>
+                </tr>
+                <tr>
+                  <th>Ягодицы</th>
+                  <td>12375</td>
+                </tr>
+                <tr>
+                  <th>Бока</th>
+                  <td>6875</td>
+                </tr>
+                <tr>
+                  <th>Живот</th>
+                  <td>12375</td>
+                </tr>
+                
+              </tbody>
+            </table>
+
+          </div>
+          <div class="price-tables__item">
+            <h3 class="price-tables__heading price-tables__heading--b-radius-tr">RF-ЛИФТИНГ</h3>
+
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th>ПРОЦЕДУРА</th>
+                  <th>ЦЕНА (руб.)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Лицо полностью</th>
+                  <td>3125</td>
+                </tr>
+                <tr>
+                  <th>Шея</th>
+                  <td>2375</td>
+                </tr>
+                <tr>
+                  <th>Декольте</th>
+                  <td>2750</td>
+                </tr>
+                <tr>
+                  <th>Грудь</th>
+                  <td>2750</td>
+                </tr>
+                <tr>
+                  <th>Внутренняя поверхность бедер</th>
+                  <td>2750</td>
+                </tr>
+                <tr>
+                  <th>Ягодицы</th>
+                  <td>3000</td>
+                </tr>
+                <tr>
+                  <th>Бока</th>
+                  <td>3000</td>
+                </tr>
+                <tr>
+                  <th>Живот</th>
+                  <td>3000</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+        <!-- /.price-tables -->
+
+
+      </section>
+      <section class="price__content tabs-content js-tabs-content" >
+        <h2 class="tabs-section__title section-subtitle section-subtitle--light">ПРАЙС</h2>
+  <!-- /.tabs-section__title section-subtitle section-subtitle--light -->
+        <div class="price-tables">
+
+          <div class="price-tables__item">
+            <h3 class="price-tables__heading price-tables__heading--b-radius-tl">БИОРЕВИТАЛИЗАЦИЯ</h3>
+
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th colspan="2">ПРОЦЕДУРА</th>
+                  <th>ЦЕНА (руб.)</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td>Область вокруг глаз	</td>
+                  <td>3 ml </td>
+                  <td>6250 </td>
+                </tr>
+                <tr>
+                  <td>Щеки</td>
+                  <td>1,5 ml</td>
+                  <td>6250</td>
+                </tr>
+                <tr>
+                  <td>Лицо полностью</td>
+                  <td>3 ml</td>
+                  <td>13625</td>
+                </tr>
+                <tr>
+                  <td>Шея</td>
+                  <td>1 ml</td>
+                  <td>6250</td>
+                </tr>
+                <tr>
+                  <td>Декольте</td>
+                  <td>2 ml</td>
+                  <td>8125</td>
+                </tr>
+                <tr>
+                  <td>Грудь</td>
+                  <td>1 ml</td>
+                  <td>7500</td>
+                </tr>
+                <tr>
+                  <td>Ягодицы</td>
+                  <td>2 ml</td>
+                  <td>12375</td>
+                </tr>
+                <tr>
+                  <td>Грудь</td>
+                  <td>1 ml</td>
+                  <td>7500</td>
+                </tr>
+                <tr>
+                  <td>Ягодицы</td>
+                  <td>2 ml</td>
+                  <td>12375</td>
+                </tr>
+                <tr>
+                  <td>Живот</td>
+                  <td>1,5 ml</td>
+                  <td>12375</td>
+                </tr>
+                <tr>
+                  <td>Живот</td>
+                  <td>1,5 ml</td>
+                  <td>12375</td>
+                </tr>
+                <tr>
+                  <td>Живот</td>
+                  <td>1 ml</td>
+                  <td>12375</td>
+                </tr>
+                <tr>
+                  <td>Живот</td>
+                  <td>1 ml</td>
+                  <td>12375</td>
+                </tr>
+                
+              </tbody>
+            </table>
+
+          </div>
+          <div class="price-tables__item">
+            <h3 class="price-tables__heading price-tables__heading--b-radius-tr">БОТУЛИНОТЕРАПИЯ</h3>
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th colspan="2">ПРОЦЕДУРА</th>
+                  <th>ЦЕНА (руб.)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Лицо полностью</td>
+                  <td>1 ед</td>
+                  <td>3125</td>
+                </tr>
+                <tr>
+                  <td>Шея</td>
+                  <td>1 ед</td>
+                  <td>2375</td>
+                </tr>
+                <tr>
+                  <td>Декольте</td>
+                  <td>1 ед</td>
+                  <td>2750</td>
+                </tr>
+                <tr>
+                  <td>Грудь</td>
+                  <td>1 ед</td>
+                  <td>2750</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 class="price-tables__heading">МЕЗОТЕРАПИЯ</h3>
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th colspan="2">ПРОЦЕДУРА</th>
+                  <th>ЦЕНА (руб.)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Лицо полностью</td>
+                  <td>3 ml</td>
+                  <td>3125</td>
+                </tr>
+                <tr>
+                  <td>Шея</td>
+                  <td>3 ml</td>
+                  <td>2375</td>
+                </tr>
+                <tr>
+                  <td>Декольте</td>
+                  <td>3 ml</td>
+                  <td>2750</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 class="price-tables__heading">МЕЗОТЕРАПИЯ</h3>
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th colspan="2">ПРОЦЕДУРА</th>
+                  <th>ЦЕНА (руб.)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Лицо полностью</td>
+                  <td>1 ед</td>
+                  <td>3125</td>
+                </tr>
+                <tr>
+                  <td>Шея</td>
+                  <td>1 ед</td>
+                  <td>2375</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+        <!-- /.price-tables -->
+      </section>
+      <section class="price__content tabs-content js-tabs-content" >
+
+        <div class="tabs-content-nav js-tabs-content-nav tabs-section__content-nav">
+          <button 
+            type="button" 
+            data-target-tab="0"
+            class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn tabs-content-btn--xl tabs-content-btn--active">
+            ЖЕНСКИЙ ПРАЙС 
+          </button>
+          <button 
+            type="button" 
+            data-target-tab="1"
+            class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn tabs-content-btn--xl">
+            МУЖСКОЙ ПРАЙС
+          </button>
+        </div>
+
+        <div class="js-tabs-content-inner">
+          <div class="price-tables">
+
+            <div class="price-tables__item">
+              <h3 class="price-tables__heading price-tables__heading--b-radius-tl">АЛЕКСАНДРИТОВЫЙ ЛАЗЕР</h3>
+  
+              <table class="price-table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>ЗОНА ОБРАБОТКИ</th>
+                    <th>БЕЗ КАРТЫ (руб.)</th>
+                    <th>С КАРТОЙ (руб.)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="7">ЛИЦО И ШЕЯ</td>
+                    <td>Лоб</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Верхняя губа</td>
+                    <td>1500</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Подбородок</td>
+                    <td>1500</td>
+                    <td>790</td>
+                  </tr>
+                  <tr>
+                    <td>Щеки</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Бакенбарды</td>
+                    <td>1500</td>
+                    <td>790</td>
+                  </tr>
+                  <tr>
+                    <td>Шея</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Лицо полностью</td>
+                    <td>5000</td>
+                    <td>2490</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="6">РУКИ</td>
+                    <td>Подмышки</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Предплечья</td>
+                    <td>3000</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Плечи</td>
+                    <td>3000</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Надплечье</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Руки полностью</td>
+                    <td>5000</td>
+                    <td>2590</td>
+                  </tr>
+                  <tr>
+                    <td>Пальцы</td>
+                    <td>700</td>
+                    <td>590</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="9">ТУЛОВИЩЕ</td>
+                    <td>Грудь (ареолы)</td>
+                    <td>1200</td>
+                    <td>590</td>
+                  </tr>
+                  <tr>
+                    <td>Декольте</td>
+                    <td>2500</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Живот полностью</td>
+                    <td>3000</td>
+                    <td>1490</td>
+                  </tr>
+                  <tr>
+                    <td>Живот (дорожка)</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Грудь полностью</td>
+                    <td>2900</td>
+                    <td>1490</td>
+                  </tr>
+                  <tr>
+                    <td>Поясница</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Воротниковая</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Верх спины</td>
+                    <td>3200</td>
+                    <td>1890</td>
+                  </tr>
+                  <tr>
+                    <td>Спина полностью	</td>
+                    <td>6000</td>
+                    <td>2990</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="6">ноги</td>
+                    <td>Ягодицы</td>
+                    <td>3500</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Колени</td>
+                    <td>1500</td>
+                    <td>590</td>
+                  </tr>
+                  <tr>
+                    <td>Голени</td>
+                    <td>7000</td>
+                    <td>2990</td>
+                  </tr>
+                  <tr>
+                    <td>Часть бедра</td>
+                    <td>4400</td>
+                    <td>2100</td>
+                  </tr>
+                  <tr>
+                    <td>Бедра</td>
+                    <td>8000</td>
+                    <td>3890</td>
+                  </tr>
+                  <tr>
+                    <td>Ноги полностью</td>
+                    <td>14000</td>
+                    <td>6390</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="5">бикини</td>
+                    <td>Бикини классическое</td>
+                    <td>3500</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Бикини тотальное</td>
+                    <td>5000</td>
+                    <td>1990</td>
+                  </tr>
+                  <tr>
+                    <td>Половые губы</td>
+                    <td>2500</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Прианальная область</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Вспышка</td>
+                    <td>50</td>
+                    <td>50</td>
+                  </tr>
+                </tbody>
+              </table>
+  
+            </div>
+            <div class="price-tables__item">
+              <h3 class="price-tables__heading price-tables__heading--b-radius-tr">ДИОДНЫЙ ЛАЗЕР</h3>
+              
+              <table class="price-table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>ЗОНА ОБРАБОТКИ</th>
+                    <th>БЕЗ КАРТЫ (руб.)</th>
+                    <th>С КАРТОЙ (руб.)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="7">ЛИЦО И ШЕЯ</td>
+                    <td>Лоб</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Верхняя губа</td>
+                    <td>1500</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Подбородок</td>
+                    <td>1500</td>
+                    <td>790</td>
+                  </tr>
+                  <tr>
+                    <td>Щеки</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Бакенбарды</td>
+                    <td>1500</td>
+                    <td>790</td>
+                  </tr>
+                  <tr>
+                    <td>Шея</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Лицо полностью</td>
+                    <td>5000</td>
+                    <td>2490</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="6">РУКИ</td>
+                    <td>Подмышки</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Предплечья</td>
+                    <td>3000</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Плечи</td>
+                    <td>3000</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Надплечье</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Руки полностью</td>
+                    <td>5000</td>
+                    <td>2590</td>
+                  </tr>
+                  <tr>
+                    <td>Пальцы</td>
+                    <td>700</td>
+                    <td>590</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="9">ТУЛОВИЩЕ</td>
+                    <td>Грудь (ареолы)</td>
+                    <td>1200</td>
+                    <td>590</td>
+                  </tr>
+                  <tr>
+                    <td>Декольте</td>
+                    <td>2500</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Живот полностью</td>
+                    <td>3000</td>
+                    <td>1490</td>
+                  </tr>
+                  <tr>
+                    <td>Живот (дорожка)</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Грудь полностью</td>
+                    <td>2900</td>
+                    <td>1490</td>
+                  </tr>
+                  <tr>
+                    <td>Поясница</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Воротниковая</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Верх спины</td>
+                    <td>3200</td>
+                    <td>1890</td>
+                  </tr>
+                  <tr>
+                    <td>Спина полностью	</td>
+                    <td>6000</td>
+                    <td>2990</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="6">ноги</td>
+                    <td>Ягодицы</td>
+                    <td>3500</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Колени</td>
+                    <td>1500</td>
+                    <td>590</td>
+                  </tr>
+                  <tr>
+                    <td>Голени</td>
+                    <td>7000</td>
+                    <td>2990</td>
+                  </tr>
+                  <tr>
+                    <td>Часть бедра</td>
+                    <td>4400</td>
+                    <td>2100</td>
+                  </tr>
+                  <tr>
+                    <td>Бедра</td>
+                    <td>8000</td>
+                    <td>3890</td>
+                  </tr>
+                  <tr>
+                    <td>Ноги полностью</td>
+                    <td>14000</td>
+                    <td>6390</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="5">бикини</td>
+                    <td>Бикини классическое</td>
+                    <td>3500</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Бикини тотальное</td>
+                    <td>5000</td>
+                    <td>1990</td>
+                  </tr>
+                  <tr>
+                    <td>Половые губы</td>
+                    <td>2500</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Прианальная область</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+  
+            </div>
+          </div>
+        </div>
+        
+        <div class="js-tabs-content-inner">
+          <div class="price-tables">
+
+            <div class="price-tables__item">
+              <h3 class="price-tables__heading price-tables__heading--b-radius-tl">АЛЕКСАНДРИТОВЫЙ ЛАЗЕР</h3>
+  
+              <table class="price-table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>ЗОНА ОБРАБОТКИ</th>
+                    <th>БЕЗ КАРТЫ (руб.)</th>
+                    <th>С КАРТОЙ (руб.)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="7">ЛИЦО И ШЕЯ</td>
+                    <td>Лоб</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Верхняя губа</td>
+                    <td>1500</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Подбородок</td>
+                    <td>1500</td>
+                    <td>790</td>
+                  </tr>
+                  <tr>
+                    <td>Щеки</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Бакенбарды</td>
+                    <td>1500</td>
+                    <td>790</td>
+                  </tr>
+                  <tr>
+                    <td>Шея</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Лицо полностью</td>
+                    <td>5000</td>
+                    <td>2490</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="6">РУКИ</td>
+                    <td>Подмышки</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Предплечья</td>
+                    <td>3000</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Плечи</td>
+                    <td>3000</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Надплечье</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Руки полностью</td>
+                    <td>5000</td>
+                    <td>2590</td>
+                  </tr>
+                  <tr>
+                    <td>Пальцы</td>
+                    <td>700</td>
+                    <td>590</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="9">ТУЛОВИЩЕ</td>
+                    <td>Грудь (ареолы)</td>
+                    <td>1200</td>
+                    <td>590</td>
+                  </tr>
+                  <tr>
+                    <td>Декольте</td>
+                    <td>2500</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Живот полностью</td>
+                    <td>3000</td>
+                    <td>1490</td>
+                  </tr>
+                  <tr>
+                    <td>Живот (дорожка)</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Грудь полностью</td>
+                    <td>2900</td>
+                    <td>1490</td>
+                  </tr>
+                  <tr>
+                    <td>Поясница</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Воротниковая</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Верх спины</td>
+                    <td>3200</td>
+                    <td>1890</td>
+                  </tr>
+                  <tr>
+                    <td>Спина полностью	</td>
+                    <td>6000</td>
+                    <td>2990</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="6">ноги</td>
+                    <td>Ягодицы</td>
+                    <td>3500</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Колени</td>
+                    <td>1500</td>
+                    <td>590</td>
+                  </tr>
+                  <tr>
+                    <td>Голени</td>
+                    <td>7000</td>
+                    <td>2990</td>
+                  </tr>
+                  <tr>
+                    <td>Часть бедра</td>
+                    <td>4400</td>
+                    <td>2100</td>
+                  </tr>
+                  <tr>
+                    <td>Бедра</td>
+                    <td>8000</td>
+                    <td>3890</td>
+                  </tr>
+                  <tr>
+                    <td>Ноги полностью</td>
+                    <td>14000</td>
+                    <td>6390</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="5">бикини</td>
+                    <td>Бикини классическое</td>
+                    <td>3500</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Бикини тотальное</td>
+                    <td>5000</td>
+                    <td>1990</td>
+                  </tr>
+                  <tr>
+                    <td>Половые губы</td>
+                    <td>2500</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Прианальная область</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Вспышка</td>
+                    <td>50</td>
+                    <td>50</td>
+                  </tr>
+                </tbody>
+              </table>
+  
+            </div>
+            <div class="price-tables__item">
+              <h3 class="price-tables__heading price-tables__heading--b-radius-tr">ДИОДНЫЙ ЛАЗЕР</h3>
+              
+              <table class="price-table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>ЗОНА ОБРАБОТКИ</th>
+                    <th>БЕЗ КАРТЫ (руб.)</th>
+                    <th>С КАРТОЙ (руб.)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="7">ЛИЦО И ШЕЯ</td>
+                    <td>Лоб</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Верхняя губа</td>
+                    <td>1500</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Подбородок</td>
+                    <td>1500</td>
+                    <td>790</td>
+                  </tr>
+                  <tr>
+                    <td>Щеки</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Бакенбарды</td>
+                    <td>1500</td>
+                    <td>790</td>
+                  </tr>
+                  <tr>
+                    <td>Шея</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Лицо полностью</td>
+                    <td>5000</td>
+                    <td>2490</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="6">РУКИ</td>
+                    <td>Подмышки</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Предплечья</td>
+                    <td>3000</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Плечи</td>
+                    <td>3000</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Надплечье</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Руки полностью</td>
+                    <td>5000</td>
+                    <td>2590</td>
+                  </tr>
+                  <tr>
+                    <td>Пальцы</td>
+                    <td>700</td>
+                    <td>590</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="9">ТУЛОВИЩЕ</td>
+                    <td>Грудь (ареолы)</td>
+                    <td>1200</td>
+                    <td>590</td>
+                  </tr>
+                  <tr>
+                    <td>Декольте</td>
+                    <td>2500</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Живот полностью</td>
+                    <td>3000</td>
+                    <td>1490</td>
+                  </tr>
+                  <tr>
+                    <td>Живот (дорожка)</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Грудь полностью</td>
+                    <td>2900</td>
+                    <td>1490</td>
+                  </tr>
+                  <tr>
+                    <td>Поясница</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Воротниковая</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Верх спины</td>
+                    <td>3200</td>
+                    <td>1890</td>
+                  </tr>
+                  <tr>
+                    <td>Спина полностью	</td>
+                    <td>6000</td>
+                    <td>2990</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="6">ноги</td>
+                    <td>Ягодицы</td>
+                    <td>3500</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Колени</td>
+                    <td>1500</td>
+                    <td>590</td>
+                  </tr>
+                  <tr>
+                    <td>Голени</td>
+                    <td>7000</td>
+                    <td>2990</td>
+                  </tr>
+                  <tr>
+                    <td>Часть бедра</td>
+                    <td>4400</td>
+                    <td>2100</td>
+                  </tr>
+                  <tr>
+                    <td>Бедра</td>
+                    <td>8000</td>
+                    <td>3890</td>
+                  </tr>
+                  <tr>
+                    <td>Ноги полностью</td>
+                    <td>14000</td>
+                    <td>6390</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="5">бикини</td>
+                    <td>Бикини классическое</td>
+                    <td>3500</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Бикини тотальное</td>
+                    <td>5000</td>
+                    <td>1990</td>
+                  </tr>
+                  <tr>
+                    <td>Половые губы</td>
+                    <td>2500</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Прианальная область</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+  
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section class="price__content  tabs-content js-tabs-content ">
+        <h2 class="tabs-section__title section-subtitle section-subtitle--light">ПРАЙС</h2>
+        <!-- /.tabs-section__title section-subtitle section-subtitle--light -->
+        <div class="price-tables">
+          <div class="price-tables__item">
+            <h3 
+              class="
+                price-tables__heading
+                price-tables__heading--b-radius-tl">
+                ЧИСТКИ
+            </h3>
+
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th>ПРОЦЕДУРА</th>
+                  <th>ЦЕНА (руб.)</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <td>Атравматичная чистка с косметикой Holy Land</td>
+                  <td>2500</td>
+                </tr>
+                <tr>
+                  <td>Ультразвуковая чистка с косметикой Holy Land</td>
+                  <td>3000</td>
+                </tr>
+                <tr>
+                  <td>Комбинированная чистка с косметикой Holy Land</td>
+                  <td>2900</td>
+                </tr>
+                
+              </tbody>
+            </table>
+            
+          </div>
+          <div class="price-tables__item">
+            <h3 class="price-tables__heading price-tables__heading--b-radius-tr">ПИЛИНГИ</h3>
+
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th>ПРОЦЕДУРА</th>
+                  <th>ЦЕНА (руб.)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Миндальный</td>
+                  <td>2000</td>
+                </tr>
+                <tr>
+                  <td>Пировиноградный</td>
+                  <td>2000</td>
+                </tr>
+                <tr>
+                  <td>Салициловый</td>
+                  <td>2000</td>
+                </tr>
+                <tr>
+                  <td>Молочный</td>
+                  <td>2000</td>
+                </tr>
+                <tr>
+                  <td>Азелаиновый</td>
+                  <td>4000</td>
+                </tr>
+                <tr>
+                  <td>PRX-T33</td>
+                  <td>3900</td>
+                </tr>
+                <tr>
+                  <td>BioRePeelCL3</td>
+                  <td>3400</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+          
+        </div>
+        <!-- /.price-tables -->
+      </section>
+
+        <section class="price__content  tabs-content js-tabs-content ">
+        <h2 class="tabs-section__title section-subtitle section-subtitle--light">ПРАЙС</h2>
+        <!-- /.tabs-section__title section-subtitle section-subtitle--light -->
+        <div class="price-tables">
+          <div class="price-tables__item">
+            <h3 
+              class="
+                price-tables__heading
+                price-tables__heading--b-radius-tl price-tables__heading--b-radius-tr">
+                УДАЛЕНИЕ НОВООБРАЗОВАНИЙ
+            </h3>
+
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th>ПРОЦЕДУРА</th>
+                  <th>ЦЕНА (руб.)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>АНЕСТЕЗИЯ</td>
+                  <td>300</td>
+                </tr>
+
+                <tr>
+                  <td> ГИСТОЛОГИЧЕСКОЕ ИССЛЕДОВАНИЕ <br> дерматоскопия до 3 шт./ от 3 шт.</td>
+                  <td>1900 <br> 500 / 700</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    ПАПИЛЛОМЫ <br> 
+                    электрохирургическое удаление единичных папиллом размерами: <br>
+                    4-6 мм: 1 шт./ до 3 шт. / до 10 шт. от 6 мм: 1 шт./ до 3 шт. / до 10 шт.
+                  </td>
+                  <td>
+                    <br>
+                    500 / 1400 / 2500<br> 
+                    600 / 1700 / 2800
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    НЕВУСЫ <br> 
+                    электрохирургическое удаление невусов (родинок) размерами: <br>
+                    до 4 мм / 4-6 мм / 6-8 мм (1 шт.)
+                  </td>
+                  <td>
+                    <br>
+                    <br> 
+                    1000 / 2000 / 3000
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    БОРОДАВКИ <br> 
+                    электрохирургическое удаление бородавок размерами: <br>
+                    до 4 мм / от 4 мм (1 шт)
+                  </td>
+                  <td>
+                    <br>
+                    <br> 
+                    700 / 1500
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    КЕРАТОМА <br> 
+                    электрохирургическое удаление кератом размерами: <br>
+                    до 6 мм / от 4 мм
+                  </td>
+                  <td>
+                    <br>
+                    <br> 
+                    800 / 2000
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    ГЕМАНГИОМЫ <br> 
+                    электрохирургическое удаление гемангиом размерами: <br>
+                    до 4 мм / от 4 мм (1 шт.)
+                  </td>
+                  <td>
+                    <br>
+                    <br> 
+                    800 / 1600
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    ЭЛЕКТРОДЕСТРУКЦИЯ НОВООБРАЗОВАНИЙ <br> 
+                    (креатомы, папилломы): 30 мин, до 20 шт.
+                  </td>
+                  <td>
+                    <br> 
+                    4900
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    КОНТАГИОЗНЫЙ МОЛЛЮСК<br> 
+                    электрохирургическое удаление контагиозного моллюска:<br>
+                    ТЕЛО: до 10 шт. / свыше 10 шт. (цена за 1 шт.)<br>
+                    ЛИЦО: до 10 шт. / свыше 10 шт. (цена за 1 шт.)
+                  </td>
+                  <td>
+                    <br>
+                    <br> 250 / 200
+                    <br>  300 / 250
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+            
+          </div>
+        </div>
+        <!-- /.price-tables -->
+      </section>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="tabs js-tabs flex-column">
+
+            <div id="goto-stock" class="stock-slider">
   <div>
 <style>
   .stock-slider-item-1 {
@@ -1222,10 +2603,10 @@
   <!-- /.stock-slider-item-6 -->
 </div>
 </div>
-            <section class="feedback">
+            <section id="goto-feedback" class="feedback">
   <div class="container">
     <h2 class="section-title feedback__title">ОТЗЫВЫ</h2>
-    <div class="feedback-slider">
+    <div class="feedback-slider js-horizontal-slider">
       <div class="feedback-slider__item">
         <div class="feedback-slider__inner">
           <img src="./img/feedback-1.jpg" alt="feedback-1">
@@ -1309,7 +2690,7 @@
   </div>
   <!-- /.container -->
 </section>
-            <section class="contacts">
+            <section id="goto-contact" class="contacts">
   <div class="container contacts__container">
     <h2 class="section-title contacts__title">КОНТАКТЫ</h2>
     <!-- /.section-title -->
@@ -1341,9 +2722,7 @@
   </div>
   <!-- /.container -->
 
-  <div class="contacts-map" id="contactsMap">
-    <span>КАРТА</span>
-  </div>
+  <div class="contacts-map" id="contactsMap" height="550"></div>
   <!-- /#contactsMap.contacts-map -->
 </section>
         
@@ -1358,12 +2737,12 @@
 
       <nav class="main-nav main-nav--xl footer__nav">
         <ul>
-          <li><a href="#">О клинике</a></li>
-          <li><a href="#">Акции</a></li>
-          <li><a href="#">Услуги</a></li>
-          <li><a href="#">Цены</a></li>
-          <li><a href="#">Отзывы</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="#goto-about">О клинике</a></li>
+          <li><a href="#goto-stock">Акции</a></li>
+          <li><a href="#goto-service">Услуги</a></li>
+          <li><a href="#goto-price">Цены</a></li>
+          <li><a href="#goto-feedback">Отзывы</a></li>
+          <li><a href="#goto-contact">Контакты</a></li>
         </ul>
       </nav>
       <!-- /.footer__nav -->
@@ -1373,30 +2752,30 @@
     <div class="footer__body">
       <ul class="footer__list footer-list">
         <li class="footer-list__item">
-          <a href="#" class="footer__link">Специалисты</a>
+          <a href="./img/after-before/item-1.jpg"  download class="footer__link">Специалисты</a>
         </li>
         <!-- /.footer-list__item -->
         <li class="footer-list__item">
-          <a href="#" class="footer__link">Лицензии</a>
+          <a href="./img/after-before/item-1.jpg" download class="footer__link">Лицензии</a>
         </li>
         <!-- /.footer-list__item -->
         <li class="footer-list__item">
-          <a href="#" class="footer__link">Договор оказания медицинских услуг</a>
+          <a href="./img/after-before/item-1.jpg" download class="footer__link">Договор оказания медицинских услуг</a>
         </li>
         <!-- /.footer-list__item -->
         <li class="footer-list__item">
-          <a href="#" class="footer__link">Правовая информация</a>
+          <a href="./img/after-before/item-1.jpg" download class="footer__link">Правовая информация</a>
         </li>
         <!-- /.footer-list__item -->
         <li class="footer-list__item">
-          <a href="#" class="footer__link">Реквизиты</a>
+          <a href="./img/after-before/item-1.jpg" download class="footer__link">Реквизиты</a>
         </li>
         <!-- /.footer-list__item -->
       </ul>
 
       <div class="footer__actions">
         <button type="button" class="btn btn-primary footer__btn">ОНЛАЙН ЗАПИСЬ</button>
-        <a href="#" class="footer__link"><a href="#" class="footer__link">Политика в отношении обработки персональных данных</a></a>
+        <a href="./policy.html" class="footer__link">Политика в отношении обработки персональных данных</a>
       </div>
     </div>
     <!-- /.footer__body -->
@@ -1409,6 +2788,7 @@
   </div>
   <!-- /.container -->
 </footer>
+        <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
         <script src="js/main.min.js"></script>
         <script src="js/vendor.min.js"></script>
     </body>
