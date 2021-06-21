@@ -34,10 +34,19 @@ $(function () {
     }
 
     if ($(this).scrollTop() > 899) {
-      $('#header').addClass("header-sticky");
+      if ($('#header').hasClass('header-policy')) {
+        $('#header').addClass("header-sticky");
+      } else {
+        $('#header').addClass("header-sticky header-primary");
+      }
     }
     else {
-      $('#header').removeClass("header-sticky");
+      if ($('#header').hasClass('header-policy')) {
+        $('#header').removeClass("header-sticky");
+      } else {
+        $('#header').removeClass("header-sticky header-primary");
+      }
+
     }
   }, 250));
 

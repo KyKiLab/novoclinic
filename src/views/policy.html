@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include("../blocks/modules/head/head.html")
+    <body>
+        <header id="header" class="header header-policy header-primary">
+            <div class="container header__container">
+              <nav class="header__nav main-nav">
+                <ul>
+                  <li><a href="./index.html#goto-about">О клинике</a></li>
+                  <li><a href="./index.html#goto-stock">Акции</a></li>
+                  <li><a href="./index.html#goto-service">Услуги</a></li>
+                  <li><a href="./index.html#goto-price">Цены</a></li>
+                  <li><a href="./index.html#goto-feedback">Отзывы</a></li>
+                  <li><a href="./index.html#goto-contact">Контакты</a></li>
+                </ul>
+              </nav>
+              <!-- /.header__nav -->
+          
+              <div class="header__logo">
+                <a href="./index.html"><img src="./img/logo.svg" width="250" alt="Novo clinic logo"></a>
+                
+              </div>
+              <!-- /.header__logo -->
+          
+              <div class="header__actions">
+          
+                <div class="header-contact">
+                  <button type="button" class="header-contact__dropdown-btn js-dropdown-btn">Клиники: 
+                    <svg class="header-contact__dropdown-ic">
+                      <use xlink:href="./img/svg/sprite.svg#ic-arrow-down"></use>
+                    </svg>
+                  </button>
+          
+                  <ul class="header-contact__dropdown-content js-dropdown-content">
+                    <li class="header-contact__item">
+                      На Фрунзенской
+                      <a class="header-contact__link" href="tel:+7921331-52-55">
+                        +7 (921) 331-52-55  
+                        <svg class="header-contact__link-ic">
+                          <use xlink:href="./img/svg/sprite.svg#ic-viber"></use>
+                        </svg>
+                    </a>
+                    
+                    </li>
+                    <li class="header-contact__item">
+                      На Петроградской
+                      <a class="header-contact__link" href="tel:+7921596-31-60">
+                        +7 (921) 596-31-60
+                        <svg class="header-contact__link-ic">
+                          <use xlink:href="./img/svg/sprite.svg#ic-viber"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- /.header-contact__dropdown-content -->
+                </div>
+                <!-- /.header-contact -->
+          
+                <button type="button" class="header__btn">ЗАПИСАТЬСЯ НА ПРИЕМ</button>
+              </div>
+              <!-- /.header__actions -->
+          
+              @@include("../blocks/components/toggle-menu-btn/toggle.html")
+            </div>
+            <!-- /.container -->
+          </header>
+        <main class="policy">
+            
+            <div class="policy-content">
+                <h1 class="section-title">ПРАВОВАЯ ИНФОРМАЦИЯ</h1>
+            </div>
+           
+        
+        </main>
+        <footer class="footer">
+            <div class="container">
+              <div class="footer__header">
+          
+                <div class="footer__logo">
+                  <img src="./img/logo.svg" width="181" height="47" alt="Novo clinic logo">
+                </div>
+          
+                <nav class="main-nav main-nav--xl footer__nav">
+                  <ul>
+                    <li><a href="./index.html#goto-about">О клинике</a></li>
+                    <li><a href="./index.html#goto-stock">Акции</a></li>
+                    <li><a href="./index.html#goto-service">Услуги</a></li>
+                    <li><a href="./index.html#goto-price">Цены</a></li>
+                    <li><a href="./index.html#goto-feedback">Отзывы</a></li>
+                    <li><a href="./index.html#goto-contact">Контакты</a></li>
+                  </ul>
+                </nav>
+                <!-- /.footer__nav -->
+              </div>
+              <!-- /.footer__header -->
+          
+              <div class="footer__body">
+                <ul class="footer__list footer-list">
+                  <li class="footer-list__item">
+                    <a href="./img/after-before/item-1.jpg"  download class="footer__link">Специалисты</a>
+                  </li>
+                  <!-- /.footer-list__item -->
+                  <li class="footer-list__item">
+                    <a href="./img/after-before/item-1.jpg" download class="footer__link">Лицензии</a>
+                  </li>
+                  <!-- /.footer-list__item -->
+                  <li class="footer-list__item">
+                    <a href="./img/after-before/item-1.jpg" download class="footer__link">Договор оказания медицинских услуг</a>
+                  </li>
+                  <!-- /.footer-list__item -->
+                  <li class="footer-list__item">
+                    <a href="./img/after-before/item-1.jpg" download class="footer__link">Правовая информация</a>
+                  </li>
+                  <!-- /.footer-list__item -->
+                  <li class="footer-list__item">
+                    <a href="./img/after-before/item-1.jpg" download class="footer__link">Реквизиты</a>
+                  </li>
+                  <!-- /.footer-list__item -->
+                </ul>
+          
+                <div class="footer__actions">
+                  <button type="button" class="btn btn-primary footer__btn">ОНЛАЙН ЗАПИСЬ</button>
+                  <a href="policy.html" class="footer__link"><a href="#" class="footer__link">Политика в отношении обработки персональных данных</a></a>
+                </div>
+              </div>
+              <!-- /.footer__body -->
+          
+              <div class="footer__footer">
+                <p>ООО «Новолазер Плюс»</p>
+                <p>Сайт разработан <!-- ... и слава богу))) --> </p>
+              </div>
+              <!-- /.footer__footer =) --> 
+            </div>
+            <!-- /.container -->
+          </footer>
+        <script src="js/main.js"></script>
+        <script src="js/vendor.js"></script>
+    </body>
+</html>

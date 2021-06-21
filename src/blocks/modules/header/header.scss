@@ -147,6 +147,13 @@
 
   &-sticky {
     position: fixed;
+  }
+
+  &-policy {
+    position: relative;
+  }
+
+  &-primary {
     background: $primary-bg-color;
 
     .main-nav {
