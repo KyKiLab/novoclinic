@@ -1,3 +1,4 @@
+import './adaptiveMoveBlock'
 import './import/modules'
 import './banner-slider'
 import './stock-slider'

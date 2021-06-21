@@ -6,10 +6,10 @@ const activeClass = {
 }
 
 const refs = {
-  // $tabsMainContainer: $('.js-tabs'),
+  $tabsMainContainer: $('.js-tabs'),
   $tabsMainNav: $('.js-tabs-nav'),
   $tabsMainNavBtn: $('.js-tab-btn'),
-  $tabsMainContent: $('.js-tabs .js-tabs-content'),
+  $tabsMainContent: $('.js-tabs-content'),
   $innerTabsNav: $('.js-tabs-content-nav'),
   $innerTabsNavBtn: $('.js-tabs-content-btn'),
   $innerTabsContent: $('.js-tabs-content-inner'),
@@ -17,33 +17,59 @@ const refs = {
 
 $(function () {
 
-  refs.$tabsMainContent.not(":first").hide();
+  refs.$tabsMainContainer.each((k, container) => {
+    $(container)
+      .find(refs.$tabsMainContent)
+      .not(":first").hide();
 
-  refs.$tabsMainNav.on('click', function (e) {
-    if (e.target.nodeName !== 'BUTTON') return
-    const $target = $(e.target);
+    $(container)
+      .find(refs.$tabsMainNav)
+      .on('click', function (e) {
+        if (e.target.nodeName !== 'BUTTON') return
+        const $target = $(e.target);
+        const $n = $target.data('targetTab');
 
-    const $n = $target.data('targetTab');
+        $target
+          .closest($(this))
+          .find(refs.$tabsMainNavBtn)
+          .removeClass(activeClass.mainNavBtn);
 
-    refs.$tabsMainNavBtn.removeClass(activeClass.mainNavBtn)
-    $target.addClass(activeClass.mainNavBtn)
+        $target.addClass(activeClass.mainNavBtn)
 
-    refs.$tabsMainContent.hide().eq($n).fadeIn('slow')
-  })
 
-  refs.$tabsMainContent.each((k, mainContent) => {
+        $target
+          .closest(refs.$tabsMainContainer)
+          .find(refs.$tabsMainContent)
+          .hide().eq($n)
+          .fadeIn('fast')
+      })
 
-    $(mainContent).find(refs.$innerTabsContent).not(":first").hide();
+    $(container)
+      .find(refs.$tabsMainContent)
+      .each((k, mainContent) => {
 
-    $(mainContent).find(refs.$innerTabsNav).on('click', function (e) {
-      if (e.target.nodeName !== 'BUTTON') return
-      const $target = $(e.target);
-      const $n = $target.data('targetTab');
+        $(mainContent)
+          .find(refs.$innerTabsContent).not(":first")
+          .hide();
 
-      $(this).find(refs.$innerTabsNavBtn).removeClass(activeClass.innerTabsNavBtn)
-      $target.addClass(activeClass.innerTabsNavBtn)
-      $(this).siblings(refs.$innerTabsContent).hide().eq($n).fadeIn('slow')
-    })
+        $(mainContent).find(refs.$innerTabsNav).on('click', function (e) {
+          if (e.target.nodeName !== 'BUTTON') return
+          const $target = $(e.target);
+          const $n = $target.data('targetTab');
+
+          $(this)
+            .find(refs.$innerTabsNavBtn)
+            .removeClass(activeClass.innerTabsNavBtn);
+
+          $target
+            .addClass(activeClass.innerTabsNavBtn)
+
+          $(this)
+            .siblings(refs.$innerTabsContent)
+            .hide().eq($n).fadeIn('slow')
+        })
+      })
+
   })
 
 
@@ -51,6 +77,12 @@ $(function () {
 
     if (list.querySelectorAll('li').length > 5) {
       list.classList.add('service-list-columns')
+    }
+  })
+
+  document.querySelectorAll('.price-tables').forEach(table => {
+    if (table.querySelectorAll('.price-table').length == 1) {
+      table.classList.add('price-tables--one-item')
     }
   })
 

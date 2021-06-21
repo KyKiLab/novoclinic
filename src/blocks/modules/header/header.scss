@@ -162,6 +162,10 @@
       &__btn {
         color: $main-text-color;
         border-color: $main-text-color;
+
+        @include md-block {
+          font-size: 12px;
+        }
       }
 
       &__logo {

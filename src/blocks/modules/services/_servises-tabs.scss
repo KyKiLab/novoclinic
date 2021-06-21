@@ -69,6 +69,22 @@
     }
     //.tabs-nav-btn
 
+    &--vertical {
+      flex-direction: column;
+
+      .tabs-nav-btn {
+        &:first-child {
+          border-radius: 10px 10px 0 0;
+          border: 1px solid $primary;
+        }
+
+        &:last-child {
+          border-radius: 0 0 10px 10px;
+          border: 1px solid $primary;
+        }
+      }
+    }
+
     &__btn {
       flex: 1;
 
@@ -125,6 +141,14 @@
 
     &--active {
       text-decoration: underline;
+    }
+
+    &--xl {
+      font-size: rem(24);
+      @include sm-block {
+        font-size: rem(18);
+        text-align: center;
+      }
     }
 
     &:focus {

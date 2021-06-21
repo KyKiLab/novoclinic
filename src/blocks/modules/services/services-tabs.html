@@ -11,11 +11,11 @@
           class="js-tab-btn tabs-nav__btn tabs-nav-btn">ИНЪЕКЦИОННАЯ КОСМЕТОЛОГИЯ</button>
         <button type="button" data-target-tab="2"
           class="js-tab-btn tabs-nav__btn tabs-nav-btn">ЛАЗЕРНАЯ ЭПИЛЯЦИЯ</button>
-        <button type="button" data-target-tab="3"
+          <button type="button" data-target-tab="3"
+            class="js-tab-btn tabs-nav__btn tabs-nav-btn">УХОДОВЫЕ ПРОЦЕДУРЫ</button>
+        <button type="button" data-target-tab="4"
         class="js-tab-btn tabs-nav__btn tabs-nav-btn">УДАЛЕНИЕ НОВООБРАЗОВАНИЙ
         </button>
-        <!-- <button type="button" data-target-tab="4"
-          class="js-tab-btn tabs-nav__btn tabs-nav-btn">УХОДОВЫЕ ПРОЦЕДУРЫ</button> -->
       </div>
       <!-- /.tabs-nav -->
 
@@ -28,17 +28,20 @@
       <!-- ЛАЗЕРНАЯ ЭПИЛЯЦИЯ -->
       @@include('./laser-epilation/laser-epilation.html')
 
-      <!-- УДАЛЕНИЕ НОВООБРАЗОВАНИЙ -->
-      @@include('./remove-formations/remove-formations.html')
-      
-      <!-- УХОДОВЫЕ ПРОЦЕДУРЫ -->
-      <!-- <div class="tabs-content js-tabs-content" >
-
-        <div class="tabs-content-inner js-tabs-content-inner">
-          УХОДОВЫЕ ПРОЦЕДУРЫ
+            <!-- УХОДОВЫЕ ПРОЦЕДУРЫ -->
+     <div class="tabs-content js-tabs-content" >
+        <div class="service js-tabs-content-inner flex-column">
+          <h3 class="service__title">
+            УХОДОВЫЕ ПРОЦЕДУРЫ
+          </h3>
         </div>
       </div> -->
       <!-- /.tabs-content -->
+
+      <!-- УДАЛЕНИЕ НОВООБРАЗОВАНИЙ -->
+      @@include('./remove-formations/remove-formations.html')
+      
+
     </div>
     <!-- /.tabs -->
   </div>
