@@ -21,11 +21,16 @@
 }
 
 .main-title {
+  color: $main-text-color;
   font: 600 rem(64) / 1.1 "El Messiri";
   text-align: center;
 
   @include sm-block {
     font-size: rem(24);
+  }
+
+  &--md {
+    font-size: 36px;
   }
 }
 
@@ -46,4 +51,8 @@
   &--light {
     color: $light-text-color;
   }
+}
+
+.tt-none {
+  text-transform: none;
 }

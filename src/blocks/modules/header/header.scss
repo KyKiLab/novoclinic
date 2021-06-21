@@ -200,6 +200,12 @@
         color: $main-text-color;
       }
     }
+
+    .toggle-menu {
+      span {
+        background-color: $light-bg-color;
+      }
+    }
   }
 }
 
