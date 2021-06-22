@@ -10,16 +10,21 @@ const refs = {
 
 $(function () {
 
-  $('a[href*=\\#goto]:not([href=\\#goto])').bind('click.smoothscroll', function (event) {
+  $('.js-scroll-link').on('click', e => {
 
-    event.preventDefault();
-    var target = $(this).attr('href');
-    var offset = $('#header').height();
-    var marginTop = $(target).offset().top;
-    $('html, body').animate({ scrollTop: marginTop - offset }, 800);
-    window.location
-    return false;
+    if (e.target.nodeName === 'A') {
+
+      e.preventDefault();
+      var target = $(e.target).attr('href');
+      var offset = $('#header').height();
+      var marginTop = $(target).offset().top;
+      $('html, body').animate({ scrollTop: marginTop - offset }, 800);
+      window.location
+      return false;
+    }
   })
+
+
 
   refs.$dropDownBtn.on('click', e => {
     $(e.target).toggleClass('is-active');
