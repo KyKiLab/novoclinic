@@ -24,6 +24,17 @@ $(function () {
     }
   })
 
+  $('.js-main-nav').on('click', e => {
+
+    if (e.target.nodeName === 'A') {
+
+      if (refs.header.classList.contains('mob-menu-show')) {
+        toggleMenu()
+      }
+
+    }
+  })
+
 
 
   refs.$dropDownBtn.on('click', e => {
@@ -56,7 +67,7 @@ $(function () {
   }, 250));
 
 
-  const toggleMenu = (e) => {
+  const toggleMenu = () => {
 
     refs.burgerBtn.classList.toggle('toggle-menu--on');
     refs.header.classList.toggle('mob-menu-show');
