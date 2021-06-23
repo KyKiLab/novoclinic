@@ -1,0 +1,2795 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+  <link rel="stylesheet" href="styles/main.min.css">
+
+  
+</head>
+    <body>
+        <header id="header" class="header">
+  <div class="container header__container">
+    <nav class="header__nav main-nav js-main-nav js-scroll-link">
+      <ul>
+        <li><a href="#goto-about">О клинике</a></li>
+        <li><a href="#goto-stock">Акции</a></li>
+        <li><a href="#goto-service">Услуги</a></li>
+        <li><a href="#goto-price">Цены</a></li>
+        <li><a href="#goto-feedback">Отзывы</a></li>
+        <li><a href="#goto-contact">Контакты</a></li>
+      </ul>
+    </nav>
+    <!-- /.header__nav -->
+
+    <div class="header__logo">
+      <img src="./img/logo.svg" width="250" alt="Novo clinic logo">
+    </div>
+    <!-- /.header__logo -->
+
+    <div class="header__actions">
+
+      <div class="header-contact">
+        <button type="button" class="header-contact__dropdown-btn js-dropdown-btn">Клиники: 
+          <svg class="header-contact__dropdown-ic">
+            <use xlink:href="./img/svg/sprite.svg#ic-arrow-down"></use>
+          </svg>
+        </button>
+
+        <ul class="header-contact__dropdown-content js-dropdown-content">
+          <li class="header-contact__item">
+            На Фрунзенской
+            <a class="header-contact__link" href="tel:+7921331-52-55">
+              +7 (921) 331-52-55  
+              <svg class="header-contact__link-ic">
+                <use xlink:href="./img/svg/sprite.svg#ic-viber"></use>
+              </svg>
+          </a>
+          
+          </li>
+          <li class="header-contact__item">
+            На Петроградской
+            <a class="header-contact__link" href="tel:+7921596-31-60">
+              +7 (921) 596-31-60
+              <svg class="header-contact__link-ic">
+                <use xlink:href="./img/svg/sprite.svg#ic-viber"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <!-- /.header-contact__dropdown-content -->
+      </div>
+      <!-- /.header-contact -->
+
+      <button type="button" class="header__btn">ЗАПИСАТЬСЯ НА ПРИЕМ</button>
+    </div>
+    <!-- /.header__actions -->
+
+    <button class="toggle-menu js-toggle-menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+  </div>
+  <!-- /.container -->
+</header>
+        <main>
+            
+            <div id="topBannerSlider" class="banner-slider" >
+  
+  <div class="banner-slider-item banner-slider-item-1" style="background-image: url(./img/banner-slide-1.jpg);">
+    <div class="banner-slider-item-1__inner">
+      <div class="container">
+        <p class="banner-title banner-title--light banner-slider-item-1__title">
+          -20% на всю косметологию
+        </p>
+        <p class="banner-slider-item-1__footnote">
+          *при первом посещении клиник Novo.Clinic
+        </p>
+
+        <button type="button" class="btn btn-light">ОНЛАЙН ЗАПИСЬ</button>
+    </div>
+    <!-- /.container -->
+    </div>
+    <!-- /.__inner -->
+  </div>
+  <!-- /.banner-slider-item-1 -->
+
+
+
+  <div class="banner-slider-item banner-slider-item-2" style="background-image: url(./img/banner-slide-2.jpg);">
+  <div class="banner-slider-item-2__inner">
+    <div class="container">
+      <p class="banner-slider-item-2__inner-top banner-slider-heading">Специальное предложение на лазерную эпиляцию</p>
+      <p class="banner-title banner-title--light banner-slider-item-2__inner-body">
+        Бикини и подмышки 
+      </p>
+
+      <div class="banner-slider-item-2__inner-bottom">
+        <div class="banner-slider-price">
+
+          <div class="banner-slider-price__item">
+            <div class="banner-slider-heading banner-slider-price__heading">Александритовый лазер</div>
+            <div class="banner-price banner-price--light">1490 руб.</div>
+          </div>
+
+          <div class="banner-slider-price__item">
+            <div class="banner-slider-heading banner-slider-price__heading"">Диодный лазер</div>
+            <div class="banner-price banner-price--light">740 руб.</div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-light">ОНЛАЙН ЗАПИСЬ</button>
+      </div>
+
+  </div>
+  <!-- /.container -->
+  </div>
+  <!-- /.__inner -->
+</div>
+<!-- /.banner-slider-item-2 -->
+
+  
+  <div class="banner-slider-item banner-slider-item-3" style="background-image: url(./img/banner-slide-3.jpg);">
+    <div class="banner-slider-item-3__inner">
+      <div class="container">
+        <p class="banner-slider-item-3__inner-top banner-slider-subtitle banner-slider-subtitle--light">Специальное предложение на лазерную эпиляцию</p>
+        <p class="banner-title banner-title--light banner-slider-item-3__inner-body">
+          BioRePeel 
+        </p>
+
+        <ul class="banner-slider-item-3__inner-list banner-slider-heading">
+          <li>разглаживает морщины </li>
+          <li>беорется со следами акне</li>
+          <li>сужает поры </li>
+          <li>возвращает мышечный тонус </li>
+        </ul>
+
+        <div class="banner-slider-item-3__inner-bottom">
+
+          <div class="banner-price banner-price--light banner-slider-item-3__price">2700 руб <br> вместо <span class="banner-price--old">3400 руб.</span></div>
+
+          <button type="button" class="btn btn-light">ОНЛАЙН ЗАПИСЬ</button>
+        </div>
+
+    </div>
+    <!-- /.container -->
+    </div>
+    <!-- /.__inner -->
+  </div>
+  <!-- /.banner-slider-item-3 -->
+</div>
+<!-- /.banner-slider -->
+            <section>
+  <div class="container">
+
+    <div class="features">
+      <div class="features-card">
+        <h2 class="features-card__heading">Современное оборудование</h2>
+        <!-- /.features-card__heading -->
+        <div class="features-card__hovered">
+          <div class="features-card__wrap">
+            <span> Клиники Novo Clinic оснащены передовым оборудованием, процедуры проводятся эффективно и безопасно для пациентов с любым типом кожи. </span> 
+            <a href="#" class="features-card__link" download="">Подробнее</a>
+            <!-- /.features__link -->
+          </div>
+        </div>
+        <!-- /.features-card__hovered -->
+      </div>
+
+      <div class="features-card">
+        <h2 class="features-card__heading">Удобное расположение</h2>
+        <!-- /.features-card__heading -->
+        <div class="features-card__hovered">
+          <div class="features-card__wrap">
+            <span>Клиники в 5 минутах от ст. м. Фрунзенская и Петроградская.</span> 
+            <a href="#goto-contact" class="features-card__link" >Посмотреть на карте</a>
+            <!-- /.features__link -->
+          </div>
+        </div>
+        <!-- /.features-card__hovered -->
+      </div>
+
+      <div class="features-card">
+        <h2 class="features-card__heading">Дипломированные специалисты</h2>
+        <!-- /.features-card__heading -->
+        <div class="features-card__hovered">
+          <div class="features-card__wrap">
+            <span>Все врачи клиники имеют высокую квалификацию, необходимые дипломы и сертификаты. Мы ценим и гордимся нашими врачами.</span> 
+            <a href="#" class="features-card__link" download="">Специалисты</a>
+            <!-- /.features__link -->
+          </div>
+        </div>
+        <!-- /.features-card__hovered -->
+      </div>
+      <!-- /.features-card -->
+
+    </div>
+    <!-- /.features -->
+
+  </div>
+  <!-- ./ container -->
+</section>
+
+            <section id="goto-about" class="about">
+  <div class="container">
+    <h2 class="section-title about__title">О клинике</h2>
+    <h1 class="main-title">Novo Clinic</h1>
+    <h2 class="main-title about__title"> Свежие решения. Новые тенденции. Современные технологии.</h2>
+    <div class="about-content">
+      <div class="about-content__left">
+        <img class="about-content__img" width="362" height="442" src="./img/about-5.jpg" alt="Novo Clinic. Новые тенденции">
+      </div>
+      <div class="about-content__center">
+        <p>
+          Красота и здоровье - неотъемлемые атрибуты успешного и уверенного в себе человека. Быть неотразимым в условиях современного ритма жизни становится все сложнее, а требования к себе все выше. Понимая, насколько важно для Вас выглядеть и чувствовать себя уверенно, не потеряв при этом время и средства, мы открыли нашу клинику.
+        </p>
+        <p>В Novo Clinic для Вас доступны аппаратная и инъекционная косметология. Все процедуры осуществляются с использованием современного лицензированного оборудования и сертифицированных препаратов.</p>
+        <p>Novo Clinic всегда использует самые современные технологии. У нас Вы сможете найти настоящих профессионалов своего дела, получивших высшее образование в лучших ВУЗах страны. Наши специалисты – это прогрессивно мыслящие, открытые новому и современные люди. Благодаря этому, мы не боимся называть себя клиникой нового поколения.</p>
+        <p>
+          Мы дорожим нашими пациентами и поэтому хотим сделать все процедуры доступнее. Специальные цены и акции гарантированно обрадуют Вас, а удобное расположение недалеко от метро позволит сэкономить драгоценное время.</p>
+        <p>Ждем Вас!</p>
+
+      </div>
+      <div class="about-content__right">
+        <img class="about-content__img" width="360" height="293" src="./img/about-6.jpg" alt="Novo Clinic. Свежие решения.">
+      </div>
+    </div>
+    <!-- /.about__content -->
+  </div>
+</section>
+            <section >
+  <div class="container">
+    <div class="about-slider js-horizontal-slider">
+      <div class="about-slider__item">
+        <img src="./img/about-1.jpg" alt="about-1" width="690" height="690">
+      </div>
+      <!-- /.about-slider__item -->
+      <div class="about-slider__item">
+        <img src="./img/about-2.jpg" alt="about-2" width="690" height="690">
+      </div>
+      <!-- /.about-slider__item -->
+      <div class="about-slider__item">
+        <img src="./img/about-3.jpg" alt="about-3" width="690" height="690">
+      </div>
+      <!-- /.about-slider__item -->
+      <div class="about-slider__item">
+        <img src="./img/about-4.jpg" alt="about-4" width="690" height="690">
+      </div>
+      <!-- /.about-slider__item -->
+    </div>
+    <!-- /.about-slider -->
+  </div>
+</section>
+            <div class="tabs-section flex-column">
+  <h2 class="tabs-section__title section-subtitle section-subtitle--light">УСЛУГИ</h2>
+  <!-- /.tabs-section__title section-subtitle section-subtitle--light -->
+
+  <div id="goto-service" class="container flex-column">
+    <div class="tabs js-tabs flex-column">
+      <div class="tabs-nav js-tabs-nav tabs-section__tabs-nav">
+        <button type="button" data-target-tab="0"
+          class="js-tab-btn tabs-nav__btn tabs-nav-btn tabs-nav-btn--active">АППАРАТНАЯ КОСМЕТОЛОГИЯ</button>
+        <button type="button" data-target-tab="1"
+          class="js-tab-btn tabs-nav__btn tabs-nav-btn">ИНЪЕКЦИОННАЯ КОСМЕТОЛОГИЯ</button>
+        <button type="button" data-target-tab="2"
+          class="js-tab-btn tabs-nav__btn tabs-nav-btn">ЛАЗЕРНАЯ ЭПИЛЯЦИЯ</button>
+          <button type="button" data-target-tab="3"
+            class="js-tab-btn tabs-nav__btn tabs-nav-btn">УХОДОВЫЕ ПРОЦЕДУРЫ</button>
+        <button type="button" data-target-tab="4"
+        class="js-tab-btn tabs-nav__btn tabs-nav-btn">УДАЛЕНИЕ НОВООБРАЗОВАНИЙ
+        </button>
+      </div>
+      <!-- /.tabs-nav -->
+
+      <!-- АППАРАТНАЯ КОСМЕТОЛОГИЯ -->
+      <div class="tabs-content js-tabs-content flex-column" >
+
+  <div class="tabs-content-nav js-tabs-content-nav tabs-section__content-nav">
+    <button type="button" data-target-tab="0"
+      class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn tabs-content-btn--active">VBEAM</button>
+    <button type="button" data-target-tab="1"
+      class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn">RF-ЛИФТИНГ</button>
+    <button type="button" data-target-tab="2"
+      class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn">RF-АБЛЯЦИЯ</button>
+  </div>
+  <!-- ./tabs-content-nav -->
+
+  <div class="service js-tabs-content-inner flex-column">
+  <h3 class="service__title">
+    Лазерная система VBEAM
+  </h3>
+  <!-- /.tabs-content-inner --> 
+
+  <div class="service__row">
+    <div class="service__picture service__picture--vertical">
+      <img src="./img/services/s-vbeam-v.jpg" width="310" height="440" alt="Лазерная система VBEAM">
+    </div>
+    <div class="service__content">
+      <p class="service__text">
+        Это импульсный лазер на красителе, используемый для лечения сосудистых патологий кожи. Лазерный луч действует избирательно на оксигемоглобин, который придает красный цвет крови в сосудах. Окружающая кожа и другие ткани не страдают, а сосуды склерозируются.
+      </p>
+      <p class="service__text">Показания:</p>
+
+      <ul class="service__list service-list ">
+        <li class="service-list__item">Расширенные сосуды</li>
+        <li class="service-list__item">Ангиомы, гемангиомы</li>
+        <li class="service-list__item">Винные пятна-для них VBeam лазер выбора, единственный лазер, который удаляет их без рубцов</li>
+        <li class="service-list__item">Розацеа</li>
+        <li class="service-list__item">Акне/ Постакне</li>
+        <li class="service-list__item">Бородавки</li>
+        <li class="service-list__item">Гематомы</li>
+      </ul>
+    
+      <p class="service__text">
+        Как правило, необходим курс процедур, но уже после первой пациент отмечает видимый результат. Посветление обработанного участка кожи, уменьшение количества видимых сосудов. Анестезия перед процедурой не требуется и не проводится. Охлаждение кожи, которое происходит процессе процедуры, делает ее максимально комфортной.
+      </p>
+      <p class="service__text">
+        Так же применяется Beam Perfecta для омоложения. Процедура стимулирует выработку коллагена, выравнивает цвет кожи, устраняет мелкие сосуды. Буквально после первой процедуры пациенты отмечают заметное улучшение качества кожи и лифтинг-эффект.
+      </p>
+
+      <div class="service__actions service-actions">
+        <a href="#goto-price" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+        <a href="#" class="service-actions__link service-actions__link--primary">ОНЛАЙН ЗАПИСЬ</a>
+        <!-- /.service-btns -->
+      </div>
+      <!-- /.service__actions -->
+    </div>
+    <div class="service__picture service__picture--horizontal">
+      <img src="./img/services/s-vbeam-h.jpg" width="320" height="260"  alt="Лазерная система VBEAM">
+    </div>
+  </div>
+</div><!-- Лазерная система VBEAM -->
+  
+  <div class="service js-tabs-content-inner flex-column">
+    <h3 class="service__title">
+      RF-лифтинг
+    </h3>
+    <!-- /.tabs-content-inner --> 
+  
+    <div class="service__row">
+      <div class="service__picture service__picture--vertical">
+        <img src="./img/services/s-rf-v.jpg" width="310" height="440" alt="Лазерная система VBEAM">
+      </div>
+      <div class="service__content">
+        <p class="service__text">
+          RF-лифтинг (термолифтинг) на аппарате Venus Viva. Venus Viva- это аппарат нового типа, предназначеный для омоложения лица и тела. Главный плюс - отсутствие хирургического вмешательства и безболезненность процедуры.
+        </p>
+        
+        <p class="service__text">
+Термолифтинг направлен на стимуляцию выработки коллагена и уплотнение имеющегося, в том числе уменьшение объемов жировых пакетов.
+        </p>
+        <p class="service__text">
+КАК ЭТО РАБОТАЕТ?</br>
+Во время процедуры происходит контролируемый прогрев структур кожи и подкожно-жировой клетчатки в зоне воздействия. Системного влияния на организм не происходит. Продолжительность процедуры: до 40 мин ( в зависимости от зоны).
+</p>
+<p class="service__text">
+РЕЗУЛЬТАТ: уплотнение кожи лица и тела; формирование четкого овала лица; уменьшение «второго подбородка», уменьшение отечности и пастозности лица и области вокруг глаз; подтяжка кожи живота, внутренней поверхности плеча и бедер, уменьшение проявления целлюлита.</p>
+
+  
+        <div class="service__actions service-actions">
+          <a href="#goto-price" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#" class="service-actions__link service-actions__link--primary">ОНЛАЙН ЗАПИСЬ</a>
+          <!-- /.service-btns -->
+        </div>
+        <!-- /.service__actions -->
+      </div>
+      <div class="service__picture service__picture--horizontal">
+        <img src="./img/services/s-rf-h.jpg" width="320" height="260"  alt="Лазерная система VBEAM">
+      </div>
+    </div>
+  </div><!-- RF-ЛИФТИНГ -->
+  
+  <div class="service js-tabs-content-inner flex-column">
+    <h3 class="service__title">
+      RF-абляция 
+    </h3>
+    <!-- /.tabs-content-inner --> 
+  
+    <div class="service__row">
+      <div class="service__picture service__picture--vertical">
+        
+      </div>
+      <div class="service__content">
+        <p class="service__text">
+          Процедура деликатной «шлифовки». Более быстрая и мягкая pеабилитация по сравнению с лазерной шлифовкой. Показания:
+        </p>
+  
+        <ul class="service__list service-list ">
+          <li class="service-list__item"> Опущение нижнего и верхнего века</li>
+          <li class="service-list__item">Кисетные морщины и морщинки возле рта</li>
+          <li class="service-list__item">Рубцы, постакне, стрии/ растяжки</li>
+          <li class="service-list__item">Расширенные поры</li>
+          <li class="service-list__item">Потеря упругости, эластичности кожи</li>
+          <li class="service-list__item">Неравномерный цвет лица</li>
+          <li class="service-list__item"> Пигментация</li>
+        </ul>
+      
+        <p class="service__text">
+          В результате процедуры выпариваются крохотные столбики кожи в месте контакта игольчатых электродов (абляция). А также осуществляется прогрев тканей вокруг этих столбиков (коагуляция), что дополнительно стимулирует кожу. Курс: 2-5 процедур 1 раз в месяц. Продолжительность процедуры: 60 мин. 
+        </p>
+
+  
+        <div class="service__actions service-actions">
+          <a href="#goto-price" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#" class="service-actions__link service-actions__link--primary">ОНЛАЙН ЗАПИСЬ</a>
+          <!-- /.service-btns -->
+        </div>
+        <!-- /.service__actions -->
+      </div>
+      <div class="service__picture service__picture--horizontal">
+        <img src="./img/services/s-rfa-h.jpg" width="320" height="260"  alt="Лазерная система VBEAM">
+      </div>
+    </div>
+  </div><!-- RF-АБЛЯЦИЯ -->
+
+</div>
+<!-- /.tabs-content -->
+
+      <!-- ИНЪЕКЦИОННАЯ КОСМЕТОЛОГИЯ -->
+      <div class="tabs-content js-tabs-content flex-column" >
+
+  <div class="tabs-content-nav js-tabs-content-nav tabs-section__content-nav">
+    <button 
+      type="button" 
+      data-target-tab="0"
+      class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn tabs-content-btn--active">
+      БИОРЕВИТАЛИЗАЦИЯ
+    </button>
+    <button 
+      type="button" 
+      data-target-tab="1"
+      class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn">
+      БОТУЛИНОТЕРАПИЯ
+    </button>
+    <button 
+      type="button" 
+      data-target-tab="2"
+      class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn">
+      МЕЗОТЕРАПИЯ
+    </button>
+    <button 
+      type="button" 
+      data-target-tab="3"
+      class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn">
+      АУТОПЛАЗМОТЕРАПИЯ
+    </button>
+
+  </div>
+  <!-- ./tabs-content-nav -->
+  
+  <div class="service js-tabs-content-inner flex-column">
+    <h3 class="service__title">
+      БИОРЕВИТАЛИЗАЦИЯ
+    </h3>
+    <!-- /.tabs-content-inner --> 
+  
+    <div class="service__row">
+      <div class="service__picture service__picture--vertical"> </div>
+      <div class="service__content">
+        <p class="service__text">
+          Биоревитализация – это метод внутрикожных инъекций немодифицированной гиалуроновой кислоты, позволяющий достигнуть восстановления физиологической среды и нормализации обменных процессов в дерме.
+        </p>
+        <p class="service__text">Биоревитализант – гель, применяющийся для инъекционных процедур омоложения кожи и устранения эстетических дефектов. В его состав входит  гиалуроновая кислота с различным процентным содержанием.Биоревитализация позволяет достичь следующих эффектов:</p>
+  
+        <ul class="service__list service-list ">
+          <li class="service-list__item">Профилактика раннего увядания и предотвращения дряблости кожи</li>
+          <li class="service-list__item">Коррекция морщин</li>
+          <li class="service-list__item">Дополнительная гидратация дермы</li>
+          <li class="service-list__item">Уменьшение выраженности рубцов и шрамов постакне </li>
+        </ul>
+      
+        <p class="service__text">
+          Выбор препарата основывается на индивидуальных особенностях: возраст, степень выраженности возрастных изменений, сочетание с другими методами и препаратами коррекции.
+        </p>
+        <p class="service__text">
+          Процедуре предшествует нанесение аппликационной анестезии (препарат «Акриол Про», содержащий лидокаин 2,5г., прилокаин 2,5). Использование местной анестезии позволяет свести к минимуму неприятные ощущения во время процедуры.
+        </p>
+  
+        <div class="service__actions service-actions">
+          <a href="#goto-price" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#" class="service-actions__link service-actions__link--primary">ОНЛАЙН ЗАПИСЬ</a>
+          <!-- /.service-btns -->
+        </div>
+        <!-- /.service__actions -->
+      </div>
+      <div class="service__picture service__picture--horizontal">
+        <img src="./img/services/s-bio-h.jpg" width="320" height="260"  alt="БИОРЕВИТАЛИЗАЦИЯ">
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="service js-tabs-content-inner flex-column">
+    <h3 class="service__title">
+      БОТУЛИНОТЕРАПИЯ
+    </h3>
+    <!-- /.tabs-content-inner --> 
+  
+    <div class="service__row">
+      <div class="service__picture service__picture--vertical">
+        <img src="./img/services/s-botu-v.jpg" width="310" height="440" alt="БОТУЛИНОТЕРАПИЯ">
+      </div>
+      <div class="service__content">
+        <p class="service__text">
+          Ботулинотерапия – процедура, направленная на снижение тонуса мимических мышц с уменьшением их двигательной активности, а также на уменьшение выработки кожного пота под действием ботулинического токсина типа A путем блокирования высвобождения ацетилхолина. Результатом проведения процедуры является: 
+        </p>
+        
+        <ul class="service__list service-list ">
+          <li class="service-list__item">Устранение или уменьшение глубины статических и динамических мимических морщин</li>
+          <li class="service-list__item">Устранение симптомов проявления гипергидроза (повышенной потливости)</li>
+          <li class="service-list__item">Профилактика образования статических мимических морщин</li>
+        </ul>
+      
+        <p class="service__text">
+          Введение препарата осуществляется поэтапно в намеченные участки. Количество препарата, необходимого для процедуры, индивидуально. Эффект от процедуры становится заметен в течение 2 недель и является временным. Повторная процедура рекомендована не ранее, чем через 4-6 месяцев.
+        </p>
+  
+        <div class="service__actions service-actions">
+          <a href="#goto-price" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#" class="service-actions__link service-actions__link--primary">ОНЛАЙН ЗАПИСЬ</a>
+          <!-- /.service-btns -->
+        </div>
+        <!-- /.service__actions -->
+      </div>
+      <div class="service__picture service__picture--horizontal">
+        <img src="./img/services/s-botu-h.jpg" width="320" height="260"  alt="БОТУЛИНОТЕРАПИЯs">
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="service js-tabs-content-inner flex-column">
+    <h3 class="service__title">
+      Мезотерапия
+    </h3>
+    <!-- /.tabs-content-inner --> 
+  
+    <div class="service__row">
+      <div class="service__picture service__picture--vertical">
+        <img src="./img/services/s-mezo-v.jpg" width="310" height="440" alt="Мезотерапия">
+      </div>
+      <div class="service__content">
+        <p class="service__text">
+          Мезотерапия – это метод внутрикожных инъекций активных ингредиентов препарата, позволяющий достигнуть восстановления физиологической среды и нормализации обменных процессов в дерме. В состав препарата для мезотерапии могут входить различные ингредиенты, в зависимости от назначения препарат, витамины, микроэлементы, гиалуроновая кислота, пептиды и антиоксиданты. Мезотерапия позволяет достичь следующих эффектов: 
+        </p>
+        
+        <ul class="service__list service-list ">
+          <li class="service-list__item">
+            Профилактика раннего увядания и предотвращения дряблости кожи
+          </li>
+          <li class="service-list__item">
+            Коррекция морщин
+          </li>
+          <li class="service-list__item">
+            Дополнительная гидратация дермы
+          </li>
+          <li class="service-list__item">
+            Уменьшение выраженности рубцов и шрамов постакне
+          </li>
+          
+        </ul>
+      
+        <p class="service__text">
+          Выбор препарата исходит из индивидуальных факторов: возраст, степень выраженности возрастных изменений, сочетание с другими методами и препаратами коррекции.
+        </p>
+        <p class="service__text">
+          Процедуре предшествует нанесение аппликационной анестезии (препарат «Акриол Про», содержащий лидокаин 2,5г., прилокаин 2,5). Использование местной анестезии позволяет свести к минимуму неприятные ощущения во время процедуры.сочетание с другими методами и препаратами коррекции.
+        </p>
+  
+        <div class="service__actions service-actions">
+          <a href="#goto-price" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#" class="service-actions__link service-actions__link--primary">ОНЛАЙН ЗАПИСЬ</a>
+          <!-- /.service-btns -->
+        </div>
+        <!-- /.service__actions -->
+      </div>
+      <div class="service__picture service__picture--horizontal">
+        <!-- <img src="./img/services/s-botu-h.jpg" width="320" height="260"  alt="БОТУЛИНОТЕРАПИЯs"> -->
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="service js-tabs-content-inner flex-column">
+    <h3 class="service__title">
+      Аутоплазмотерапия
+    </h3>
+    <!-- /.tabs-content-inner --> 
+  
+    <div class="service__row">
+      <div class="service__picture service__picture--vertical">
+        <img src="./img/services/s-auto-v.jpg" width="310" height="440" alt="Аутоплазмотерапия">
+      </div>
+      <div class="service__content">
+        <p class="service__text">
+          АУТОПЛАЗМОТЕРАПИЯ занимает лидирующие позиции среди инъекционных методик омоложения.  ️Плазма богата тромбоцитами, аминокислотами, витаминами, глюкозой, жирами, гормонами и ферментами. Показания:
+        </p>
+        
+        <ul class="service__list service-list ">
+          
+          
+          <li class="service-list__item">
+            Профилактика или коррекция возрастных изменений кожи 
+          </li>
+          <li class="service-list__item">
+            Мелкие мимические морщины 
+          </li>
+          <li class="service-list__item">
+            Акне и постакне 
+          </li>
+          <li class="service-list__item">
+            Нарушение пигментации 
+          </li>
+          <li class="service-list__item">
+            Аллопеция (облысение/выпадения волос)
+          </li>
+          <li class="service-list__item">
+            Сухость и шелушение кожи
+          </li>
+          
+        </ul>
+        
+        <p class="service__text">
+          ВАутоплазмотерапия представляет из себя курс от 4-х процедур. Периодичность - раз в 1 неделю. Преимущества:
+        </p>
+        
+        <ul class="service__list service-list ">
+          <li class="service-list__item">
+            Безопасность и гипоаллергенность
+          </li>
+          <li class="service-list__item">
+            Для инъекций используется плазма собственной крови пациента, которую прекрасно воспринимает организм
+          </li>
+          <li class="service-list__item">
+            ️Натуральность. Для лечения не применяются синтетические препараты
+          </li>
+          <li class="service-list__item">
+            Эффективность — многолетняя клиническая практика и десятки научных статей подтверждают действенность технологии
+          </li>
+          <li class="service-list__item">
+            Комфортность процедуры - Инъекции «родной» плазмы сопровождаются минимальными ощущениями.
+          </li>
+        </ul>
+  
+        <div class="service__actions service-actions">
+          <a href="#goto-price" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#" class="service-actions__link service-actions__link--primary">ОНЛАЙН ЗАПИСЬ</a>
+          <!-- /.service-btns -->
+        </div>
+        <!-- /.service__actions -->
+      </div>
+      <div class="service__picture service__picture--horizontal">
+        <img src="./img/services/s-auto-h.jpg" width="320" height="260"  alt="Аутоплазмотерапия">
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<!-- /.tabs-content -->
+
+      <!-- ЛАЗЕРНАЯ ЭПИЛЯЦИЯ -->
+      <div class="tabs-content js-tabs-content flex-column" >
+  <div class="tabs-content-nav js-tabs-content-nav tabs-section__content-nav">
+    <button 
+      type="button" 
+      data-target-tab="0"
+      class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn tabs-content-btn--active">
+      АЛЕКСАНДРИТОВЫЙ ЛАЗЕР CYNOSURE APOGEE +
+    </button>
+    <button 
+      type="button" 
+      data-target-tab="1"
+      class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn">
+      ДИОДНЫЙ ЛАЗЕР MAGIC ONE
+    </button>
+    <button 
+      type="button" 
+      data-target-tab="2"
+      class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn">
+      АЛЕКСАНДРИТОВЫЙ ЛАЗЕР CANDELA GENTLELASE PRO
+    </button>
+  </div>
+  <!-- ./tabs-content-nav -->
+
+  
+
+  <div class="service js-tabs-content-inner flex-column">
+    <h3 class="service__title">
+      АЛЕКСАНДРИТОВЫЙ ЛАЗЕР CYNOSURE APOGEE +
+    </h3>
+    <!-- /.tabs-content-inner --> 
+  
+  <div class="service__row">
+    <div class="service__picture service__picture--vertical">
+      <img src="./img/services/s-apogee-v.jpg" width="310" height="440" alt="АЛЕКСАНДРИТОВЫЙ ЛАЗЕР CYNOSURE APOGEE +">
+    </div>
+    <div class="service__content">
+      <p class="service__text">
+        "Золотой стандарт" лазерной эпиляции. Является уникальным лазером, сочетая в себе самые современные технологические решения, широкие возможности и исключительную надежность.
+        Система ультракороткого импульса (0,5 мсек.) позволяет удалять волосы с минимальным количеством пигмента.
+      </p>
+      <p class="service__text">
+        Тотальная эпиляция волос любого цвета, любой структуры, на фототипах кожи от I до III по шкале Фитцпатрика. С осторожностью следует проводить эпиляцию для пациентов с фототипом кожи IV.
+      </p>
+      <p class="service__text">
+        Плюсы удаления волос на александритовом лазере:
+      </p>
+      
+      <ul class="service__list service-list ">
+        <li class="service-list__item">
+          Минимальный риск и дискомфорт
+        </li>
+        <li class="service-list__item">
+          Эффект сохраняется надолго (требуемое количество поддерживающих процедур около 1-2 в год)
+        </li>
+        <li class="service-list__item">
+          Действует лучше всего на светлой коже и темных волосах
+        </li>
+        <li class="service-list__item">
+          Замедление роста волос, оставшихся после первых процедур
+        </li>
+        
+      </ul>
+      
+      <div class="service__actions service-actions">
+        <a href="#goto-price" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+        <a href="#" class="service-actions__link service-actions__link--primary">ОНЛАЙН ЗАПИСЬ</a>
+        <!-- /.service-btns -->
+      </div>
+      <!-- /.service__actions -->
+    </div>
+    <div class="service__picture service__picture--horizontal">
+      <img src="./img/services/s-apogee-h.jpg" width="320" height="260"  alt="      АЛЕКСАНДРИТОВЫЙ ЛАЗЕР CYNOSURE APOGEE +">
+    </div>
+  </div>
+</div>
+  
+
+  <div class="service js-tabs-content-inner flex-column">
+    <h3 class="service__title">
+      Диодный лазер MAGIC ONE
+    </h3>
+    <!-- /.tabs-content-inner --> 
+  
+  <div class="service__row">
+    <div class="service__picture service__picture--vertical">
+      <img src="./img/services/s-magic-v.jpg" width="310" height="440" alt="АЛЕКСАНДРИТОВЫЙ ЛАЗЕР CYNOSURE APOGEE +">
+    </div>
+    <div class="service__content">
+      <p class="service__text">
+        Диодный лазер Magic One — это медицинская разработка, зарекомендовавшая себя в косметологии и получившая положительные отзывы многих специалистов. Вся технология заключается в воздействии механизма, производящего луч с волновой длиной 808 нм непосредственно на волосяную фолликулу.
+      </p>
+      <p class="service__text">
+        Может применяться на более смуглой или загорелой коже, работает на 1-5 фототипах кожи.
+        Лазер отлично зарекомендовал себя в удалении волос на загорелой коже: им можно пользоваться в летние месяцы, наши клиенты могут не беспокоиться о нежелательных последствиях.
+        Лазерная эпиляция с помощью отечественного аппарата Magic ONE основана на влиянии на меланин, содержащийся непосредственно в волосяной луковице.
+      </p>
+      <p class="service__text">
+        Плюсы удаления волос на диодном лазере:
+      </p>
+      
+      <ul class="service__list service-list ">
+        
+        <li class="service-list__item">
+          Безопасность, поскольку лазерный луч воздействует на волосяную луковицу, не задевая при этом кожные покровы
+        </li>
+        <li class="service-list__item">
+          Безболезненно (во время процедуры может ощущаться легкое покалывание)
+        </li>
+        <li class="service-list__item">
+          Во время процедуры не образовываются шрамы и рубцы
+        </li>
+        <li class="service-list__item">
+          Удаление не занимает много времени
+        </li>
+        <li class="service-list__item">
+          Можно обрабатывать смуглую кожу
+        </li>
+        
+      </ul>
+      
+      <div class="service__actions service-actions">
+        <a href="#goto-price" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+        <a href="#" class="service-actions__link service-actions__link--primary">ОНЛАЙН ЗАПИСЬ</a>
+        <!-- /.service-btns -->
+      </div>
+      <!-- /.service__actions -->
+    </div>
+    <div class="service__picture service__picture--horizontal">
+      <img src="./img/services/s-magic-h.jpg" width="320" height="260"  alt="      АЛЕКСАНДРИТОВЫЙ ЛАЗЕР CYNOSURE APOGEE +">
+    </div>
+  </div>
+</div>
+
+
+
+<div class="service js-tabs-content-inner flex-column">
+  <h3 class="service__title">
+    Александритовый лазер CANDELA GENTLELASE PRO
+  </h3>
+  <!-- /.tabs-content-inner --> 
+  
+
+<div class="service__row">
+  <div class="service__picture service__picture--vertical">
+    <img src="./img/services/s-pro-v.jpg" width="310" height="440" alt="Александритовый лазер CANDELA GENTLELASE PRO">
+  </div>
+  <div class="service__content">
+
+    <p class="service__text">
+      Диодный лазер Magic One — это медицинская разработка, зарекомендовавшая себя в косметологии и получившая положительные отзывы многих специалистов. Вся технология заключается в воздействии механизма, производящего луч с волновой длиной 808 нм непосредственно на волосяную фолликулу.
+    </p>
+    <p class="service__text">
+      20 лет в лазерной эпиляции. Именно столько времени прошло с момента получения лазером GentleLase разрешения FDA на проведение перманентной лазерной эпиляции, что сделало его Первым в мире длинноимпульсным александритовым лазером с системой охлаждения кожи, официально разрешенным для проведения процедур по удалению волос.
+    </p>
+    <p class="service__text">
+      Плюсы удаления волос на александритовом лазере:
+    </p>
+
+    <ul class="service__list service-list ">
+      
+      <li class="service-list__item">
+        Короткая длительность процедуры
+      </li>
+      <li class="service-list__item">
+        Высокая эффективность, быстрый результат
+      </li>
+      <li class="service-list__item">
+        Минимальный риск и дискомфорт
+      </li>
+      <li class="service-list__item">
+        Эффект сохраняется надолго (требуемое количество поддерживающих процедур около 1-2 в год)
+      </li>
+      
+    </ul>
+    
+    <div class="service__actions service-actions">
+      <a href="#goto-price" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+      <a href="#" class="service-actions__link service-actions__link--primary">ОНЛАЙН ЗАПИСЬ</a>
+      <!-- /.service-btns -->
+    </div>
+    <!-- /.service__actions -->
+  </div>
+  <div class="service__picture service__picture--horizontal">
+    <img src="./img/services/s-pro-h.jpg" width="320" height="260"  alt="Александритовый лазер CANDELA GENTLELASE PRO">
+  </div>
+</div>
+</div>
+
+</div>
+<!-- /.tabs-content -->
+
+            <!-- УХОДОВЫЕ ПРОЦЕДУРЫ -->
+     <div class="tabs-content js-tabs-content" >
+        <div class="service js-tabs-content-inner flex-column">
+          <h3 class="service__title">
+            УХОДОВЫЕ ПРОЦЕДУРЫ
+          </h3>
+        </div>
+      </div> -->
+      <!-- /.tabs-content -->
+
+      <!-- УДАЛЕНИЕ НОВООБРАЗОВАНИЙ -->
+      
+<div class="tabs-content js-tabs-content flex-column" ><
+  <div class="service js-tabs-content-inner flex-column">
+    <h3 class="service__title">
+      Александритовый лазер CYNOSURE APOGEE +
+    </h3>
+    <!-- /.tabs-content-inner --> 
+  
+  <div class="service__row">
+    <div class="service__picture service__picture--vertical">
+      <img src="./img/services/s-remove-v.jpg" width="310" height="440" alt="АЛЕКСАНДРИТОВЫЙ ЛАЗЕР CYNOSURE APOGEE +">
+    </div>
+    <div class="service__content">
+      <p class="service__text">
+        В косметологической клинике удаление новообразований является одной из самых востребованных процедур. Что же можно удалить в кабинете косметолога? Исключительно доброкачественные новообразования, например: папилломы, кератомы, фибромы, невусы/родинки.
+      </p>
+      <p class="service__text">
+        Это больно? Нет, процедура проходит максимально комфортно для пациента. Перед удалением проводится анестезия.
+      </p>
+      <p class="service__text">
+        Какой метод мы используем? В нашей клинике мы удаляем новообразования методом электрокоагуляции. Это объясняет основное противопоказание - наличие у пациента кардиостимулятора.
+      </p>
+      <p class="service__text">
+        Есть ли ограничения после процедуры?
+      </p>
+      
+      <ul class="service__list service-list ">
+        
+        <li class="service-list__item">
+          Да, после удаления следует избегать контакта ранки с водой
+        </li>
+        <li class="service-list__item">
+          Исключить приём ванны, посещение сауны и бассейна до заживления
+        </li>
+        <li class="service-list__item">
+          Использовать фотозащиту spf50+ в течение 1,5 месяцев после удаления
+        </li>
+        <li class="service-list__item">
+          Также нужно будет несколько раз в день обрабатывать кожу по рекомендациям врача 
+        </li>
+        
+      </ul>
+      
+      <div class="service__actions service-actions">
+        <a href="#goto-price" class="service-actions__link">УЗНАТЬ СТОИМОСТЬ</a>
+        <a href="#" class="service-actions__link service-actions__link--primary">ОНЛАЙН ЗАПИСЬ</a>
+        <!-- /.service-btns -->
+      </div>
+      <!-- /.service__actions -->
+    </div>
+    <div class="service__picture service__picture--horizontal">
+      <!-- <img src="./img/services/s-magic-h.jpg" width="320" height="260"  alt="      АЛЕКСАНДРИТОВЫЙ ЛАЗЕР CYNOSURE APOGEE +"> -->
+    </div>
+  </div>
+</div>
+
+</div>
+      
+
+    </div>
+    <!-- /.tabs -->
+  </div>
+</div>
+            <section class="form">
+  <div class="container">
+    <h2 class="section-title form__title">ВОЗНИКЛИ ВОПРОСЫ?</h2>
+
+    <div class="contact-form">
+      <form>
+        <div class="contact-form__input-group input-group contact-form__group">
+          <input class="contact-form-input input-group__item" type="tel" name="" id="" placeholder="+7(">
+          <input class="contact-form-input input-group__item" type="text" name="" id="" placeholder="Имя">
+        </div>
+        <div class="contact-form__textarea contact-form__group">
+          <textarea class="contact-form-input" name="" id="" rows="5" placeholder="Комментарий"></textarea>
+        </div>
+        <div class="contact-form__action contact-form__group">
+          <input type="submit" class="btn btn-dark" value="ОТПРАВИТЬ"/>
+          <p class="contact-form__text">Вы можете задать любой вопрос нашим специалистам, и мы обязательно на него ответим</p>
+        </div>  
+      </form>
+    </div>
+    <!-- /.contact-form -->
+  </div>
+</section>
+            <div id="goto-price" class="tabs-section price" >
+  
+
+  <div class="container">
+    <div class="price__row tabs js-tabs price__da-target-btn" >
+
+      <div class="price__nav">
+        <div class="tabs-nav tabs-nav--vertical js-tabs-nav price__tabs-nav">
+          <button type="button" data-target-tab="0"
+            class="js-tab-btn tabs-nav__btn tabs-nav-btn tabs-nav-btn--active">АППАРАТНАЯ КОСМЕТОЛОГИЯ</button>
+          <button type="button" data-target-tab="1"
+            class="js-tab-btn tabs-nav__btn tabs-nav-btn">ИНЪЕКЦИОННАЯ КОСМЕТОЛОГИЯ</button>
+          <button type="button" data-target-tab="2"
+            class="js-tab-btn tabs-nav__btn tabs-nav-btn">ЛАЗЕРНАЯ ЭПИЛЯЦИЯ</button>
+            <button type="button" data-target-tab="3"
+              class="js-tab-btn tabs-nav__btn tabs-nav-btn">УХОДОВЫЕ ПРОЦЕДУРЫ</button>
+          <button type="button" data-target-tab="4"
+          class="js-tab-btn tabs-nav__btn tabs-nav-btn">УДАЛЕНИЕ НОВООБРАЗОВАНИЙ
+          </button>
+        </div>
+
+        <button data-da="price__da-target-btn,last,768" type="button" class="btn btn-primary">ОНЛАЙН ЗАПИСЬ</button>
+      </div>
+
+      <section class="price__content  tabs-content js-tabs-content ">
+        <h2 class="tabs-section__title section-subtitle section-subtitle--light">ПРАЙС</h2>
+        <!-- /.tabs-section__title section-subtitle section-subtitle--light -->
+        <div class="price-tables">
+          <div class="price-tables__item">
+            <h3 
+              class="
+                price-tables__heading
+                price-tables__heading--b-radius-tl">
+              VBEAM
+            </h3>
+
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th>ПРОЦЕДУРА</th>
+                  <th>ЦЕНА (руб.)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Вспышка 1-5 (цена за одну вспушку)</th>
+                  <td>325</td>
+                </tr>
+                <tr>
+                  <th>Вспышка 6-15 (цена за одну вспышку)</th>
+                  <td>275</td>
+                </tr>
+                <tr>
+                  <th>Вспышка 16-30 (цена за одну вспышку)</th>
+                  <td>225</td>
+                </tr>
+                <tr>
+                  <th>Нос</th>
+                  <td>3750</td>
+                </tr>
+                <tr>
+                  <th>Щеки</th>
+                  <td>7500</td>
+                </tr>
+                <tr>
+                  <th>Подбородок</th>
+                  <td>3750</td>
+                </tr>
+                <tr>
+                  <th>Лицо полностью</th>
+                  <td>16125</td>
+                </tr>
+                <tr>
+                  <th>Декольте</th>
+                  <td>10750</td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+          <div class="price-tables__item">
+            <h3 class="price-tables__heading">АБЛЯЦИЯ</h3>
+
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th>ПРОЦЕДУРА</th>
+                  <th>ЦЕНА (руб.)</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <th>Область вокруг глаз	</th>
+                  <td>6250
+                  </td>
+                </tr>
+                <tr>
+                  <th>Щеки</th>
+                  <td>6250</td>
+                </tr>
+                <tr>
+                  <th>Лицо полностью</th>
+                  <td>13625</td>
+                </tr>
+                <tr>
+                  <th>Шея</th>
+                  <td>6250</td>
+                </tr>
+                <tr>
+                  <th>Декольте</th>
+                  <td>8125</td>
+                </tr>
+                <tr>
+                  <th>Грудь</th>
+                  <td>7500</td>
+                </tr>
+                <tr>
+                  <th>Ягодицы</th>
+                  <td>12375</td>
+                </tr>
+                <tr>
+                  <th>Бока</th>
+                  <td>6875</td>
+                </tr>
+                <tr>
+                  <th>Живот</th>
+                  <td>12375</td>
+                </tr>
+                
+              </tbody>
+            </table>
+
+          </div>
+          <div class="price-tables__item">
+            <h3 class="price-tables__heading price-tables__heading--b-radius-tr">RF-ЛИФТИНГ</h3>
+
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th>ПРОЦЕДУРА</th>
+                  <th>ЦЕНА (руб.)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Лицо полностью</th>
+                  <td>3125</td>
+                </tr>
+                <tr>
+                  <th>Шея</th>
+                  <td>2375</td>
+                </tr>
+                <tr>
+                  <th>Декольте</th>
+                  <td>2750</td>
+                </tr>
+                <tr>
+                  <th>Грудь</th>
+                  <td>2750</td>
+                </tr>
+                <tr>
+                  <th>Внутренняя поверхность бедер</th>
+                  <td>2750</td>
+                </tr>
+                <tr>
+                  <th>Ягодицы</th>
+                  <td>3000</td>
+                </tr>
+                <tr>
+                  <th>Бока</th>
+                  <td>3000</td>
+                </tr>
+                <tr>
+                  <th>Живот</th>
+                  <td>3000</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+        <!-- /.price-tables -->
+
+
+      </section>
+      <section class="price__content tabs-content js-tabs-content" >
+        <h2 class="tabs-section__title section-subtitle section-subtitle--light">ПРАЙС</h2>
+  <!-- /.tabs-section__title section-subtitle section-subtitle--light -->
+        <div class="price-tables">
+
+          <div class="price-tables__item">
+            <h3 class="price-tables__heading price-tables__heading--b-radius-tl">БИОРЕВИТАЛИЗАЦИЯ</h3>
+
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th colspan="2">ПРОЦЕДУРА</th>
+                  <th>ЦЕНА (руб.)</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td>Область вокруг глаз	</td>
+                  <td>3 ml </td>
+                  <td>6250 </td>
+                </tr>
+                <tr>
+                  <td>Щеки</td>
+                  <td>1,5 ml</td>
+                  <td>6250</td>
+                </tr>
+                <tr>
+                  <td>Лицо полностью</td>
+                  <td>3 ml</td>
+                  <td>13625</td>
+                </tr>
+                <tr>
+                  <td>Шея</td>
+                  <td>1 ml</td>
+                  <td>6250</td>
+                </tr>
+                <tr>
+                  <td>Декольте</td>
+                  <td>2 ml</td>
+                  <td>8125</td>
+                </tr>
+                <tr>
+                  <td>Грудь</td>
+                  <td>1 ml</td>
+                  <td>7500</td>
+                </tr>
+                <tr>
+                  <td>Ягодицы</td>
+                  <td>2 ml</td>
+                  <td>12375</td>
+                </tr>
+                <tr>
+                  <td>Грудь</td>
+                  <td>1 ml</td>
+                  <td>7500</td>
+                </tr>
+                <tr>
+                  <td>Ягодицы</td>
+                  <td>2 ml</td>
+                  <td>12375</td>
+                </tr>
+                <tr>
+                  <td>Живот</td>
+                  <td>1,5 ml</td>
+                  <td>12375</td>
+                </tr>
+                <tr>
+                  <td>Живот</td>
+                  <td>1,5 ml</td>
+                  <td>12375</td>
+                </tr>
+                <tr>
+                  <td>Живот</td>
+                  <td>1 ml</td>
+                  <td>12375</td>
+                </tr>
+                <tr>
+                  <td>Живот</td>
+                  <td>1 ml</td>
+                  <td>12375</td>
+                </tr>
+                
+              </tbody>
+            </table>
+
+          </div>
+          <div class="price-tables__item">
+            <h3 class="price-tables__heading price-tables__heading--b-radius-tr">БОТУЛИНОТЕРАПИЯ</h3>
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th colspan="2">ПРОЦЕДУРА</th>
+                  <th>ЦЕНА (руб.)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Лицо полностью</td>
+                  <td>1 ед</td>
+                  <td>3125</td>
+                </tr>
+                <tr>
+                  <td>Шея</td>
+                  <td>1 ед</td>
+                  <td>2375</td>
+                </tr>
+                <tr>
+                  <td>Декольте</td>
+                  <td>1 ед</td>
+                  <td>2750</td>
+                </tr>
+                <tr>
+                  <td>Грудь</td>
+                  <td>1 ед</td>
+                  <td>2750</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 class="price-tables__heading">МЕЗОТЕРАПИЯ</h3>
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th colspan="2">ПРОЦЕДУРА</th>
+                  <th>ЦЕНА (руб.)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Лицо полностью</td>
+                  <td>3 ml</td>
+                  <td>3125</td>
+                </tr>
+                <tr>
+                  <td>Шея</td>
+                  <td>3 ml</td>
+                  <td>2375</td>
+                </tr>
+                <tr>
+                  <td>Декольте</td>
+                  <td>3 ml</td>
+                  <td>2750</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 class="price-tables__heading">МЕЗОТЕРАПИЯ</h3>
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th colspan="2">ПРОЦЕДУРА</th>
+                  <th>ЦЕНА (руб.)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Лицо полностью</td>
+                  <td>1 ед</td>
+                  <td>3125</td>
+                </tr>
+                <tr>
+                  <td>Шея</td>
+                  <td>1 ед</td>
+                  <td>2375</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+        <!-- /.price-tables -->
+      </section>
+      <section class="price__content tabs-content js-tabs-content" >
+
+        <div class="tabs-content-nav js-tabs-content-nav tabs-section__content-nav">
+          <button 
+            type="button" 
+            data-target-tab="0"
+            class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn tabs-content-btn--xl tabs-content-btn--active">
+            ЖЕНСКИЙ ПРАЙС 
+          </button>
+          <button 
+            type="button" 
+            data-target-tab="1"
+            class="js-tabs-content-btn tabs-content-nav__btn tabs-content-btn tabs-content-btn--xl">
+            МУЖСКОЙ ПРАЙС
+          </button>
+        </div>
+
+        <div class="js-tabs-content-inner">
+          <div class="price-tables">
+
+            <div class="price-tables__item">
+              <h3 class="price-tables__heading price-tables__heading--b-radius-tl">АЛЕКСАНДРИТОВЫЙ ЛАЗЕР</h3>
+  
+              <table class="price-table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>ЗОНА ОБРАБОТКИ</th>
+                    <th>БЕЗ КАРТЫ (руб.)</th>
+                    <th>С КАРТОЙ (руб.)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="7">ЛИЦО И ШЕЯ</td>
+                    <td>Лоб</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Верхняя губа</td>
+                    <td>1500</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Подбородок</td>
+                    <td>1500</td>
+                    <td>790</td>
+                  </tr>
+                  <tr>
+                    <td>Щеки</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Бакенбарды</td>
+                    <td>1500</td>
+                    <td>790</td>
+                  </tr>
+                  <tr>
+                    <td>Шея</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Лицо полностью</td>
+                    <td>5000</td>
+                    <td>2490</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="6">РУКИ</td>
+                    <td>Подмышки</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Предплечья</td>
+                    <td>3000</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Плечи</td>
+                    <td>3000</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Надплечье</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Руки полностью</td>
+                    <td>5000</td>
+                    <td>2590</td>
+                  </tr>
+                  <tr>
+                    <td>Пальцы</td>
+                    <td>700</td>
+                    <td>590</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="9">ТУЛОВИЩЕ</td>
+                    <td>Грудь (ареолы)</td>
+                    <td>1200</td>
+                    <td>590</td>
+                  </tr>
+                  <tr>
+                    <td>Декольте</td>
+                    <td>2500</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Живот полностью</td>
+                    <td>3000</td>
+                    <td>1490</td>
+                  </tr>
+                  <tr>
+                    <td>Живот (дорожка)</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Грудь полностью</td>
+                    <td>2900</td>
+                    <td>1490</td>
+                  </tr>
+                  <tr>
+                    <td>Поясница</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Воротниковая</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Верх спины</td>
+                    <td>3200</td>
+                    <td>1890</td>
+                  </tr>
+                  <tr>
+                    <td>Спина полностью	</td>
+                    <td>6000</td>
+                    <td>2990</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="6">ноги</td>
+                    <td>Ягодицы</td>
+                    <td>3500</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Колени</td>
+                    <td>1500</td>
+                    <td>590</td>
+                  </tr>
+                  <tr>
+                    <td>Голени</td>
+                    <td>7000</td>
+                    <td>2990</td>
+                  </tr>
+                  <tr>
+                    <td>Часть бедра</td>
+                    <td>4400</td>
+                    <td>2100</td>
+                  </tr>
+                  <tr>
+                    <td>Бедра</td>
+                    <td>8000</td>
+                    <td>3890</td>
+                  </tr>
+                  <tr>
+                    <td>Ноги полностью</td>
+                    <td>14000</td>
+                    <td>6390</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="5">бикини</td>
+                    <td>Бикини классическое</td>
+                    <td>3500</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Бикини тотальное</td>
+                    <td>5000</td>
+                    <td>1990</td>
+                  </tr>
+                  <tr>
+                    <td>Половые губы</td>
+                    <td>2500</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Прианальная область</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Вспышка</td>
+                    <td>50</td>
+                    <td>50</td>
+                  </tr>
+                </tbody>
+              </table>
+  
+            </div>
+            <div class="price-tables__item">
+              <h3 class="price-tables__heading price-tables__heading--b-radius-tr">ДИОДНЫЙ ЛАЗЕР</h3>
+              
+              <table class="price-table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>ЗОНА ОБРАБОТКИ</th>
+                    <th>БЕЗ КАРТЫ (руб.)</th>
+                    <th>С КАРТОЙ (руб.)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="7">ЛИЦО И ШЕЯ</td>
+                    <td>Лоб</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Верхняя губа</td>
+                    <td>1500</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Подбородок</td>
+                    <td>1500</td>
+                    <td>790</td>
+                  </tr>
+                  <tr>
+                    <td>Щеки</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Бакенбарды</td>
+                    <td>1500</td>
+                    <td>790</td>
+                  </tr>
+                  <tr>
+                    <td>Шея</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Лицо полностью</td>
+                    <td>5000</td>
+                    <td>2490</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="6">РУКИ</td>
+                    <td>Подмышки</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Предплечья</td>
+                    <td>3000</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Плечи</td>
+                    <td>3000</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Надплечье</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Руки полностью</td>
+                    <td>5000</td>
+                    <td>2590</td>
+                  </tr>
+                  <tr>
+                    <td>Пальцы</td>
+                    <td>700</td>
+                    <td>590</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="9">ТУЛОВИЩЕ</td>
+                    <td>Грудь (ареолы)</td>
+                    <td>1200</td>
+                    <td>590</td>
+                  </tr>
+                  <tr>
+                    <td>Декольте</td>
+                    <td>2500</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Живот полностью</td>
+                    <td>3000</td>
+                    <td>1490</td>
+                  </tr>
+                  <tr>
+                    <td>Живот (дорожка)</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Грудь полностью</td>
+                    <td>2900</td>
+                    <td>1490</td>
+                  </tr>
+                  <tr>
+                    <td>Поясница</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Воротниковая</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Верх спины</td>
+                    <td>3200</td>
+                    <td>1890</td>
+                  </tr>
+                  <tr>
+                    <td>Спина полностью	</td>
+                    <td>6000</td>
+                    <td>2990</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="6">ноги</td>
+                    <td>Ягодицы</td>
+                    <td>3500</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Колени</td>
+                    <td>1500</td>
+                    <td>590</td>
+                  </tr>
+                  <tr>
+                    <td>Голени</td>
+                    <td>7000</td>
+                    <td>2990</td>
+                  </tr>
+                  <tr>
+                    <td>Часть бедра</td>
+                    <td>4400</td>
+                    <td>2100</td>
+                  </tr>
+                  <tr>
+                    <td>Бедра</td>
+                    <td>8000</td>
+                    <td>3890</td>
+                  </tr>
+                  <tr>
+                    <td>Ноги полностью</td>
+                    <td>14000</td>
+                    <td>6390</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="5">бикини</td>
+                    <td>Бикини классическое</td>
+                    <td>3500</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Бикини тотальное</td>
+                    <td>5000</td>
+                    <td>1990</td>
+                  </tr>
+                  <tr>
+                    <td>Половые губы</td>
+                    <td>2500</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Прианальная область</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+  
+            </div>
+          </div>
+        </div>
+        
+        <div class="js-tabs-content-inner">
+          <div class="price-tables">
+
+            <div class="price-tables__item">
+              <h3 class="price-tables__heading price-tables__heading--b-radius-tl">АЛЕКСАНДРИТОВЫЙ ЛАЗЕР</h3>
+  
+              <table class="price-table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>ЗОНА ОБРАБОТКИ</th>
+                    <th>БЕЗ КАРТЫ (руб.)</th>
+                    <th>С КАРТОЙ (руб.)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="7">ЛИЦО И ШЕЯ</td>
+                    <td>Лоб</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Верхняя губа</td>
+                    <td>1500</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Подбородок</td>
+                    <td>1500</td>
+                    <td>790</td>
+                  </tr>
+                  <tr>
+                    <td>Щеки</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Бакенбарды</td>
+                    <td>1500</td>
+                    <td>790</td>
+                  </tr>
+                  <tr>
+                    <td>Шея</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Лицо полностью</td>
+                    <td>5000</td>
+                    <td>2490</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="6">РУКИ</td>
+                    <td>Подмышки</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Предплечья</td>
+                    <td>3000</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Плечи</td>
+                    <td>3000</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Надплечье</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Руки полностью</td>
+                    <td>5000</td>
+                    <td>2590</td>
+                  </tr>
+                  <tr>
+                    <td>Пальцы</td>
+                    <td>700</td>
+                    <td>590</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="9">ТУЛОВИЩЕ</td>
+                    <td>Грудь (ареолы)</td>
+                    <td>1200</td>
+                    <td>590</td>
+                  </tr>
+                  <tr>
+                    <td>Декольте</td>
+                    <td>2500</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Живот полностью</td>
+                    <td>3000</td>
+                    <td>1490</td>
+                  </tr>
+                  <tr>
+                    <td>Живот (дорожка)</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Грудь полностью</td>
+                    <td>2900</td>
+                    <td>1490</td>
+                  </tr>
+                  <tr>
+                    <td>Поясница</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Воротниковая</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Верх спины</td>
+                    <td>3200</td>
+                    <td>1890</td>
+                  </tr>
+                  <tr>
+                    <td>Спина полностью	</td>
+                    <td>6000</td>
+                    <td>2990</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="6">ноги</td>
+                    <td>Ягодицы</td>
+                    <td>3500</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Колени</td>
+                    <td>1500</td>
+                    <td>590</td>
+                  </tr>
+                  <tr>
+                    <td>Голени</td>
+                    <td>7000</td>
+                    <td>2990</td>
+                  </tr>
+                  <tr>
+                    <td>Часть бедра</td>
+                    <td>4400</td>
+                    <td>2100</td>
+                  </tr>
+                  <tr>
+                    <td>Бедра</td>
+                    <td>8000</td>
+                    <td>3890</td>
+                  </tr>
+                  <tr>
+                    <td>Ноги полностью</td>
+                    <td>14000</td>
+                    <td>6390</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="5">бикини</td>
+                    <td>Бикини классическое</td>
+                    <td>3500</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Бикини тотальное</td>
+                    <td>5000</td>
+                    <td>1990</td>
+                  </tr>
+                  <tr>
+                    <td>Половые губы</td>
+                    <td>2500</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Прианальная область</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Вспышка</td>
+                    <td>50</td>
+                    <td>50</td>
+                  </tr>
+                </tbody>
+              </table>
+  
+            </div>
+            <div class="price-tables__item">
+              <h3 class="price-tables__heading price-tables__heading--b-radius-tr">ДИОДНЫЙ ЛАЗЕР</h3>
+              
+              <table class="price-table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>ЗОНА ОБРАБОТКИ</th>
+                    <th>БЕЗ КАРТЫ (руб.)</th>
+                    <th>С КАРТОЙ (руб.)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="7">ЛИЦО И ШЕЯ</td>
+                    <td>Лоб</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Верхняя губа</td>
+                    <td>1500</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Подбородок</td>
+                    <td>1500</td>
+                    <td>790</td>
+                  </tr>
+                  <tr>
+                    <td>Щеки</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Бакенбарды</td>
+                    <td>1500</td>
+                    <td>790</td>
+                  </tr>
+                  <tr>
+                    <td>Шея</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Лицо полностью</td>
+                    <td>5000</td>
+                    <td>2490</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="6">РУКИ</td>
+                    <td>Подмышки</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Предплечья</td>
+                    <td>3000</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Плечи</td>
+                    <td>3000</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Надплечье</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Руки полностью</td>
+                    <td>5000</td>
+                    <td>2590</td>
+                  </tr>
+                  <tr>
+                    <td>Пальцы</td>
+                    <td>700</td>
+                    <td>590</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="9">ТУЛОВИЩЕ</td>
+                    <td>Грудь (ареолы)</td>
+                    <td>1200</td>
+                    <td>590</td>
+                  </tr>
+                  <tr>
+                    <td>Декольте</td>
+                    <td>2500</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Живот полностью</td>
+                    <td>3000</td>
+                    <td>1490</td>
+                  </tr>
+                  <tr>
+                    <td>Живот (дорожка)</td>
+                    <td>1300</td>
+                    <td>690</td>
+                  </tr>
+                  <tr>
+                    <td>Грудь полностью</td>
+                    <td>2900</td>
+                    <td>1490</td>
+                  </tr>
+                  <tr>
+                    <td>Поясница</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Воротниковая</td>
+                    <td>2800</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Верх спины</td>
+                    <td>3200</td>
+                    <td>1890</td>
+                  </tr>
+                  <tr>
+                    <td>Спина полностью	</td>
+                    <td>6000</td>
+                    <td>2990</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="6">ноги</td>
+                    <td>Ягодицы</td>
+                    <td>3500</td>
+                    <td>1790</td>
+                  </tr>
+                  <tr>
+                    <td>Колени</td>
+                    <td>1500</td>
+                    <td>590</td>
+                  </tr>
+                  <tr>
+                    <td>Голени</td>
+                    <td>7000</td>
+                    <td>2990</td>
+                  </tr>
+                  <tr>
+                    <td>Часть бедра</td>
+                    <td>4400</td>
+                    <td>2100</td>
+                  </tr>
+                  <tr>
+                    <td>Бедра</td>
+                    <td>8000</td>
+                    <td>3890</td>
+                  </tr>
+                  <tr>
+                    <td>Ноги полностью</td>
+                    <td>14000</td>
+                    <td>6390</td>
+                  </tr>
+  
+                  <tr>
+                    <td rowspan="5">бикини</td>
+                    <td>Бикини классическое</td>
+                    <td>3500</td>
+                    <td>1290</td>
+                  </tr>
+                  <tr>
+                    <td>Бикини тотальное</td>
+                    <td>5000</td>
+                    <td>1990</td>
+                  </tr>
+                  <tr>
+                    <td>Половые губы</td>
+                    <td>2500</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td>Прианальная область</td>
+                    <td>2000</td>
+                    <td>990</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+  
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section class="price__content  tabs-content js-tabs-content ">
+        <h2 class="tabs-section__title section-subtitle section-subtitle--light">ПРАЙС</h2>
+        <!-- /.tabs-section__title section-subtitle section-subtitle--light -->
+        <div class="price-tables">
+          <div class="price-tables__item">
+            <h3 
+              class="
+                price-tables__heading
+                price-tables__heading--b-radius-tl">
+                ЧИСТКИ
+            </h3>
+
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th>ПРОЦЕДУРА</th>
+                  <th>ЦЕНА (руб.)</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <td>Атравматичная чистка с косметикой Holy Land</td>
+                  <td>2500</td>
+                </tr>
+                <tr>
+                  <td>Ультразвуковая чистка с косметикой Holy Land</td>
+                  <td>3000</td>
+                </tr>
+                <tr>
+                  <td>Комбинированная чистка с косметикой Holy Land</td>
+                  <td>2900</td>
+                </tr>
+                
+              </tbody>
+            </table>
+            
+          </div>
+          <div class="price-tables__item">
+            <h3 class="price-tables__heading price-tables__heading--b-radius-tr">ПИЛИНГИ</h3>
+
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th>ПРОЦЕДУРА</th>
+                  <th>ЦЕНА (руб.)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Миндальный</td>
+                  <td>2000</td>
+                </tr>
+                <tr>
+                  <td>Пировиноградный</td>
+                  <td>2000</td>
+                </tr>
+                <tr>
+                  <td>Салициловый</td>
+                  <td>2000</td>
+                </tr>
+                <tr>
+                  <td>Молочный</td>
+                  <td>2000</td>
+                </tr>
+                <tr>
+                  <td>Азелаиновый</td>
+                  <td>4000</td>
+                </tr>
+                <tr>
+                  <td>PRX-T33</td>
+                  <td>3900</td>
+                </tr>
+                <tr>
+                  <td>BioRePeelCL3</td>
+                  <td>3400</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+          
+        </div>
+        <!-- /.price-tables -->
+      </section>
+
+        <section class="price__content  tabs-content js-tabs-content ">
+        <h2 class="tabs-section__title section-subtitle section-subtitle--light">ПРАЙС</h2>
+        <!-- /.tabs-section__title section-subtitle section-subtitle--light -->
+        <div class="price-tables">
+          <div class="price-tables__item">
+            <h3 
+              class="
+                price-tables__heading
+                price-tables__heading--b-radius-tl price-tables__heading--b-radius-tr">
+                УДАЛЕНИЕ НОВООБРАЗОВАНИЙ
+            </h3>
+
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th>ПРОЦЕДУРА</th>
+                  <th>ЦЕНА (руб.)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>АНЕСТЕЗИЯ</td>
+                  <td>300</td>
+                </tr>
+
+                <tr>
+                  <td> ГИСТОЛОГИЧЕСКОЕ ИССЛЕДОВАНИЕ <br> дерматоскопия до 3 шт./ от 3 шт.</td>
+                  <td>1900 <br> 500 / 700</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    ПАПИЛЛОМЫ <br> 
+                    электрохирургическое удаление единичных папиллом размерами: <br>
+                    4-6 мм: 1 шт./ до 3 шт. / до 10 шт. от 6 мм: 1 шт./ до 3 шт. / до 10 шт.
+                  </td>
+                  <td>
+                    <br>
+                    500 / 1400 / 2500<br> 
+                    600 / 1700 / 2800
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    НЕВУСЫ <br> 
+                    электрохирургическое удаление невусов (родинок) размерами: <br>
+                    до 4 мм / 4-6 мм / 6-8 мм (1 шт.)
+                  </td>
+                  <td>
+                    <br>
+                    <br> 
+                    1000 / 2000 / 3000
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    БОРОДАВКИ <br> 
+                    электрохирургическое удаление бородавок размерами: <br>
+                    до 4 мм / от 4 мм (1 шт)
+                  </td>
+                  <td>
+                    <br>
+                    <br> 
+                    700 / 1500
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    КЕРАТОМА <br> 
+                    электрохирургическое удаление кератом размерами: <br>
+                    до 6 мм / от 4 мм
+                  </td>
+                  <td>
+                    <br>
+                    <br> 
+                    800 / 2000
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    ГЕМАНГИОМЫ <br> 
+                    электрохирургическое удаление гемангиом размерами: <br>
+                    до 4 мм / от 4 мм (1 шт.)
+                  </td>
+                  <td>
+                    <br>
+                    <br> 
+                    800 / 1600
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    ЭЛЕКТРОДЕСТРУКЦИЯ НОВООБРАЗОВАНИЙ <br> 
+                    (креатомы, папилломы): 30 мин, до 20 шт.
+                  </td>
+                  <td>
+                    <br> 
+                    4900
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    КОНТАГИОЗНЫЙ МОЛЛЮСК<br> 
+                    электрохирургическое удаление контагиозного моллюска:<br>
+                    ТЕЛО: до 10 шт. / свыше 10 шт. (цена за 1 шт.)<br>
+                    ЛИЦО: до 10 шт. / свыше 10 шт. (цена за 1 шт.)
+                  </td>
+                  <td>
+                    <br>
+                    <br> 250 / 200
+                    <br>  300 / 250
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+            
+          </div>
+        </div>
+        <!-- /.price-tables -->
+      </section>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="tabs js-tabs flex-column">
+
+            <div id="goto-stock" class="stock-slider">
+  <div>
+<style>
+  .stock-slider-item-1 {
+    background-image: url('./img/stock-slider/bg-slide-1.jpg');
+    
+  }
+
+  @media screen and (max-width: 600px) {
+    .stock-slider-item-1 {
+      background-image: url('./img/stock-slider/bg-slide-1_m.jpg');
+    }
+  }
+</style>
+<div class="stock-slider-item stock-slider-item-1">
+  <div class="container">
+      <div class="stock-slider-item-1__inner stock-slider-item__inner-rigth">
+        <p class="stock-slider-item-1__heading stock-slider-item-1__block banner-slider-heading banner-slider-heading--dark">Специальное предложение на лазерную эпиляцию</p>
+      <p class="banner-title stock-slider-item-1__block">
+        Бикини <br/> и подмышки 
+      </p>
+      <div class="banner-slider-price stock-slider-item-1__block stock-slider-item-1__price">
+
+        <div class="banner-slider-price__item">
+          <div class="banner-slider-heading banner-slider-heading--dark banner-slider-price__heading">Александритовый лазер</div>
+          <div class="banner-price ">1490 руб.</div>
+        </div>
+
+        <div class="banner-slider-price__item">
+          <div class="banner-slider-heading banner-slider-heading--dark banner-slider-price__heading"">Диодный лазер</div>
+          <div class="banner-price ">740 руб.</div>
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-dark">ОНЛАЙН ЗАПИСЬ</button>
+  </div>
+  <!-- /.__inner -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /.stock-slider-item-1 -->
+</div>
+  <div>
+  <style>
+    .stock-slider-item-2 {
+      background-image: url('./img/stock-slider/bg-slide-2.jpg');
+      
+    }
+
+    @media screen and (max-width: 600px) {
+      .stock-slider-item-2 {
+        background-image: url('./img/stock-slider/bg-slide-2_m.jpg');
+      }
+    }
+  </style>
+  <div class="stock-slider-item stock-slider-item-2">
+    <div class="w-100">
+      <div class="container">
+          <div class="stock-slider-item-2__inner stock-slider-item__inner-right">
+            
+          <p class="banner-title stock-slider-item-2__block">
+            Скидка -50%
+          </p>
+
+          <p class="banner-slider-subtitle stock-slider-item-2__block">на эпиляцию любой зоны по промокоду “Гладкость”</p>
+          <!-- /.banner-slider-subtitle -->
+
+          <p class="stock-slider-item-2__heading banner-slider-heading banner-slider-heading--dark">Промокод действителен при первом посещении. Карта лояльности на три месяца в подарок.</p>
+
+          <button type="button" class="btn btn-dark">ОНЛАЙН ЗАПИСЬ</button>
+      </div>
+    <!-- /.__inner -->
+    </div>
+  </div>
+  <!-- /.container -->
+  </div>
+  <!-- /.stock-slider-item-2 -->
+</div>
+  <div>
+<style>
+    .stock-slider-item-3 {
+      background-image: url('./img/stock-slider/bg-slide-3.jpg');
+      
+    }
+
+    @media screen and (max-width: 600px) {
+      .stock-slider-item-3 {
+        background-image: url('./img/stock-slider/bg-slide-3_m.jpg');
+      }
+    }
+  </style>
+  <div class="stock-slider-item stock-slider-item-3">
+    <div class="w-100">
+      <div class="container">
+        <div class="stock-slider-item-3__inner stock-slider-item__inner-right">
+          <p class="banner-slider-subtitle stock-slider-item-3__subtitle stock-slider-item-3__block">Лазерная эпиляция по супер-ценам БЕЗ клубной карты</p>
+            
+          <p class="banner-title stock-slider-item-3__block">
+            Счастливые часы
+          </p>
+
+          <!-- /.banner-slider-subtitle -->
+
+          <ul class="banner-slider-heading banner-slider-heading--dark stock-slider-item-3__list">
+            <li>В акции может участвовать каждый наш клиент - и новый, и постоянный</li>
+            <li>Счастливые часы действуют с 13:00 до 17:00</li>
+          </ul>
+
+          <button type="button" class="btn btn-dark">ОНЛАЙН ЗАПИСЬ</button>
+      </div>
+    <!-- /.__inner -->
+    </div>
+  </div>
+  <!-- /.container -->
+  </div>
+  <!-- /.stock-slider-item-3 -->
+  </div>
+  <div>
+<style>
+    .stock-slider-item-4 {
+      background-image: url('./img/stock-slider/bg-slide-4.jpg');
+      
+    }
+
+    @media screen and (max-width: 600px) {
+      .stock-slider-item-4 {
+        background-image: url('./img/stock-slider/bg-slide-4_m.jpg');
+      }
+    }
+  </style>
+  <div class="stock-slider-item stock-slider-item-4">
+    <div class="w-100">
+      <div class="container">
+        <div class="stock-slider-item-4__inner stock-slider-item__inner-rigth">
+          <p class="banner-slider-subtitle stock-slider-item-4__block">АКЦИЯ</p>
+            
+          <p class="banner-title stock-slider-item-4__block">
+            RF-лифтинг лица
+          </p>
+
+          <!-- /.banner-slider-subtitle -->
+
+          <p 
+            class="
+                stock-slider-item-4__heading
+                banner-slider-heading 
+                banner-slider-heading--dark">
+                2500 руб. вместо <span class="line-through">3125 руб.</span> 
+          </p>
+
+          <button type="button" class="btn btn-dark">ОНЛАЙН ЗАПИСЬ</button>
+      </div>
+    <!-- /.__inner -->
+    </div>
+  </div>
+  <!-- /.container -->
+  </div>
+  <!-- /.stock-slider-item-4 -->
+</div>
+  <div>
+  <style>
+    .stock-slider-item-5 {
+      background-image: url('./img/stock-slider/bg-slide-5.jpg');
+      
+    }
+
+    @media screen and (max-width: 600px) {
+      .stock-slider-item-5 {
+        background-image: url('./img/stock-slider/bg-slide-5_m.jpg');
+      }
+    }
+  </style>
+  <div class="stock-slider-item stock-slider-item-5">
+    <div class="w-100">
+      <div class="container">
+        <div class="stock-slider-item-5__inner stock-slider-item__inner-left">
+          <p class="banner-title banner-title stock-slider-item-5__block">
+            -20% на всю косметологию
+          </p>
+            
+          <p class="stock-slider-item-5__block">
+            *при первом посещении клиник Novo.Clinic
+          </p>
+
+          <!-- /.banner-slider-subtitle -->
+
+          <button type="button" class="btn btn-dark">ОНЛАЙН ЗАПИСЬ</button>
+      </div>
+    <!-- /.__inner -->
+    </div>
+  </div>
+  <!-- /.container -->
+  </div>
+  <!-- /.stock-slider-item-4 -->
+</div>
+    <div>
+  <style>
+    .stock-slider-item-6 {
+      background-image: url('./img/stock-slider/bg-slide-6.jpg');
+      
+    }
+
+    @media screen and (max-width: 600px) {
+      .stock-slider-item-6 {
+        background-image: url('./img/stock-slider/bg-slide-6_m.jpg');
+      }
+    }
+  </style>
+  <div class="stock-slider-item stock-slider-item-6">
+    <div class="w-100">
+      <div class="container">
+        <div class="stock-slider-item-6__inner stock-slider-item__inner-rigth">
+          <p class="banner-slider-subtitle banner-slider-subtitle--light stock-slider-item-6__subtitle">Инновационный метод двухфазного пилинга</p>
+            
+          <p class="banner-title banner-title--light stock-slider-item-6__title">
+            BioRePeel
+          </p>
+
+          <ul class="banner-slider-heading banner-slider-heading--light stock-slider-item-6__list">
+            <li>разглаживает морщины</li>
+            <li>беорется со следами акне</li>
+            <li>сужает поры</li>
+            <li>возвращает мышечный тонус</li>
+          </ul>
+
+          <p 
+            class="
+                stock-slider-item-6__heading
+                banner-slider-heading 
+                banner-slider-heading--light">
+                2500 руб. вместо <span class="line-through">3125 руб.</span> 
+          </p>
+
+          <button type="button" class="btn btn-primary">ОНЛАЙН ЗАПИСЬ</button>
+      </div>
+    <!-- /.__inner -->
+    </div>
+  </div>
+  <!-- /.container -->
+  </div>
+  <!-- /.stock-slider-item-6 -->
+</div>
+</div>
+            <section id="goto-feedback" class="feedback">
+  <div class="container">
+    <h2 class="section-title feedback__title">ОТЗЫВЫ</h2>
+    <div class="feedback-slider js-horizontal-slider">
+      <div class="feedback-slider__item">
+        <div class="feedback-slider__inner">
+          <img src="./img/feedback-1.jpg" alt="feedback-1">
+        </div>
+      </div>
+      <!-- /.feedback-slider__item -->
+      <div class="feedback-slider__item">
+        <div class="feedback-slider__inner">
+          <img src="./img/feedback-2.jpg" alt="feedback-2">
+        </div>
+      </div>
+      <!-- /.feedback-slider__item -->
+      <div class="feedback-slider__item">
+        <div class="feedback-slider__inner">
+          <img src="./img/feedback-3.jpg" alt="feedback-3">
+        </div>
+      </div>
+      <!-- /.feedback-slider__item -->
+      <div class="feedback-slider__item">
+        <div class="feedback-slider__inner">
+          <img src="./img/feedback-4.jpg" alt="feedback-4">
+        </div>
+      </div>
+      <!-- /.feedback-slider__item -->
+      <div class="feedback-slider__item">
+        <div class="feedback-slider__inner">
+          <img src="./img/feedback-5.jpg" alt="feedback-5">
+        </div>
+      </div>
+      <!-- /.feedback-slider__item -->
+    </div>
+    <!-- /.feedback-slider -->
+  </div>
+</section>
+            <section class="bfr-aft">
+  <div class="container">
+    <h2 class="section-title bfr-aft__title">ДО/ПОСЛЕ</h2>
+    <p class="section-subtitle bfr-aft__subtitle">
+      Больше работ в нашем Instagram 
+      <a class="link" href="#" target="_blank">Instagram</a>
+    </p>
+
+    <div class="bfr-aft-gallery js-gallery-mob-slider">
+
+      
+        <div class="bfr-aft-gallery__item">
+  <img src="./img/after-before/item-1.jpg" alt="Novo Clinic before-after effect - 1" class="bfr-aft-gallery__img">
+</div>
+      
+        <div class="bfr-aft-gallery__item">
+  <img src="./img/after-before/item-2.jpg" alt="Novo Clinic before-after effect - 2" class="bfr-aft-gallery__img">
+</div>
+      
+        <div class="bfr-aft-gallery__item">
+  <img src="./img/after-before/item-3.jpg" alt="Novo Clinic before-after effect - 3" class="bfr-aft-gallery__img">
+</div>
+      
+        <div class="bfr-aft-gallery__item">
+  <img src="./img/after-before/item-4.jpg" alt="Novo Clinic before-after effect - 4" class="bfr-aft-gallery__img">
+</div>
+      
+        <div class="bfr-aft-gallery__item">
+  <img src="./img/after-before/item-5.jpg" alt="Novo Clinic before-after effect - 5" class="bfr-aft-gallery__img">
+</div>
+      
+        <div class="bfr-aft-gallery__item">
+  <img src="./img/after-before/item-6.jpg" alt="Novo Clinic before-after effect - 6" class="bfr-aft-gallery__img">
+</div>
+      
+        <div class="bfr-aft-gallery__item">
+  <img src="./img/after-before/item-7.jpg" alt="Novo Clinic before-after effect - 7" class="bfr-aft-gallery__img">
+</div>
+      
+        <div class="bfr-aft-gallery__item">
+  <img src="./img/after-before/item-8.jpg" alt="Novo Clinic before-after effect - 8" class="bfr-aft-gallery__img">
+</div>
+      
+
+    </div>
+    <!-- /.bfr-aft-gallery -->
+  </div>
+  <!-- /.container -->
+</section>
+            <section id="goto-contact" class="contacts">
+  <div class="container contacts__container">
+    <h2 class="section-title contacts__title">КОНТАКТЫ</h2>
+    <!-- /.section-title -->
+
+    <div class="contacts__row">
+      <div class="contacts__col">
+        <p class="contacts__item">
+          Ст. м. Фрунзенская, Красуцкого д. 3 лит. М 
+          <a class="contacts__link link" href="tel:+79213315255">+7 (921) 331-52-55</a>
+        </p>
+
+        <p class="contacts__item">
+          Ст. м. Петроградская, Ординарная д .21/22 
+          <a class="contacts__link link" href="tel:+79215963160">+7 (921) 596-31-60</a>
+        </p>
+      </div>
+      <!-- /.contacts__col -->
+      <div class="contacts__col">
+        <p class="contacts__item">
+          Режим работы: с 10 до 21:00, без выходных
+          <a class="contacts__link link" href="mailto:novolaserspbplus@gmail.com">novolaserspbplus@gmail.com</a>
+        </p>
+
+        <button type="button" class="btn btn-dark">ОНЛАЙН ЗАПИСЬ</button>
+      </div>
+      <!-- /.contacts__col -->
+    </div>
+    <!-- /.contacts__row -->
+  </div>
+  <!-- /.container -->
+
+  <div class="contacts-map" id="contactsMap" height="550"></div>
+  <!-- /#contactsMap.contacts-map -->
+</section>
+        
+        </main>
+        <footer class="footer">
+  <div class="container">
+    <div class="footer__header">
+
+      <div class="footer__logo">
+        <img src="./img/logo.svg" width="181" height="47" alt="Novo clinic logo">
+      </div>
+
+      <nav class="main-nav main-nav--xl footer__nav">
+        <ul>
+          <li><a href="#goto-about">О клинике</a></li>
+          <li><a href="#goto-stock">Акции</a></li>
+          <li><a href="#goto-service">Услуги</a></li>
+          <li><a href="#goto-price">Цены</a></li>
+          <li><a href="#goto-feedback">Отзывы</a></li>
+          <li><a href="#goto-contact">Контакты</a></li>
+        </ul>
+      </nav>
+      <!-- /.footer__nav -->
+    </div>
+    <!-- /.footer__header -->
+
+    <div class="footer__body">
+      <ul class="footer__list footer-list">
+        <li class="footer-list__item">
+          <a href="./img/after-before/item-1.jpg"  download class="footer__link">Специалисты</a>
+        </li>
+        <!-- /.footer-list__item -->
+        <li class="footer-list__item">
+          <a href="./img/after-before/item-1.jpg" download class="footer__link">Лицензии</a>
+        </li>
+        <!-- /.footer-list__item -->
+        <li class="footer-list__item">
+          <a href="./img/after-before/item-1.jpg" download class="footer__link">Договор оказания медицинских услуг</a>
+        </li>
+        <!-- /.footer-list__item -->
+        <li class="footer-list__item">
+          <a href="./img/after-before/item-1.jpg" download class="footer__link">Правовая информация</a>
+        </li>
+        <!-- /.footer-list__item -->
+        <li class="footer-list__item">
+          <a href="./img/after-before/item-1.jpg" download class="footer__link">Реквизиты</a>
+        </li>
+        <!-- /.footer-list__item -->
+      </ul>
+
+      <div class="footer__actions">
+        <button type="button" class="btn btn-primary footer__btn">ОНЛАЙН ЗАПИСЬ</button>
+        <a href="./policy.html" class="footer__link">Политика в отношении обработки персональных данных</a>
+      </div>
+    </div>
+    <!-- /.footer__body -->
+
+    <div class="footer__footer">
+      <p>ООО «Новолазер Плюс»</p>
+      <p>Сайт разработан <!-- ... и слава богу))) --> </p>
+    </div>
+    <!-- /.footer__footer =) --> 
+  </div>
+  <!-- /.container -->
+</footer>
+        <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+        <script src="js/main.min.js"></script>
+        <script src="js/vendor.min.js"></script>
+    </body>
+</html>
