@@ -58,7 +58,9 @@
     background-color: $primary;
     text-align: center;
     padding: 8px 8px 22px;
-    font: 14px "Roboto";
+    font-family: "Roboto", serif;
+    font-size: rem(14);
+    line-height: 1.2;
     margin: 0 -15px;
 
     @include md-block {

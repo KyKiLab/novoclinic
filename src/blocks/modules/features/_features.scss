@@ -42,8 +42,11 @@
   &__heading {
     max-width: rem(320);
     text-align: center;
-    font: 600 rem(36) / 1.2 "El Messiri";
 
+    font-family: "El Messiri", serif;
+    font-size: rem(36);
+    font-weight: 600;
+    line-height: 1.2;
     @include lg-block {
       opacity: 1;
       font-size: rem(24);

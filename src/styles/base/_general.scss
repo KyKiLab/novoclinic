@@ -35,7 +35,9 @@ body {
   justify-content: space-between;
   min-height: 100%;
   color: $main-text-color;
-  font: 400 1rem "Roboto Condensed", serif;
+  font-family: "Roboto Condensed", serif;
+  font-size: rem(16);
+  font-weight: 400;
   background: $primary-bg-color;
 
   header {

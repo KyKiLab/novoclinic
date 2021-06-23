@@ -1,5 +1,7 @@
 .banner-title {
-  font: 400 rem(104) "El messiri";
+  font-family: "El messiri", serif;
+  font-size: rem(104);
+  font-weight: 400;
   line-height: rem(90);
   word-wrap: break-word;
 
@@ -22,7 +24,10 @@
 
 .main-title {
   color: $main-text-color;
-  font: 600 rem(64) / 1.1 "El Messiri";
+  font-family: "El messiri", serif;
+  font-size: rem(64);
+  font-weight: 600;
+  line-height: 1.2;
   text-align: center;
 
   @include sm-block {
@@ -35,7 +40,10 @@
 }
 
 .section-title {
-  font: 400 rem(24) / rem(28) "Roboto";
+  font-family: "Roboto", serif;
+  font-size: rem(24);
+  font-weight: 400;
+  line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
 
@@ -45,7 +53,10 @@
 }
 
 .section-subtitle {
-  font: 400 rem(18) / rem(22) "Roboto";
+  font-family: "Roboto", serif;
+  font-size: rem(18);
+  font-weight: 400;
+  line-height: 1.2;
   text-align: center;
 
   &--light {

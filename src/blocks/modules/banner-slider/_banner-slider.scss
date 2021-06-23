@@ -68,8 +68,10 @@
 }
 
 .banner-price {
-  font: 600 rem(36) "El messiri";
-  line-height: 1;
+  font-family: "El messiri", serif;
+  font-size: rem(36);
+  font-weight: 600;
+  line-height: 1.2;
   word-wrap: break-word;
 
   &--light {
@@ -82,7 +84,10 @@
 }
 
 .banner-slider-subtitle {
-  font: 600 rem(36) / 1.1 "El messiri";
+  font-family: "El messiri", serif;
+  font-size: rem(36);
+  font-weight: 600;
+  line-height: 1.1;
   word-wrap: break-word;
 
   @include sm-block {

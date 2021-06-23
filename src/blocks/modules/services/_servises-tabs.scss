@@ -25,7 +25,10 @@
 
     &-btn {
       @include button-reset();
-      font: rem(14) / 1.3 "Roboto";
+
+      font-family: "Roboto", serif;
+      font-size: rem(14);
+      line-height: 1.3;
       color: $main-text-color;
       background-color: $primary-bg-color;
       transition: all $transition;
@@ -125,7 +128,9 @@
 
   &-btn {
     @include button-reset();
-    font: rem(14) / 1.3 "Roboto";
+    font-family: "Roboto", serif;
+    font-size: rem(14);
+    line-height: 1.3;
     color: $light-text-color;
     text-transform: uppercase;
     text-decoration: none;

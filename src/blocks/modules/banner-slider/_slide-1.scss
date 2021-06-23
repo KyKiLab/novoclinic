@@ -26,7 +26,11 @@
   }
 
   &__footnote {
-    font: 400 rem(16) "Roboto Condensed";
+    font-family: "Roboto Condensed", serif;
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: 1.1;
+
     color: rgba($light-text-color, 0.7);
     margin-bottom: rem(50);
   }
