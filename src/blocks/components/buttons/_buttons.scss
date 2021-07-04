@@ -1,12 +1,13 @@
 .btn {
   @include button-reset();
   @include transition-colors();
+  font-family: Roboto;
   border-radius: rem(30);
   text-transform: uppercase;
   font-size: rem(14);
-  min-width: rem(130);
+  min-width: rem(137);
   border: 1px solid $transparent;
-  padding: rem(17) rem(46);
+  padding: rem(14) rem(45);
 
   &:focus {
     outline: $primary;
