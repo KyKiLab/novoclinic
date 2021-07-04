@@ -1,5 +1,9 @@
 .stock-slider {
   padding-top: rem(64);
+  margin-bottom: 0 !important;
+  @include sm-block {
+    padding-top: 12px;
+  }
   &-item {
     height: 600px;
     padding: rem(40) 0;

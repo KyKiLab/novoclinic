@@ -101,3 +101,9 @@ body {
     transform-origin: right top;
   }
 }
+
+.hide-mob {
+  @include sm-block {
+    display: none;
+  }
+}

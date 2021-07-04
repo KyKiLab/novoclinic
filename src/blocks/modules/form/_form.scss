@@ -70,7 +70,11 @@
   // .contact-form__text
 
   &__text {
-    margin-top: rem(20);
+    margin: rem(0);
+  }
+
+  .wpcf7 .ajax-loader {
+    margin: 5px 24px 0;
   }
 }
 
@@ -79,7 +83,7 @@
 
   &__item {
     &:not(:last-child) {
-      margin-bottom: rem(20);
+      margin-bottom: rem(16);
     }
   }
 }
@@ -88,13 +92,20 @@
   @include input-reset($light-text-color);
   width: 100%;
   border: none;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 1;
+  font-size: rem(14);
   background-color: rgba($light-bg-color, 0.8);
   outline: $primary;
   padding: rem(18);
   border-radius: $border-radius;
 
   &::placeholder {
-    font-family: 400 rem(14) / rem(17) "Roboto";
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: 1;
     color: $main-text-color;
     text-overflow: ellipsis;
     opacity: 1;
@@ -110,4 +121,5 @@
 
 textarea {
   resize: none;
+  padding: 17px;
 }

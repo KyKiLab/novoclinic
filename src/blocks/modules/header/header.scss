@@ -121,13 +121,15 @@
     @include button-reset();
     @include transition-colors();
     margin-left: rem(36);
+    font-family: "Roboto Condensed";
     color: $light-text-color;
     background-color: $transparent;
     text-transform: uppercase;
     font-size: rem(14);
     display: flex;
     align-items: center;
-    padding: rem(17) rem(22);
+    padding: rem(17) rem(23);
+    letter-spacing: 0.5px;
     border-radius: $border-radius;
     border: 1px solid $light-text-color;
     &:hover,
@@ -203,7 +205,7 @@
 
     .toggle-menu {
       span {
-        background-color: $light-bg-color;
+        background-color: $dark-bg-color;
       }
     }
   }
