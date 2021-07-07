@@ -6,6 +6,7 @@
   left: 0;
   top: 0;
   z-index: 99;
+  font-family: Roboto;
 
   &.mob-menu-show {
     .header__nav {
@@ -121,7 +122,7 @@
     @include button-reset();
     @include transition-colors();
     margin-left: rem(36);
-    font-family: "Roboto Condensed";
+    font-family: "Roboto";
     color: $light-text-color;
     background-color: $transparent;
     text-transform: uppercase;

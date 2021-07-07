@@ -18,10 +18,11 @@
   }
 
   &__inner {
+    max-width: rem(700);
     width: 100%;
+    text-align: center;
   }
   &__title {
-    max-width: rem(660);
     margin-bottom: rem(20);
   }
 

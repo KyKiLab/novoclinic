@@ -13,7 +13,7 @@
     background-size: cover;
 
     @include md-block {
-      height: 568px;
+      height: calc(100vh - 60px);
     }
 
     &__inner-rigth {

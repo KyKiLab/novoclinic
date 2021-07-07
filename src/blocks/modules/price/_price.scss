@@ -66,6 +66,7 @@
     font-size: rem(14);
     line-height: 1.2;
     margin: 0 -15px;
+    font-weight: 400;
 
     @include sm-block {
       background-color: $transparent;
@@ -162,7 +163,7 @@
         span {
           display: block;
           text-transform: uppercase;
-          transform: rotate(90deg);
+          transform: rotate(-90deg);
           position: absolute;
           width: 150px;
           left: -65px;

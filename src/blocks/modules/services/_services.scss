@@ -138,10 +138,10 @@
     }
 
     &:hover {
-      background-color: $light-bg-color;
+      // background-color: $light-bg-color;
       text-decoration: none;
-      color: $main-text-color;
-      border-color: $light-bg-color;
+      color: $primary;
+      // border-color: $light-bg-color;
     }
 
     &--primary {
@@ -149,10 +149,10 @@
       color: $main-text-color;
 
       &:hover {
-        background-color: $transparent;
+        // background-color: $transparent;
         text-decoration: none;
-        color: $light-text-color;
-        border-color: $transparent;
+        color: $main-text-color;
+        // border-color: $transparent;
       }
     }
   }
