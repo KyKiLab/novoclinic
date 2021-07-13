@@ -133,17 +133,17 @@
     letter-spacing: 0.5px;
     border-radius: $border-radius;
     border: 1px solid $light-text-color;
-    &:hover,
-    &:active {
-      background-color: $light-bg-color;
-      color: $main-text-color;
-    }
+    // &:hover,
+    // &:active {
+    //   background-color: $light-bg-color;
+    //   color: $main-text-color;
+    // }
 
     &:focus {
       outline: $primary;
       &:focus {
         outline: $primary;
-        box-shadow: 2px 2px 2px 2px $primary;
+        // box-shadow: 2px 2px 2px 2px $primary;
       }
     }
   } // .header__btn

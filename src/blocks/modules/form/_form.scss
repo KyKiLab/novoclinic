@@ -76,6 +76,16 @@
   .wpcf7 .ajax-loader {
     margin: 5px 24px 0;
   }
+
+  .wpcf7 form.sent .wpcf7-response-output {
+    border-color: #2c1906;
+    text-align: center;
+    width: 40%;
+
+    @include sm-block {
+      width: 100%;
+    }
+  }
 }
 
 .input-group {

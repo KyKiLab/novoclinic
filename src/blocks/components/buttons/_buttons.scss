@@ -24,29 +24,29 @@
   background-color: $light-bg-color;
   color: $main-text-color;
 
-  &:hover {
-    background-color: $dark-bg-color;
-    color: $light-text-color;
-    border-color: $dark-bg-color;
-  }
+  // &:hover {
+  //   background-color: $dark-bg-color;
+  //   color: $light-text-color;
+  //   border-color: $dark-bg-color;
+  // }
 }
 
 .btn-dark {
   background-color: $dark-bg-color;
   color: $light-text-color;
-  &:hover {
-    background-color: $light-bg-color;
-    color: $main-text-color;
-    border-color: $light-bg-color;
-  }
+  // &:hover {
+  //   background-color: $light-bg-color;
+  //   color: $main-text-color;
+  //   border-color: $light-bg-color;
+  // }
 }
 
 .btn-primary {
   background-color: $primary;
   color: $main-text-color;
-  &:hover {
-    background-color: $dark-bg-color;
-    color: $light-text-color;
-    border-color: $dark-bg-color;
-  }
+  // &:hover {
+  //   background-color: $dark-bg-color;
+  //   color: $light-text-color;
+  //   border-color: $dark-bg-color;
+  // }
 }
